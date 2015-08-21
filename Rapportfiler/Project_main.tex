@@ -1,0 +1,44 @@
+%Document setup
+%\input{Document_setup.tex}
+
+\documentclass[a4paper,10pt,onecolumn,titlepage]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{tabularx}
+\usepackage{float}
+\usepackage[nottoc]{tocbibind}
+\usepackage[hidelinks]{hyperref}
+\usepackage{acronym}
+%\usepackage[options]{natbib} % Experementing with new bibliography type
+
+\pagenumbering{arabic}
+
+\begin{document}
+
+\include{Titlepage.tex}
+
+%Table of Contents
+\renewcommand\contentsname{Table of Contents}
+%\addcontentsline{toc}{section}{Table of Contents}
+\tableofcontents
+
+\section{Dummy1}
+
+Blabla
+
+\section{Dummy2}
+
+Blabla
+
+\section{Dummy3}
+
+Blabla
+
+\section{Dummy4}
+
+Blabla, bla!
+
+\end{document}
