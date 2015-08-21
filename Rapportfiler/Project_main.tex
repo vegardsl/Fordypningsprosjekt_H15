@@ -4,12 +4,18 @@
 \documentclass[a4paper,10pt,onecolumn,titlepage]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
+
+\setlength{\columnsep}{1cm}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\setlength\parindent{0cm}  % Hack for removing indentation
+
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{tabularx}
 \usepackage{float}
 \usepackage[nottoc]{tocbibind}
+\usepackage[toc,page]{appendix}
 \usepackage[hidelinks]{hyperref}
 \usepackage{acronym}
 %\usepackage[options]{natbib} % Experementing with new bibliography type
@@ -30,16 +36,21 @@
 
 \include{Introduction}
 
-\section{Dummy2}
+\include{Problem_Description}
 
-Blabla
+\include{Background_theory}
 
-\section{Dummy3}
+\include{Implementation}
 
-Blabla
+\include{Testing}
 
-\section{Dummy4}
+\include{Conclusion}
 
-Blabla, bla!
+\include{Further_Work}
+
+\appendix
+\include{Code}
+
+\input{Bibliography}
 
 \end{document}
