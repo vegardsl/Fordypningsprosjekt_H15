@@ -5,6 +5,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage[english]{babel}
 
+\usepackage[top=1.5in, bottom=1.5in, left=1in, right=1in]{geometry}
+
 \setlength{\columnsep}{1cm}
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 \setlength\parindent{0cm}  % Hack for removing indentation
@@ -17,6 +19,7 @@
 \usepackage[nottoc]{tocbibind}
 \usepackage[toc,page]{appendix}
 \usepackage[hidelinks]{hyperref}
+\usepackage{multicol}
 \usepackage{acronym}
 %\usepackage[options]{natbib} % Experementing with new bibliography type
 
@@ -28,6 +31,8 @@
 
 \include{Abstract}
 
+\include{Problem_Description}
+
 
 %Table of Contents
 \renewcommand\contentsname{Table of Contents}
@@ -35,8 +40,6 @@
 \tableofcontents
 
 \include{Introduction}
-
-\include{Problem_Description}
 
 \include{Background_theory}
 
