@@ -1,8 +1,9 @@
 \select@language {english}
 \contentsline {section}{\numberline {1}Introduction}{3}{section.1}
-\contentsline {subsection}{\numberline {1.1}Long-term Goal of the Project}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.1}Mobile Autonomous Robotics and Computer Vision}{3}{subsection.1.1}
 \contentsline {subsection}{\numberline {1.2}System Overview}{3}{subsection.1.2}
 \contentsline {subsection}{\numberline {1.3}Report Structure}{3}{subsection.1.3}
+<<<<<<< HEAD
 \contentsline {section}{\numberline {2}Background Theory}{4}{section.2}
 \contentsline {subsection}{\numberline {2.1}GPU-Accelerated OpenCV}{4}{subsection.2.1}
 \contentsline {subsubsection}{\numberline {2.1.1}Introduction}{4}{subsubsection.2.1.1}
@@ -20,5 +21,21 @@
 \contentsline {section}{\numberline {5}Conclusion}{7}{section.5}
 \contentsline {section}{\numberline {6}Further Work}{8}{section.6}
 \contentsline {subsection}{\numberline {6.1}Cooperation With Ole Magnus}{8}{subsection.6.1}
+=======
+\contentsline {subsection}{\numberline {1.4}Computer Vision}{4}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}Optical flow(?)}{4}{subsection.1.5}
+\contentsline {subsection}{\numberline {1.6}Real-Time Systems}{4}{subsection.1.6}
+\contentsline {subsection}{\numberline {1.7}Selection of Real-Time System(?)}{4}{subsection.1.7}
+\contentsline {subsection}{\numberline {1.8}LIDAR}{4}{subsection.1.8}
+\contentsline {subsection}{\numberline {1.9}Vehicle Dynamics}{4}{subsection.1.9}
+\contentsline {subsection}{\numberline {1.10}Vehicle Control}{4}{subsection.1.10}
+\contentsline {section}{\numberline {2}Implementation}{5}{section.2}
+\contentsline {section}{\numberline {3}Testing and Assessment of Performance}{6}{section.3}
+\contentsline {subsection}{\numberline {3.1}Navigation}{6}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Real-Time Demands}{6}{subsection.3.2}
+\contentsline {section}{\numberline {4}Conclusion}{7}{section.4}
+\contentsline {section}{\numberline {5}Further Work}{8}{section.5}
+\contentsline {subsection}{\numberline {5.1}Cooperation With Ole Magnus}{8}{subsection.5.1}
+>>>>>>> origin/master
 \contentsline {section}{\numberline {A}Code}{9}{appendix.A}
 \contentsline {section}{\numberline {B}Bibliography}{10}{appendix.B}

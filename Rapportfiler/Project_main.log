@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.18)  24 SEP 2015 10:28
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.8.21)  14 OCT 2015 15:06
+>>>>>>> origin/master
 entering extended mode
 **Project_main.tex
 
@@ -905,9 +909,17 @@ ain.toc)
 \tf@toc=\write5
  [2
 
+<<<<<<< HEAD
 ]
 (C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Introduct
 ion.tex) [3
+=======
+] (Introduction.tex
+
+LaTeX Warning: Reference `' on page 3 undefined on input line 3.
+
+) [3
+>>>>>>> origin/master
 
 ]
 (C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Backgroun
@@ -983,18 +995,30 @@ Package rerunfilecheck Warning: File `Project_main.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `Project_main.out':
+<<<<<<< HEAD
 (rerunfilecheck)             Before: DD7557A0CC5DD6FF67DFCE8C3FD22CD4;1303
 (rerunfilecheck)             After:  1D9E7A47915111FC30596E17E76103F0;1449.
+=======
+(rerunfilecheck)             Before: 069EF17CFF520FDC90731644537375D6;1250
+(rerunfilecheck)             After:  052AFA6312BE840984904ABC817F7455;1267.
+>>>>>>> origin/master
 
 LaTeX Warning: There were undefined references.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 59.
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  7956 strings out of 493921
  117753 string characters out of 3147278
  229330 words of memory out of 3000000
  11021 multiletter control sequences out of 15000+200000
+=======
+ 8074 strings out of 493698
+ 114366 string characters out of 3144406
+ 235653 words of memory out of 3000000
+ 11172 multiletter control sequences out of 15000+200000
+>>>>>>> origin/master
  7934 words of font info for 29 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  29i,6n,30p,543b,396s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1006,9 +1030,17 @@ onts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/a
 msfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmtt10.pfb>
+<<<<<<< HEAD
 Output written on Project_main.pdf (12 pages, 144205 bytes).
 PDF statistics:
  223 PDF objects out of 1000 (max. 8388607)
  51 named destinations out of 1000 (max. 500000)
  169 words of extra memory for PDF output out of 10000 (max. 10000000)
+=======
+Output written on Project_main.pdf (12 pages, 142578 bytes).
+PDF statistics:
+ 215 PDF objects out of 1000 (max. 8388607)
+ 48 named destinations out of 1000 (max. 500000)
+ 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+>>>>>>> origin/master
 
