@@ -1,0 +1,16 @@
+/* ---- Installing Qt 4.8 ----*/
+Add bin to path
+Download and install pearl
+
+Requirement: Pearl
+http://www.activestate.com/activeperl/downloads
+
+Reboot
+
+Open MSVC cmd prompt
+Change dir to Qt/4.8.0
+Configure
+Open cource: o
+yes y
+Wait approx 5 min while configuring
+Run nmake

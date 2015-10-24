@@ -4,13 +4,15 @@
 \contentsline {subsection}{\numberline {1.2}System Overview}{3}{subsection.1.2}
 \contentsline {subsection}{\numberline {1.3}Report Structure}{3}{subsection.1.3}
 \contentsline {section}{\numberline {2}Background Theory}{4}{section.2}
-\contentsline {subsection}{\numberline {2.1}Computer Vision}{4}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Optical flow(?)}{4}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Real-Time Systems}{4}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Selection of Real-Time System(?)}{4}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}LIDAR}{4}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Vehicle Dynamics}{4}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Vehicle Control}{4}{subsection.2.7}
+\contentsline {subsection}{\numberline {2.1}GPU-Accelerated OpenCV}{4}{subsection.2.1}
+\contentsline {subsubsection}{\numberline {2.1.1}Introduction}{4}{subsubsection.2.1.1}
+\contentsline {subsection}{\numberline {2.2}Computer Vision}{4}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Optical flow(?)}{4}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Real-Time Systems}{4}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Selection of Real-Time System(?)}{4}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}LIDAR}{4}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Vehicle Dynamics}{4}{subsection.2.7}
+\contentsline {subsection}{\numberline {2.8}Vehicle Control}{4}{subsection.2.8}
 \contentsline {section}{\numberline {3}Implementation}{5}{section.3}
 \contentsline {section}{\numberline {4}Testing and Assessment of Performance}{6}{section.4}
 \contentsline {subsection}{\numberline {4.1}Navigation}{6}{subsection.4.1}
