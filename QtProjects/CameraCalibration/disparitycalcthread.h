@@ -63,30 +63,30 @@ private:
     void createTrackbars();
     //void on_trackbar( int, void* );
     //void on_prefilterCap( int, void* );
-    void on_blockSize( int, void* );
-    void on_textureThreashold( int, void* );
-    void on_uniquenessRatio( int, void* );
-    void on_speckleWindowSize( int, void* );
-    void on_speckleRange( int, void* );
-    void on_disp12MaxDiff( int, void* );
-    void on_P1( int, void* );
-    void on_P2( int, void* );
+    //void on_blockSize( int, void* );
+    //void on_textureThreashold( int, void* );
+    //void on_uniquenessRatio( int, void* );
+    //void on_speckleWindowSize( int, void* );
+    //void on_speckleRange( int, void* );
+    //void on_disp12MaxDiff( int, void* );
+    //void on_P1( int, void* );
+    //void on_P2( int, void* );
 
     //int min_disp = 0;
     int numDisparities = 16*10; //Must be divisible by 16.
     int SADWindowSize = 5; // Must be odd.
 
-    int minDisparity = -32;
-    int numDisparity = 256;
-    int prefilterCap = 21;
-    int blockSize = 5;
-    int textureThreashold = 10;
+    int minDisparity = 0;
+    int numDisparity = 80;
+    int prefilterCap = 11;
+    int blockSize = 7; // Set size of blocks to match
+    int textureThreshold = 10;
     int uniquenessRatio = 15;
     int speckleWindowSize = 19;
     int speckleRange = 8;
     int disp12MaxDiff = 5;
-    int P1 = 16 * 3 * SADWindowSize * SADWindowSize;
-    int P2 = 32 * 3 * SADWindowSize * SADWindowSize;
+    int P1 = 12 * 3 * SADWindowSize * SADWindowSize;
+    int P2 = 36 * 3 * SADWindowSize * SADWindowSize;
 
     const int TRACKBAR_MAX = 256;
     int TRACKBAR_MIN = 0;
@@ -103,6 +103,13 @@ public:
     void show_disparity(cv::Size); // show live disparity by processing stereo camera feed
 
     void _setPrefilterCap(int _prefilterCap){sgbm -> setPreFilterCap(_prefilterCap);}
+    void _setBlockSize(int _blockSize){sgbm -> setBlockSize(_blockSize);}
+    void _setUniquenessRatio(int _uniquenessRatio){sgbm -> setUniquenessRatio(_uniquenessRatio);}
+    void _setSpeckleWindowSize(int _speckleWindowSize){sgbm -> setSpeckleWindowSize(_speckleWindowSize);}
+    void _setSpeckleRange(int _speckleRange){sgbm -> setBlockSize(_speckleRange);}
+    void _setDisp12MaxDiff(int _disp12MaxDiff){sgbm -> setDisp12MaxDiff(_disp12MaxDiff);}
+    void _setP1(int _P1){sgbm -> setP1(_P1);}
+    void _setP2(int _P2){sgbm -> setP2(_P2);}
 
 protected:
 

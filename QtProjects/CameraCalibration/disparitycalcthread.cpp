@@ -9,7 +9,7 @@ DisparityCalcThread::DisparityCalcThread(QObject *parent) : QThread(parent)
 {
 
 }
-
+/*
 void on_trackbar( int, void* )
 {//This function gets called whenever a
     // trackbar position is changed
@@ -24,22 +24,58 @@ void on_trackbar( int, void* )
     sgbm->setP2(P2);
 
 }
-
+*/
 void on_prefilterCap(int prefilterCap, void* _disp_obj)
 {
     //sgbm->setPreFilterCap(prefilterCap);
     DisparityCalcThread * disp_obj = (DisparityCalcThread *) _disp_obj;
     disp_obj -> _setPrefilterCap(prefilterCap);
 }
+
+void on_blockSize( int blockSize, void* _disp_obj)
+{
+    DisparityCalcThread * disp_obj = (DisparityCalcThread *) _disp_obj;
+    disp_obj -> _setBlockSize(blockSize);
+}
 /*
-void DisparityCalcThread::on_blockSize( int, void* );
-void DisparityCalcThread::on_textureThreashold( int, void* );
-void DisparityCalcThread::on_uniquenessRatio( int, void* );
-void DisparityCalcThread::on_speckleWindowSize( int, void* );
-void DisparityCalcThread::on_speckleRange( int, void* );
-void DisparityCalcThread::on_disp12MaxDiff( int, void* );
-void DisparityCalcThread::on_P1( int, void* );
-void DisparityCalcThread::on_P2( int, void* );
+void on_textureThreashold( int textureThreashold, void* _disp_obj)
+{
+    DisparityCalcThread * disp_obj = (DisparityCalcThread *) _disp_obj;
+    disp_obj -> _setTextureThreashold(textureThreashold);
+}
+*/
+void on_uniquenessRatio( int uniquenessRatio, void* _disp_obj)
+{
+    DisparityCalcThread * disp_obj = (DisparityCalcThread *) _disp_obj;
+    disp_obj -> _setUniquenessRatio(uniquenessRatio);
+}
+
+void on_speckleWindowSize( int speckleWindowSize, void* _disp_obj)
+{
+    DisparityCalcThread * disp_obj = (DisparityCalcThread *) _disp_obj;
+    disp_obj -> _setSpeckleWindowSize(speckleWindowSize);
+}
+
+void on_speckleRange( int speckleRange, void* _disp_obj)
+{
+    DisparityCalcThread * disp_obj = (DisparityCalcThread *) _disp_obj;
+    disp_obj -> _setSpeckleRange(speckleRange);
+}
+/*
+void DisparityCalcThread::on_disp12MaxDiff( int, void* )
+{
+
+}
+
+void DisparityCalcThread::on_P1( int, void* )
+{
+
+}
+
+void DisparityCalcThread::on_P2( int, void* )
+{
+
+}
 */
 void DisparityCalcThread::createTrackbars()
 {
@@ -47,13 +83,13 @@ void DisparityCalcThread::createTrackbars()
 
     sprintf( TrackbarName, "prefilterCap", prefilterCap);
     sprintf( TrackbarName, "blockSize", blockSize);
-    sprintf( TrackbarName, "textureThreashold", textureThreashold);
+    //sprintf( TrackbarName, "textureThreshold", textureThreashold); // Not used in StereoSGBM
     sprintf( TrackbarName, "uniquenessRatio", uniquenessRatio);
     sprintf( TrackbarName, "speckleWindowSize", speckleWindowSize);
     sprintf( TrackbarName, "speckleRange", speckleRange);
-    sprintf( TrackbarName, "disp12MaxDiff", disp12MaxDiff);
-    sprintf( TrackbarName, "P1", P1);
-    sprintf( TrackbarName, "P1", P1);
+    //sprintf( TrackbarName, "disp12MaxDiff", disp12MaxDiff);
+    //sprintf( TrackbarName, "P1", P1);
+    //sprintf( TrackbarName, "P1", P1);
 
     //create trackbars and insert them into window
     //3 parameters are: the address of the variable that is changing when the trackbar is moved(eg.H_LOW),
@@ -61,14 +97,15 @@ void DisparityCalcThread::createTrackbars()
     //and the function that is called whenever the trackbar is moved(eg. on_trackbar)
     //                                  ---->    ---->     ---->
     createTrackbar( "prefilterCap", trackbarWindowName, &prefilterCap, TRACKBAR_MAX, on_prefilterCap, (void *)this );
-    createTrackbar( "blockSize", trackbarWindowName, &blockSize, TRACKBAR_MAX, on_trackbar );
-    createTrackbar( "textureThreashold", trackbarWindowName, &textureThreashold, TRACKBAR_MAX, on_trackbar );
-    createTrackbar( "uniquenessRatio", trackbarWindowName, &uniquenessRatio, TRACKBAR_MAX, on_trackbar );
-    createTrackbar( "speckleWindowSize", trackbarWindowName, &speckleWindowSize, TRACKBAR_MAX, on_trackbar );
-    createTrackbar( "speckleRange", trackbarWindowName, &speckleRange, TRACKBAR_MAX, on_trackbar );
-    createTrackbar( "disp12MaxDiff", trackbarWindowName, &disp12MaxDiff, TRACKBAR_MAX, on_trackbar );
-    createTrackbar( "P1", trackbarWindowName, &P1, TRACKBAR_MAX, on_trackbar );
-    createTrackbar( "P2", trackbarWindowName, &P2, TRACKBAR_MAX, on_trackbar );
+
+    createTrackbar( "blockSize", trackbarWindowName, &blockSize, TRACKBAR_MAX, on_blockSize );
+    //createTrackbar( "textureThreshold", trackbarWindowName, &textureThreashold, TRACKBAR_MAX, on_trackbar ); // Not used in StereoSGBM
+    createTrackbar( "uniquenessRatio", trackbarWindowName, &uniquenessRatio, TRACKBAR_MAX, on_uniquenessRatio );
+    createTrackbar( "speckleWindowSize", trackbarWindowName, &speckleWindowSize, TRACKBAR_MAX, on_speckleWindowSize );
+    createTrackbar( "speckleRange", trackbarWindowName, &speckleRange, TRACKBAR_MAX, on_speckleRange );
+    //createTrackbar( "disp12MaxDiff", trackbarWindowName, &disp12MaxDiff, TRACKBAR_MAX, on_trackbar );
+    //createTrackbar( "P1", trackbarWindowName, &P1, TRACKBAR_MAX, on_trackbar );
+    //createTrackbar( "P2", trackbarWindowName, &P2, TRACKBAR_MAX, on_trackbar );
 
     on_prefilterCap(prefilterCap,this);
 }
@@ -200,6 +237,9 @@ void DisparityCalcThread::run()
     sgbm->setP2(P2);
 
     namedWindow("Disparity Map");
+    //imshow(trackbarWindowName);
+
+    createTrackbars();
 
     int numCudaDevices = cuda::getCudaEnabledDeviceCount();
     string s = to_string(numCudaDevices);
@@ -266,7 +306,7 @@ void DisparityCalcThread::run()
         dst.convertTo(disp8U, CV_8UC1, 255/(maxVal - minVal));
         dst.convertTo(disp32F, CV_32F,1./16);
 
-        Canny( disp8U, edge, 100, 200, 3);
+        //Canny( disp8U, edge, 100, 200, 3);
 
         imshow("Left", framel_rect);
         imshow("Right", framer_rect);
@@ -285,10 +325,12 @@ void DisparityCalcThread::run()
             }
 
         }
+        /*
         if(!edge.empty())
         {
             imshow("Edge",edge);
         }
+        */
         choice = char(waitKey(1)); // User input.
     }
 
