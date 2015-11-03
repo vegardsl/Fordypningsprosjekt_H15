@@ -6,13 +6,7 @@
 
 INCLUDEPATH +=  C:\OpenCV\build\include \
                 C:\OpenCV\sources\modules\core\include\opencv2\core \
-                C:\OpenCV\sources\modules\cudastereo \
-                #"C:\Program Files\PCL 1.7.2\include\pcl-1.7" \
-                #"C:\Program Files\PCL 1.6.0\3rdParty\Boost\include" \
-                #"C:\Program Files\PCL 1.6.0\3rdParty\Eigen\include" \
-                #"C:\Program Files\PCL 1.6.0\3rdParty\FLANN\include" \
-                #"C:\Program Files\PCL 1.6.0\3rdParty\Qhull\include" \
-                #"C:\Program Files\PCL 1.6.0\3rdParty\VTK\include\vtk-5.8" \
+                C:\OpenCV\sources\modules\cudastereo \r
 
 
 CONFIG(release,debug|release)
