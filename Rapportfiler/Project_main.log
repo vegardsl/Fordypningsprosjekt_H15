@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.18)  3 NOV 2015 12:39
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.18)  3 NOV 2015 22:19
 entering extended mode
 **Project_main.tex
 
@@ -939,10 +939,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
  []
 
-) [4
+[4
 
 
-] [5]
+]
+
+LaTeX Warning: Reference `' on page 5 undefined on input line 48.
+
+) [5]
 (C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Implement
 ation.tex) [6
 
@@ -1009,7 +1013,7 @@ aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
 Package rerunfilecheck Info: File `Project_main.out' has not changed.
-(rerunfilecheck)             Checksum: 092CD62327D12C838A901DFA8A69D173;2206.
+(rerunfilecheck)             Checksum: C3962E2ABA65114B8B87F3F271BF0281;2599.
 
 
 LaTeX Warning: There were undefined references.
@@ -1017,13 +1021,13 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
  ) 
 Here is how much of TeX's memory you used:
- 7990 strings out of 493921
- 118615 string characters out of 3147278
- 229725 words of memory out of 3000000
- 11035 multiletter control sequences out of 15000+200000
+ 7998 strings out of 493921
+ 118829 string characters out of 3147278
+ 229726 words of memory out of 3000000
+ 11039 multiletter control sequences out of 15000+200000
  7934 words of font info for 29 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 29i,6n,30p,615b,438s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,6n,30p,684b,438s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiK
@@ -1033,9 +1037,9 @@ e1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt1
 0.pfb>
-Output written on Project_main.pdf (15 pages, 164905 bytes).
+Output written on Project_main.pdf (15 pages, 169923 bytes).
 PDF statistics:
- 300 PDF objects out of 1000 (max. 8388607)
- 64 named destinations out of 1000 (max. 500000)
- 265 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 321 PDF objects out of 1000 (max. 8388607)
+ 68 named destinations out of 1000 (max. 500000)
+ 297 words of extra memory for PDF output out of 10000 (max. 10000000)
 

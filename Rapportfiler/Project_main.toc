@@ -6,28 +6,32 @@
 \contentsline {section}{\numberline {2}Background Theory}{4}{section.2}
 \contentsline {subsection}{\numberline {2.1}GPU-Accelerated OpenCV}{4}{subsection.2.1}
 \contentsline {subsubsection}{\numberline {2.1.1}Introduction to Computer Vision and OpenCV}{4}{subsubsection.2.1.1}
-\contentsline {section}{\numberline {3}Stereo Vision and Depth Perception}{4}{section.3}
-\contentsline {subsection}{\numberline {3.1}Introduction}{4}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Binocular Stereo Vision Theory}{5}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Stereo Matching Algorithms}{5}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}Block Matching}{5}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}Semi-global Block Matching}{5}{subsubsection.3.3.2}
-\contentsline {subsection}{\numberline {3.4}Calibration and Rectification}{5}{subsection.3.4}
-\contentsline {section}{\numberline {4}Object Detection and Avoidance}{5}{section.4}
-\contentsline {subsection}{\numberline {4.1}Computer Vision}{5}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Optical flow(?)}{5}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Real-Time Systems}{5}{subsection.4.3}
-\contentsline {subsection}{\numberline {4.4}Selection of Real-Time System(?)}{5}{subsection.4.4}
-\contentsline {subsection}{\numberline {4.5}LIDAR}{5}{subsection.4.5}
-\contentsline {subsection}{\numberline {4.6}Vehicle Dynamics}{5}{subsection.4.6}
-\contentsline {subsection}{\numberline {4.7}Vehicle Control}{5}{subsection.4.7}
-\contentsline {section}{\numberline {5}Implementation}{6}{section.5}
-\contentsline {section}{\numberline {6}Testing and Assessment of Performance}{7}{section.6}
-\contentsline {subsection}{\numberline {6.1}Navigation}{7}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Real-Time Demands}{7}{subsection.6.2}
-\contentsline {section}{\numberline {7}Conclusion}{8}{section.7}
-\contentsline {section}{\numberline {8}Further Work}{9}{section.8}
-\contentsline {subsection}{\numberline {8.1}Cooperation With Ole Magnus}{9}{subsection.8.1}
+\contentsline {subsection}{\numberline {2.2}Stereo Vision and Depth Perception}{4}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Introduction}{4}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Binocular Stereo Vision Theory}{5}{subsubsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.3}Stereo Matching Algorithms}{5}{subsubsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.4}Block Matching}{5}{subsubsection.2.2.4}
+\contentsline {subsubsection}{\numberline {2.2.5}Semi-global Block Matching}{5}{subsubsection.2.2.5}
+\contentsline {subsection}{\numberline {2.3}Calibration and Rectification}{5}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Object Detection and Avoidance}{5}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Vanishing Point Navigation}{5}{subsection.2.5}
+\contentsline {subsubsection}{\numberline {2.5.1}Introduction}{5}{subsubsection.2.5.1}
+\contentsline {subsubsection}{\numberline {2.5.2}Vanishing Points and Geometry}{5}{subsubsection.2.5.2}
+\contentsline {subsubsection}{\numberline {2.5.3}Applications in Navigation}{5}{subsubsection.2.5.3}
+\contentsline {subsubsection}{\numberline {2.5.4}Limitations}{5}{subsubsection.2.5.4}
+\contentsline {subsection}{\numberline {2.6}Optical flow(?)}{5}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Real-Time Systems}{5}{subsection.2.7}
+\contentsline {subsection}{\numberline {2.8}Selection of Real-Time System(?)}{5}{subsection.2.8}
+\contentsline {subsection}{\numberline {2.9}LIDAR}{5}{subsection.2.9}
+\contentsline {subsection}{\numberline {2.10}Vehicle Dynamics}{5}{subsection.2.10}
+\contentsline {subsection}{\numberline {2.11}Vehicle Control}{5}{subsection.2.11}
+\contentsline {section}{\numberline {3}Implementation}{6}{section.3}
+\contentsline {section}{\numberline {4}Testing and Assessment of Performance}{7}{section.4}
+\contentsline {subsection}{\numberline {4.1}Navigation}{7}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Real-Time Demands}{7}{subsection.4.2}
+\contentsline {section}{\numberline {5}Conclusion}{8}{section.5}
+\contentsline {section}{\numberline {6}Further Work}{9}{section.6}
+\contentsline {subsection}{\numberline {6.1}Cooperation With Ole Magnus}{9}{subsection.6.1}
 \contentsline {section}{Appendices}{10}{section*.8}
 \contentsline {section}{\numberline {A}Acronyms}{11}{Appendix.a.A}
 \contentsline {section}{\numberline {B}Code Listings}{12}{Appendix.a.B}

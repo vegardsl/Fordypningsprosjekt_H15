@@ -5,29 +5,33 @@
 \BOOKMARK [1][-]{section.2}{Background Theory}{}% 5
 \BOOKMARK [2][-]{subsection.2.1}{GPU-Accelerated OpenCV}{section.2}% 6
 \BOOKMARK [3][-]{subsubsection.2.1.1}{Introduction to Computer Vision and OpenCV}{subsection.2.1}% 7
-\BOOKMARK [1][-]{section.3}{Stereo Vision and Depth Perception}{}% 8
-\BOOKMARK [2][-]{subsection.3.1}{Introduction}{section.3}% 9
-\BOOKMARK [2][-]{subsection.3.2}{Binocular Stereo Vision Theory}{section.3}% 10
-\BOOKMARK [2][-]{subsection.3.3}{Stereo Matching Algorithms}{section.3}% 11
-\BOOKMARK [3][-]{subsubsection.3.3.1}{Block Matching}{subsection.3.3}% 12
-\BOOKMARK [3][-]{subsubsection.3.3.2}{Semi-global Block Matching}{subsection.3.3}% 13
-\BOOKMARK [2][-]{subsection.3.4}{Calibration and Rectification}{section.3}% 14
-\BOOKMARK [1][-]{section.4}{Object Detection and Avoidance}{}% 15
-\BOOKMARK [2][-]{subsection.4.1}{Computer Vision}{section.4}% 16
-\BOOKMARK [2][-]{subsection.4.2}{Optical flow\(?\)}{section.4}% 17
-\BOOKMARK [2][-]{subsection.4.3}{Real-Time Systems}{section.4}% 18
-\BOOKMARK [2][-]{subsection.4.4}{Selection of Real-Time System\(?\)}{section.4}% 19
-\BOOKMARK [2][-]{subsection.4.5}{LIDAR}{section.4}% 20
-\BOOKMARK [2][-]{subsection.4.6}{Vehicle Dynamics}{section.4}% 21
-\BOOKMARK [2][-]{subsection.4.7}{Vehicle Control}{section.4}% 22
-\BOOKMARK [1][-]{section.5}{Implementation}{}% 23
-\BOOKMARK [1][-]{section.6}{Testing and Assessment of Performance}{}% 24
-\BOOKMARK [2][-]{subsection.6.1}{Navigation}{section.6}% 25
-\BOOKMARK [2][-]{subsection.6.2}{Real-Time Demands}{section.6}% 26
-\BOOKMARK [1][-]{section.7}{Conclusion}{}% 27
-\BOOKMARK [1][-]{section.8}{Further Work}{}% 28
-\BOOKMARK [2][-]{subsection.8.1}{Cooperation With Ole Magnus}{section.8}% 29
-\BOOKMARK [1][-]{section*.8}{Appendices}{}% 30
-\BOOKMARK [1][-]{Appendix.a.A}{Acronyms}{}% 31
-\BOOKMARK [1][-]{Appendix.a.B}{Code Listings}{}% 32
-\BOOKMARK [1][-]{Appendix.a.C}{Bibliography}{}% 33
+\BOOKMARK [2][-]{subsection.2.2}{Stereo Vision and Depth Perception}{section.2}% 8
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Introduction}{subsection.2.2}% 9
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Binocular Stereo Vision Theory}{subsection.2.2}% 10
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Stereo Matching Algorithms}{subsection.2.2}% 11
+\BOOKMARK [3][-]{subsubsection.2.2.4}{Block Matching}{subsection.2.2}% 12
+\BOOKMARK [3][-]{subsubsection.2.2.5}{Semi-global Block Matching}{subsection.2.2}% 13
+\BOOKMARK [2][-]{subsection.2.3}{Calibration and Rectification}{section.2}% 14
+\BOOKMARK [2][-]{subsection.2.4}{Object Detection and Avoidance}{section.2}% 15
+\BOOKMARK [2][-]{subsection.2.5}{Vanishing Point Navigation}{section.2}% 16
+\BOOKMARK [3][-]{subsubsection.2.5.1}{Introduction}{subsection.2.5}% 17
+\BOOKMARK [3][-]{subsubsection.2.5.2}{Vanishing Points and Geometry}{subsection.2.5}% 18
+\BOOKMARK [3][-]{subsubsection.2.5.3}{Applications in Navigation}{subsection.2.5}% 19
+\BOOKMARK [3][-]{subsubsection.2.5.4}{Limitations}{subsection.2.5}% 20
+\BOOKMARK [2][-]{subsection.2.6}{Optical flow\(?\)}{section.2}% 21
+\BOOKMARK [2][-]{subsection.2.7}{Real-Time Systems}{section.2}% 22
+\BOOKMARK [2][-]{subsection.2.8}{Selection of Real-Time System\(?\)}{section.2}% 23
+\BOOKMARK [2][-]{subsection.2.9}{LIDAR}{section.2}% 24
+\BOOKMARK [2][-]{subsection.2.10}{Vehicle Dynamics}{section.2}% 25
+\BOOKMARK [2][-]{subsection.2.11}{Vehicle Control}{section.2}% 26
+\BOOKMARK [1][-]{section.3}{Implementation}{}% 27
+\BOOKMARK [1][-]{section.4}{Testing and Assessment of Performance}{}% 28
+\BOOKMARK [2][-]{subsection.4.1}{Navigation}{section.4}% 29
+\BOOKMARK [2][-]{subsection.4.2}{Real-Time Demands}{section.4}% 30
+\BOOKMARK [1][-]{section.5}{Conclusion}{}% 31
+\BOOKMARK [1][-]{section.6}{Further Work}{}% 32
+\BOOKMARK [2][-]{subsection.6.1}{Cooperation With Ole Magnus}{section.6}% 33
+\BOOKMARK [1][-]{section*.8}{Appendices}{}% 34
+\BOOKMARK [1][-]{Appendix.a.A}{Acronyms}{}% 35
+\BOOKMARK [1][-]{Appendix.a.B}{Code Listings}{}% 36
+\BOOKMARK [1][-]{Appendix.a.C}{Bibliography}{}% 37

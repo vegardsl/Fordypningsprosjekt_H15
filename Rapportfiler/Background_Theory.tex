@@ -20,7 +20,7 @@ Methods for computer vision can be separated into two main categories, i.e. acti
 
 Optical flow is another important method for depth perception. Optical flow may be either active or passive. The passive variant requires  only one camera, but depends on motion and a stream of images to extract depth information. Observing how much some chosen features in a scene has moved in the image frame at $t = 1$ compared to the frame at $t = 0$ is the basis of depth sensing from optical flow. In a static scene, objects that are far away will naturally have an optical flow field with a smaller magnitude than objects that are close. \\
 
-In this project, passive stereoscopic vision is achieved by using two identical (in theory) cameras placed on the same plane. The second camera is displaced by a few centimetres from the first camera. The gist of this method is based on the fact that objects close to the cameras will have a large displacement from the left to the right camera compared to objects that are further away. 
+In this project, passive stereoscopic vision is achieved by using two identical (in theory) cameras placed on the same plane. The cameras are placed a few centimetres apart. This distance is called the baseline $B$. The gist of this method is based on the fact that objects close to the cameras will have a large displacement from the left to the right camera compared to objects that are further away. 
 
 \subsubsection{Binocular Stereo Vision Theory}
 
@@ -39,7 +39,25 @@ In this project, passive stereoscopic vision is achieved by using two identical 
 
 \subsubsection{Introduction}
 
-The idea behind using one or more vanishing points for navigation is simple and intuitive. 
+The idea behind using one or more vanishing points for navigation is simple and intuitive.  The number of papers on the topic of vanishing points in computer vision is also vast.  
+
+Vanishing points and their properties has been used extensively in the field of computer vision, and the number of applications are many. By detecting vanishing points in an image or several images of the same scene, it is possible to infer much information about the real world geometry of the scene. In this section, the basic idea of how vanishing points in a 2D image relates to the geometry of the real world will be briefly explained. Some interesting applications that may be relevant for navigation is presented. Vanishing point properties that may directly facilitate robot navigation will also be discussed.
+
+\subsubsection{Vanishing Points and Geometry}
+
+A vanishing point may be defined as `` the point or points to which the extensions of parallel lines appear to converge in a perspective drawing. '' \cite{}. For another description of a vanishing point, consider some feature in the real world that forms a set of two or more parallel lines. If these lines are not parallel to the image plane, their projection on the image plane will converge and form a vanishing point. If these lines are parallel to the image plane, the vanishing point will be at infinity. See figure \ref{} for an illustration of this description.
+
+Definition cite:
+Weisstein, Eric W. "Vanishing Point." From MathWorld--A Wolfram Web Resource. http://mathworld.wolfram.com/VanishingPoint.html 
+
+\subsubsection{Applications in Navigation}
+
+Vanishing point detection 
+Choices
+Indication of a turn
+
+\subsubsection{Limitations}
+
 
 
 \subsection{Optical flow(?)}
