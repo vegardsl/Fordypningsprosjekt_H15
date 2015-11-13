@@ -1,0 +1,93 @@
+Release:
+
+C:\OpenCV\customBuild\lib\Release\opencv_calib3d300.lib
+C:\OpenCV\customBuild\lib\Release\opencv_core300.lib
+C:\OpenCV\customBuild\lib\Release\opencv_features2d300.lib
+C:\OpenCV\customBuild\lib\Release\opencv_flann300.lib
+C:\OpenCV\customBuild\lib\Release\opencv_hal300.lib
+C:\OpenCV\customBuild\lib\Release\opencv_highgui300.lib
+C:\OpenCV\customBuild\lib\Release\opencv_imgcodecs300.lib
+C:\OpenCV\customBuild\lib\Release\opencv_imgproc300.lib
+C:\OpenCV\customBuild\lib\Release\opencv_ml300.lib
+C:\OpenCV\customBuild\lib\Release\opencv_objdetect300.lib
+C:\OpenCV\customBuild\lib\Release\opencv_photo300.lib
+C:\OpenCV\customBuild\lib\Release\opencv_shape300.lib
+C:\OpenCV\customBuild\lib\Release\opencv_stitching300.lib
+C:\OpenCV\customBuild\lib\Release\opencv_superres300.lib
+C:\OpenCV\customBuild\lib\Release\opencv_ts300.lib
+C:\OpenCV\customBuild\lib\Release\opencv_video300.lib
+C:\OpenCV\customBuild\lib\Release\opencv_videoio300.lib
+C:\OpenCV\customBuild\lib\Release\opencv_videostab300.lib
+
+Debug:
+
+C:\OpenCV\customBuild\lib\Debug\opencv_calib3d300d.lib
+C:\OpenCV\customBuild\lib\Debug\opencv_core300d.lib
+C:\OpenCV\customBuild\lib\Debug\opencv_features2d300d.lib
+C:\OpenCV\customBuild\lib\Debug\opencv_flann300d.lib
+C:\OpenCV\customBuild\lib\Debug\opencv_hal300d.lib
+C:\OpenCV\customBuild\lib\Debug\opencv_highgui300d.lib
+C:\OpenCV\customBuild\lib\Debug\opencv_imgcodecs300d.lib
+C:\OpenCV\customBuild\lib\Debug\opencv_imgproc300d.lib
+C:\OpenCV\customBuild\lib\Debug\opencv_ml300d.lib
+C:\OpenCV\customBuild\lib\Debug\opencv_objdetect300d.lib
+C:\OpenCV\customBuild\lib\Debug\opencv_photo300d.lib
+C:\OpenCV\customBuild\lib\Debug\opencv_shape300d.lib
+C:\OpenCV\customBuild\lib\Debug\opencv_stitching300d.lib
+C:\OpenCV\customBuild\lib\Debug\opencv_superres300d.lib
+C:\OpenCV\customBuild\lib\Debug\opencv_ts300d.lib
+C:\OpenCV\customBuild\lib\Debug\opencv_video300d.lib
+C:\OpenCV\customBuild\lib\Debug\opencv_videoio300d.lib
+C:\OpenCV\customBuild\lib\Debug\opencv_videostab300d.lib
+
+
+.pro-file in Qt:
+
+INCLUDEPATH +=  C:\\OpenCV\\build\\include \
+                C:\\OpenCV\\sources\\modules\\core\\include\\opencv2\\core
+
+CONFIG(release,debug|release)
+{
+    LIBS += -LC:\\OpenCV\\customBuild\\lib\\Release \
+            -lopencv_calib3d300.lib \
+            -lopencv_core300.lib \
+            -lopencv_features2d300.lib \
+            -lopencv_flann300.lib \
+            -lopencv_hal300.lib \
+            -lopencv_highgui300.lib \
+            -lopencv_imgcodecs300.lib \
+            -lopencv_imgproc300.lib \
+            -lopencv_ml300.lib \
+            -lopencv_objdetect300.lib \
+            -lopencv_photo300.lib \
+            -lopencv_shape300.lib \
+            -lopencv_stitching300.lib \
+            -lopencv_superres300.lib \
+            -lopencv_ts300.lib \
+            -lopencv_video300.lib \
+            -lopencv_videoio300.lib \
+            -lopencv_videostab300.lib
+}
+
+CONFIG(debug,debug|release)
+{
+    LIBS += -LC:\\OpenCV\\customBuild\\lib\\Debug \
+            -lopencv_calib3d300d.lib \
+            -lopencv_core300d.lib \
+            -lopencv_features2d300d.lib \
+            -lopencv_flann300d.lib \
+            -lopencv_hal300d.lib \
+            -lopencv_highgui300d.lib \
+            -lopencv_imgcodecs300d.lib \
+            -lopencv_imgproc300d.lib \
+            -lopencv_ml300d.lib \
+            -lopencv_objdetect300d.lib \
+            -lopencv_photo300d.lib \
+            -lopencv_shape300d.lib \
+            -lopencv_stitching300d.lib \
+            -lopencv_superres300d.lib \
+            -lopencv_ts300d.lib \
+            -lopencv_video300d.lib \
+            -lopencv_videoio300d.lib \
+            -lopencv_videostab300d.lib
+}
