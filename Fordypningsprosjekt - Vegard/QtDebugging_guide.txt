@@ -1,0 +1,31 @@
+Setting up a debugger.
+
+Debugging an application whithin Qt Creator in Windows is not possible out of the box, and some steps must be taken in order to enable this function. This guide presents the steps necessary to enable debugging in Qt creator with this project setup. The project used when creating this quide, was compiled with the msvc2013_64 compiler in a Windows 7 environment. 
+
+1. 
+Search the web for "Window standalone debugging tools" and look for "WDK and WinDbg downloads", or just follow this link: "https://msdn.microsoft.com/en-us/windows/hardware/hh852365.aspx". 
+
+2.
+Select the download link that is appropriate for your system, for example: WDK 8.1 for Windows 7.
+
+3. Run the installer.
+
+4. When propted to select the feaures you want to install, you must at least select "Debugging Tools for Windows". Only this selection is within the scope of this guide. Click install.
+
+5.
+When the installation is done, open Qt Creator.
+
+6.
+From the menu bar, select Tools -> Options.
+
+Details:
+Now is the time to make sure that Qt Creator can detect the debuggers, and that the debugger is  a part of the Kit used to make and build the project.
+
+7.
+Select the tab Debuggers. If the Windows debugger is not among the auto-detected debuggers, click Add. Now you may specify a new debugger for use within Qt Creator. In the Path text-field, enter the path to the debugger you want to add. Choose between the 64-bit version or 32-bit version. The path should lead to cdb.exe. Give the debugger an apropriate name. Click Apply.
+
+8.
+Select the "Kits"-tab, and select the kit used for your project. Select the debugger from step 7 and click "Apply". Any warnings related to "No debugger set up" should disappear, i.e. the warning symbol shold be gone.
+
+9.
+You may now debug your application. Build your projet in debug mode and press F5 to start debugging. 

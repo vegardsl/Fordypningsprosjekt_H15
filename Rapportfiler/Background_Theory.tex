@@ -1,14 +1,64 @@
-\chapter{Background Theory}
+\section{Background Theory}
 
 The theory that is necessary to understand how the problem was solved.
 
+This section presents the theory that is necessary to understand the implementation presented in section \ref{o}. 
+
 \subsection{GPU-Accelerated OpenCV}
+
+\subsubsection{Introduction to Computer Vision and OpenCV}
+
+OpenCV started... 1999 Intel. Today, it is a fully open source library with a vast number of advanced computer vision algorithms. The pre-build library can quickly be plugged into  an IDE such as Qt Creator or Visual Studio 2013 (not tested for compatibility with Visual Studio 2015 at the time of writing), thus giving the programmer access to all basic OpenCV features. A steb-by-step guide for using both the pre-built and a custom-built library can be found in Appendix \ref{}.
+
+\subsection{Stereo Vision and Depth Perception}
 
 \subsubsection{Introduction}
 
-OpenCV started... 1999 Intel. Today, it is a fully open source library with a vast number of advanced computer vision algorithms. The pre-build library can quickly be plugged into  an IDE such as QTCreator or Visual Studio 2013 (not tested for compatibility with Visual Studio 2015 at the time of writing), thus giving the programmer access to all basic OpenCV features. A steb-by-step guide for using both the pre-built and a custom-built library can be found in Appendix \ref{}.
+Stereo vision and depth perception is one of the core topics within this report. Here, the theory behind a method using two cameras is presented, while some additional methods are mentioned to provide context.\\
 
-\subsection{Computer Vision}
+Methods for computer vision can be separated into two main categories, i.e. active and passive. Active sensors will usually project a light pattern onto the scene to be perceived, before sensing how this pattern is displaced by the topology of the scene. The Kinect sensor and 3d-scanners using laser light are typical examples of active sensors. Passive depth perception makes use of many of the same cues we use to perceive depth. The most common passive sensors extract the depth information by observing observing a scene from at least two different positions. \\
+
+Optical flow is another important method for depth perception. Optical flow may be either active or passive. The passive variant requires  only one camera, but depends on motion and a stream of images to extract depth information. Observing how much some chosen features in a scene has moved in the image frame at $t = 1$ compared to the frame at $t = 0$ is the basis of depth sensing from optical flow. In a static scene, objects that are far away will naturally have an optical flow field with a smaller magnitude than objects that are close. \\
+
+In this project, passive stereoscopic vision is achieved by using two identical (in theory) cameras placed on the same plane. The cameras are placed a few centimetres apart. This distance is called the baseline $B$. The gist of this method is based on the fact that objects close to the cameras will have a large displacement from the left to the right camera compared to objects that are further away. 
+
+\subsubsection{Binocular Stereo Vision Theory}
+
+\subsubsection{Stereo Matching Algorithms}
+
+\subsubsection{Block Matching}
+
+\subsubsection{Semi-global Block Matching}
+
+\subsection{Calibration and Rectification}
+
+
+\subsection{Object Detection and Avoidance}
+
+\subsection{Vanishing Point Navigation}
+
+\subsubsection{Introduction}
+
+The idea behind using one or more vanishing points for navigation is simple and intuitive.  The number of papers on the topic of vanishing points in computer vision is also vast.  
+
+Vanishing points and their properties has been used extensively in the field of computer vision, and the number of applications are many. By detecting vanishing points in an image or several images of the same scene, it is possible to infer much information about the real world geometry of the scene. In this section, the basic idea of how vanishing points in a 2D image relates to the geometry of the real world will be briefly explained. Some interesting applications that may be relevant for navigation is presented. Vanishing point properties that may directly facilitate robot navigation will also be discussed.
+
+\subsubsection{Vanishing Points and Geometry}
+
+A vanishing point may be defined as `` the point or points to which the extensions of parallel lines appear to converge in a perspective drawing. '' \cite{}. For another description of a vanishing point, consider some feature in the real world that forms a set of two or more parallel lines. If these lines are not parallel to the image plane, their projection on the image plane will converge and form a vanishing point. If these lines are parallel to the image plane, the vanishing point will be at infinity. See figure \ref{} for an illustration of this description.
+
+Definition cite:
+Weisstein, Eric W. "Vanishing Point." From MathWorld--A Wolfram Web Resource. http://mathworld.wolfram.com/VanishingPoint.html 
+
+\subsubsection{Applications in Navigation}
+
+Vanishing point detection 
+Choices
+Indication of a turn
+
+\subsubsection{Limitations}
+
+
 
 \subsection{Optical flow(?)}
 
