@@ -22,7 +22,17 @@ Details:
 Now is the time to make sure that Qt Creator can detect the debuggers, and that the debugger is  a part of the Kit used to make and build the project.
 
 7.
-Select the tab Debuggers. If the Windows debugger is not among the auto-detected debuggers, click Add. Now you may specify a new debugger for use within Qt Creator. In the Path text-field, enter the path to the debugger you want to add. Choose between the 64-bit version or 32-bit version. The path should lead to cdb.exe. Give the debugger an apropriate name. Click Apply.
+Select the tab Debuggers. If the Windows debugger is not among the auto-detected debuggers, click Add. Now you may specify a new debugger for use within Qt Creator. 
+
+7a.
+Give the debugger an appropiate name, for example: ""
+
+7b.
+In the Path text-field, enter the path to the debugger you want to add. Choose between the 64-bit version or 32-bit version. 
+
+The default path if the 64-bit version is to be used will probably be: "C:\Program Files (x86)\Windows Kits\8.1\Debuggers\x64".
+
+The path should lead to a folder which contains "cdb.exe". Give the debugger an apropriate name. Click Apply, and verify that the debugger has appeared under "Manual" in the window above.
 
 8.
 Select the "Kits"-tab, and select the kit used for your project. Select the debugger from step 7 and click "Apply". Any warnings related to "No debugger set up" should disappear, i.e. the warning symbol shold be gone.

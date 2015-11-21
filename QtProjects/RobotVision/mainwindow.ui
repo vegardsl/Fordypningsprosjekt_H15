@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1400</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1400</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>703</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="minimumSize">
+    <size>
+     <width>1400</width>
+     <height>650</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>1400</width>
+     <height>650</height>
+    </size>
+   </property>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1371</width>
+      <height>621</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>1341</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QFrame" name="frame_2">
+        <property name="minimumSize">
+         <size>
+          <width>650</width>
+          <height>370</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="leftLabel">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>640</width>
+           <height>512</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>640</width>
+           <height>512</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="frame_3">
+        <property name="minimumSize">
+         <size>
+          <width>650</width>
+          <height>370</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <widget class="QLabel" name="rightLabel">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>640</width>
+           <height>512</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>640</width>
+           <height>512</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>590</y>
+       <width>188</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="capture">
+        <property name="text">
+         <string>Capture Image</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="endSampling">
+        <property name="text">
+         <string>End Sampling Mode</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1400</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuVideo">
+    <property name="title">
+     <string>Video</string>
+    </property>
+    <widget class="QMenu" name="menuLive_Stream">
+     <property name="title">
+      <string>Live Stream</string>
+     </property>
+     <addaction name="actionToggle_Left_Camera"/>
+     <addaction name="actionToggle_Right_Camera"/>
+    </widget>
+    <addaction name="menuLive_Stream"/>
+    <addaction name="actionToggle_Depth_Perception"/>
+   </widget>
+   <widget class="QMenu" name="menuCalibration">
+    <property name="title">
+     <string>Calibration</string>
+    </property>
+    <widget class="QMenu" name="menuCamera_Calibration">
+     <property name="title">
+      <string>Camera Calibration</string>
+     </property>
+     <addaction name="actionCalibrate_Left_Camera"/>
+     <addaction name="actionCalibrate_Right_Camera"/>
+     <addaction name="actionCalibrate_Stereo_Camera"/>
+     <addaction name="actionRectify_Images"/>
+    </widget>
+    <addaction name="menuCamera_Calibration"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuVideo"/>
+   <addaction name="menuCalibration"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionStereo_Calibration">
+   <property name="text">
+    <string>Stereo Calibration</string>
+   </property>
+  </action>
+  <action name="actionToggle_Left_Camera">
+   <property name="text">
+    <string>Toggle Left Camera on/off</string>
+   </property>
+  </action>
+  <action name="actionToggle_Right_Camera">
+   <property name="text">
+    <string>Toggle Right Camera on/off</string>
+   </property>
+  </action>
+  <action name="actionCalibrate_Left_Camera">
+   <property name="text">
+    <string>Calibrate Left Camera</string>
+   </property>
+  </action>
+  <action name="actionCalibrate_Right_Camera">
+   <property name="text">
+    <string>Calibrate Right Camera</string>
+   </property>
+  </action>
+  <action name="actionCalibrate_Stereo_Camera">
+   <property name="text">
+    <string>Calibrate Stereo Camera</string>
+   </property>
+  </action>
+  <action name="actionRectify_Images">
+   <property name="text">
+    <string>Rectify Images</string>
+   </property>
+  </action>
+  <action name="actionToggle_Depth_Perception">
+   <property name="text">
+    <string>Toggle Depth Perception</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

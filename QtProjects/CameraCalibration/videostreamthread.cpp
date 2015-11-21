@@ -11,8 +11,6 @@ VideoStreamThread::VideoStreamThread(QObject *parent) : QThread(parent)
 
 }
 
-
-
 void VideoStreamThread::beginVideoStream(string address, string newWindowName){
    videoStreamAddress = address;
    windowName = newWindowName;

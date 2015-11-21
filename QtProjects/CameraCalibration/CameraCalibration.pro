@@ -1,25 +1,58 @@
-INCLUDEPATH +=  C:\OpenCV\build\include \
-                C:\OpenCV\sources\modules\core\include\opencv2\core \
-                C:\OpenCV\sources\modules\cudastereo \
-                #"C:\Program Files\PCL 1.7.2\include\pcl-1.7" \
-                #"C:\Program Files\PCL 1.6.0\3rdParty\Boost\include" \
-                #"C:\Program Files\PCL 1.6.0\3rdParty\Eigen\include" \
-                #"C:\Program Files\PCL 1.6.0\3rdParty\FLANN\include" \
-                #"C:\Program Files\PCL 1.6.0\3rdParty\Qhull\include" \
-                #"C:\Program Files\PCL 1.6.0\3rdParty\VTK\include\vtk-5.8" \
+INCLUDEPATH +=  C:\\OpenCV\\build\\install\\include \
+                C:\\OpenCV\\build\\install\\include\\opencv \
+                C:\\OpenCV\\build\\install\\include \\opencv2
 
 
 CONFIG(release,debug|release)
 {
-    LIBS += C:\OpenCV\build\x64\vc12\lib\opencv_ts300.lib \
-            C:\OpenCV\build\x64\vc12\lib\opencv_world300.lib \
+    LIBS += -LC:\\OpenCV\\build\\lib\\Release \
+            -lopencv_calib3d300 \
+            -lopencv_core300 \
+            -lopencv_features2d300 \
+            -lopencv_flann300 \
+            -lopencv_hal300 \
+            -lopencv_highgui300 \
+            -lopencv_imgcodecs300 \
+            -lopencv_imgproc300 \
+            -lopencv_ml300 \
+            -lopencv_objdetect300 \
+            -lopencv_photo300 \
+            -lopencv_shape300 \
+            -lopencv_stitching300 \
+            -lopencv_superres300 \
+            -lopencv_ts300 \
+            -lopencv_video300 \
+            -lopencv_videoio300 \
+            -lopencv_videostab300 \
+            -lopencv_xfeatures2d300 \
+            -lopencv_xobjdetect300 \
+            -lopencv_stereo300
 }
 
 CONFIG(debug,debug|release)
 {
-    LIBS += "C:\OpenCV\build\x64\vc12\lib\opencv_ts300d.lib" \
-            "C:\OpenCV\build\x64\vc12\lib\opencv_world300d.lib" \
-
+    LIBS += -LC:\\OpenCV\\build\\lib\\Debug \
+            -lopencv_calib3d300d \
+            -lopencv_core300d \
+            -lopencv_features2d300d \
+            -lopencv_flann300d \
+            -lopencv_hal300d \
+            -lopencv_highgui300d \
+            -lopencv_imgcodecs300d \
+            -lopencv_imgproc300d \
+            -lopencv_ml300d \
+            -lopencv_objdetect300d \
+            -lopencv_photo300d \
+            -lopencv_shape300d \
+            -lopencv_stitching300d \
+            -lopencv_superres300d \
+            -lopencv_ts300d \
+            -lopencv_video300d \
+            -lopencv_videoio300d \
+            -lopencv_videostab300d \
+            -lopencv_xfeatures2d300d \
+            -lopencv_xobjdetect300d \
+            -lopencv_stereo300d
 }
 
 QT += core
