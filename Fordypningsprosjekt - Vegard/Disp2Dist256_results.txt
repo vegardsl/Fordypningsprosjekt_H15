@@ -1,0 +1,33 @@
+General model Power1:
+     f(x) = a*x^b
+Coefficients (with 95% confidence bounds):
+       a =        7275  (6632, 7919)
+       b =      -1.016  (-1.036, -0.9956)
+
+Goodness of fit:
+  SSE: 16.3
+  R-square: 0.9988
+  Adjusted R-square: 0.9987
+  RMSE: 1.079
+
+
+DATASET:
+
+Dist	Disp
+
+50	136
+60	114
+70	98
+80	85
+90	74
+100	70
+110	61
+120	56
+130	52
+140	49
+150	45
+160	43
+170	40
+180	36
+190	34
+200	32
