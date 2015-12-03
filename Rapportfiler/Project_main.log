@@ -1,24 +1,13 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.18)  3 NOV 2015 22:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.8.21)  3 DEC 2015 13:46
 entering extended mode
 **Project_main.tex
-
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Project_m
-ain.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2012-05-30, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2012-05-30, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
+(Project_main.tex
+LaTeX2e <2014/05/01>
+Babel <3.9l> and hyphenation patterns for 68 languages loaded.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls"
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\size10.clo"
-File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -33,19 +22,19 @@ File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \bibindent=\dimen102
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
-Package: inputenc 2008/03/30 v1.1d Input encoding file
+Package: inputenc 2014/04/30 v1.2b Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
-File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00AB (decimal 171)
@@ -195,7 +184,7 @@ Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
-File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00B8 (decimal 184)
@@ -226,7 +215,7 @@ Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
-File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+File: omsenc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -249,8 +238,8 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
-Package: babel 2008/07/08 v3.8m The Babel package
+("C:\Program Files\MiKTeX 2.9\tex\latex\babel\babel.sty"
+Package: babel 2014/09/25 3.9l The Babel package
 
 *************************************
 * Local config file bblopts.cfg used
@@ -258,11 +247,11 @@ Package: babel 2008/07/08 v3.8m The Babel package
 ("C:\Program Files\MiKTeX 2.9\tex\latex\00miktex\bblopts.cfg"
 File: bblopts.cfg 2006/07/31 v1.0 MiKTeX 'babel' configuration
 )
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\english.ldf"
-Language: english 2005/03/30 v3.3o English support from the babel system
+("C:\Program Files\MiKTeX 2.9\tex\latex\babel-english\english.ldf"
+Language: english 2012/08/20 v3.3p English support from the babel system
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
-File: babel.def 2008/07/08 v3.8m Babel common definitions
+("C:\Program Files\MiKTeX 2.9\tex\latex\babel\babel.def"
+File: babel.def 2014/09/25 3.9l Babel common definitions
 \babel@savecnt=\count87
 \U@D=\dimen103
 )
@@ -274,7 +263,7 @@ File: babel.def 2008/07/08 v3.8m Babel common definitions
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
@@ -361,10 +350,10 @@ LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
@@ -409,7 +398,7 @@ Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1enc.dfu"
-File: ts1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+File: ts1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00A4 (decimal 164)
@@ -544,10 +533,10 @@ Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\tabularx.sty"
-Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
+Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
-Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen123
 \extrarowheight=\dimen124
 \NC@list=\toks23
@@ -658,9 +647,9 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count112
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
+("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip11
-Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen131
@@ -696,7 +685,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 \Hy@SectionHShift=\skip48
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tools\multicol.sty"
-Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
+Package: multicol 2014/10/28 v1.8i multicolumn formatting (FMi)
 \c@tracingmulticols=\count119
 \mult@box=\box30
 \multicol@leftmargin=\dimen134
@@ -713,6 +702,7 @@ Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \multicolbaselineskip=\skip50
 \partial@page=\box31
 \last@line=\box32
+\maxbalancingoverflow=\dimen139
 \mult@rightbox=\box33
 \mult@grightbox=\box34
 \mult@gfirstbox=\box35
@@ -736,18 +726,18 @@ Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
 \@tempa=\box53
 \c@columnbadness=\count125
 \c@finalcolumnbadness=\count126
-\last@try=\dimen139
-\multicolovershoot=\dimen140
-\multicolundershoot=\dimen141
+\last@try=\dimen140
+\multicolovershoot=\dimen141
+\multicolundershoot=\dimen142
 \mult@nat@firstbox=\box54
 \colbreak@box=\box55
-\multicol@sort@counter=\count127
+\mc@col@check@num=\count127
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\acronym\acronym.sty"
-Package: acronym 2012/10/29 v1.38 Support for acronyms (Tobias Oetiker)
+Package: acronym 2014/09/29 v1.40 Support for acronyms (Tobias Oetiker)
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\bigfoot\suffix.sty"
-Package: suffix 2006/07/15 1.5 Variant command support
+Package: suffix 2006/07/15 1.5a Variant command support
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\xstring\xstring.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\generic\xstring\xstring.tex"
@@ -755,69 +745,53 @@ Package: suffix 2006/07/15 1.5 Variant command support
 \integerpart=\count128
 \decimalpart=\count129
 )
-Package: xstring 2013/2/28  v1.7a  String manipulations (C Tellechea)
+Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
 \AC@clearlist=\toks27
 )
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Project_m
-ain.aux
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Titlepage
-.aux)
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Abstract.
-aux)
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Problem_D
-escription.aux)
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Introduct
-ion.aux)
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Backgroun
-d_theory.aux)
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Implement
-ation.aux)
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Testing.a
-ux)
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Conclusio
-n.aux)
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Further_W
-ork.aux)
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Acronyms.
-aux)
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Code.aux)
+
+LaTeX Warning: Unused global option(s):
+    [8pt].
+
+(Project_main.aux (Titlepage.aux) (Abstract.aux) (Problem_Description.aux)
+(Introduction.aux) (Background_theory.aux) (Implementation.aux) (Testing.aux)
+(Conclusion.aux) (Further_Work.aux) (Acronyms.aux) (Code.aux))
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 29.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 28.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
-File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: a4paper
+* paper: a5paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
-* v-part:(T,H,B)=(108.405pt, 628.23685pt, 108.405pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=452.9679pt
-* \textheight=628.23685pt
+* h-part:(L,W,R)=(72.26999pt, 276.5608pt, 72.26999pt)
+* v-part:(T,H,B)=(108.405pt, 380.69788pt, 108.405pt)
+* \paperwidth=421.10078pt
+* \paperheight=597.50787pt
+* \textwidth=276.5608pt
+* \textheight=380.69788pt
 * \oddsidemargin=0.0pt
 * \evensidemargin=0.0pt
 * \topmargin=-0.86499pt
@@ -825,7 +799,7 @@ LaTeX Font Info:    ... okay on input line 28.
 * \headsep=25.0pt
 * \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=57.0pt
+* \marginparwidth=3.0pt
 * \marginparsep=11.0pt
 * \columnsep=28.45274pt
 * \skip\footins=9.0pt plus 4.0pt minus 2.0pt
@@ -841,19 +815,19 @@ LaTeX Font Info:    ... okay on input line 28.
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count130
-\scratchdimen=\dimen142
+\scratchdimen=\dimen143
 \scratchbox=\box56
 \nofMPsegments=\count131
 \nofMParguments=\count132
 \everyMPshowfont=\toks28
 \MPscratchCnt=\count133
-\MPscratchDim=\dimen143
+\MPscratchDim=\dimen144
 \MPnumerator=\count134
 \makeMPintoPDFobject=\count135
 \everyMPtoPDFconversion=\toks29
 )
 \AtBeginShipoutBox=\box57
-Package hyperref Info: Link coloring OFF on input line 28.
+Package hyperref Info: Link coloring OFF on input line 29.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -862,67 +836,201 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count136
 )
-LaTeX Info: Redefining \ref on input line 28.
-LaTeX Info: Redefining \pageref on input line 28.
-LaTeX Info: Redefining \nameref on input line 28.
+LaTeX Info: Redefining \ref on input line 29.
+LaTeX Info: Redefining \pageref on input line 29.
+LaTeX Info: Redefining \nameref on input line 29.
 
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Project_m
-ain.out)
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Project_m
-ain.out)
+(Project_main.out) (Project_main.out)
 \@outlinefile=\write4
-
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Titlepage
-.tex [1
+ (Titlepage.tex [1
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}])
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Abstract.
-texpdfTeX warning (ext4): destination with the same identifier (name{page.1}) h
-as been already used, duplicate ignored
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]) (Abstract.texpdfTeX 
+warning (ext4): destination with the same identifier (name{page.1}) has been al
+ready used, duplicate ignored
 <to be read again> 
                    \relax 
 l.7 \end{abstract}
                    [1
 
 
-])
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Problem_D
-escription.tex
-Underfull \hbox (badness 10000) in paragraph at lines 22--23
-\OT1/cmr/m/n/10 ar-beid for a forbedre sikker-heten,
+]) (Problem_Description.tex
+Overfull \hbox (13.80078pt too wide) in paragraph at lines 3--3
+[][]\OT1/cmr/bx/n/14.4 Oppgavebeskrivelse 
  []
 
-)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
- been already used, duplicate ignored
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+\OT1/cmr/m/n/10 jek-ter med utvikling av
+ []
+
+
+Underfull \hbox (badness 6252) in paragraph at lines 7--8
+\OT1/cmr/m/n/10 ved-like-hold utfrt av en
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+\OT1/cmr/m/n/10 in-nebygget bat-teridrevet
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
+[][]\OT1/cmr/bx/n/12 Malsetninger for
+ []
+
+
+Underfull \hbox (badness 8189) in paragraph at lines 11--12
+\OT1/cmr/m/n/10 tidig som hin-dringer og
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+[]\OT1/cmr/m/n/10 Utforsk mulige
+ []
+
+
+Underfull \hbox (badness 7308) in paragraph at lines 14--15
+\OT1/cmr/m/n/10 nav-i-gasjon som kan
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+\OT1/cmr/m/n/10 det primre nav-i-
+ []
+
+
+Underfull \hbox (badness 6016) in paragraph at lines 16--17
+\OT1/cmr/m/n/10 fun-net i punkt en.
+ []
+
+
+Underfull \hbox (badness 7888) in paragraph at lines 18--19
+\OT1/cmr/m/n/10 ne-thet for au-tonom
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+\OT1/cmr/m/n/10 nav-i-gasjon i test-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+\OT1/cmr/m/n/10 miljet (Kon-torom-
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.34 \include{Problem_Description}
-                                   [1
+l.22 	\item F
+             oreslå endringer og forslag til videre arbeid for å forbedre ...
+[1
 
 
 ]
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Project_m
-ain.toc)
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+\OT1/cmr/m/n/10 heten, paliteligheten
+ []
+
+
+Underfull \hbox (badness 7851) in paragraph at lines 33--34
+\OT1/cmr/m/n/10 robotic main-te-nance per-
+ []
+
+
+Underfull \hbox (badness 6236) in paragraph at lines 33--34
+\OT1/cmr/m/n/10 tonomous robot. Over
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
+\OT1/cmr/m/n/10 the course of pre-vi-ous
+ []
+
+
+Underfull \hbox (badness 5741) in paragraph at lines 33--34
+\OT1/cmr/m/n/10 ma-nip-u-la-tor arm, sev-eral
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--34
+\OT1/cmr/m/n/10 on-board power sup-ply
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+[]\OT1/cmr/m/n/10 Explore po-ten-tial
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+\OT1/cmr/m/n/10 meth-ods for au-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+\OT1/cmr/m/n/10 tonomous nav-i-ga-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+\OT1/cmr/m/n/10 goals above, where
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
+\OT1/cmr/m/n/10 pri-mary nav-i-ga-tional
+ []
+
+
+Underfull \hbox (badness 5726) in paragraph at lines 43--44
+\OT1/cmr/m/n/10 eral or a com-bi-na-
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.44 
+      [2]
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+\OT1/cmr/m/n/10 au-tonomous nav-i-ga-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+\OT1/cmr/m/n/10 im-ple-men-ta-tion and
+ []
+
+) [3] (Project_main.toc
+Overfull \hbox (9.60641pt too wide) in paragraph at lines 8--8
+ [][] [][]\OT1/cmr/m/n/10 Introduction to Com-puter Vi-sion and OpenCV[] []  
+ []
+
+[4
+
+])
 \tf@toc=\write5
- [2
+ [5] (Introduction.tex
 
-]
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Introduct
-ion.tex
+LaTeX Warning: Reference `' on page 6 undefined on input line 3.
 
-LaTeX Warning: Reference `' on page 3 undefined on input line 3.
+<Images/hardwareSetup_cropped.png, id=243, 947.79094pt x 327.47343pt>
+File: Images/hardwareSetup_cropped.png Graphic file (type png)
 
-) [3
+<use Images/hardwareSetup_cropped.png>
+Package pdftex.def Info: Images/hardwareSetup_cropped.png used on input line 15
+.
+(pdftex.def)             Requested size: 276.5608pt x 95.55449pt.
+) [6
 
-]
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Backgroun
-d_theory.tex
+ <./Images/hardwareSetup_cropped.png>] [7] (Background_theory.tex
 
-LaTeX Warning: Reference `o' on page 4 undefined on input line 5.
+LaTeX Warning: Reference `o' on page 8 undefined on input line 5.
 
 
-LaTeX Warning: Reference `' on page 4 undefined on input line 11.
+LaTeX Warning: Reference `' on page 8 undefined on input line 11.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 17--18
@@ -934,100 +1042,73 @@ Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
+[8
 
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
  []
 
-[4
+[9]
+
+LaTeX Warning: Reference `' on page 10 undefined on input line 48.
+
+[10]
+Overfull \hbox (126.65193pt too wide) in paragraph at lines 50--52
+\OT1/cmr/m/n/10 MathWorld--A Wol-fram Web Re-source. http://mathworld.wolfram.c
+om/VanishingPoint.html 
+ []
+
+) [11] (Implementation.tex) [12
+
+
+] (Testing.tex) [13
+
+
+] (Conclusion.tex) [14
 
 
 ]
-
-LaTeX Warning: Reference `' on page 5 undefined on input line 48.
-
-) [5]
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Implement
-ation.tex) [6
+(Further_Work.tex) [15
 
 
-]
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Testing.t
-ex) [7
+] [16
+
+] (Acronyms.tex) [17
+
+] (Code.tex) [18
 
 
 ]
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Conclusio
-n.tex) [8
-
-
-]
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Further_W
-ork.tex) [9
-
-
-] [10
+(Bibliography.tex)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 66.
+ [19
 
 ]
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Acronyms.
-tex) [11
-
-]
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Code.tex)
-[12
-
-
-]
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Bibliogra
-phy.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
- [13
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
-
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Project_m
-ain.aux
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Titlepage
-.aux)
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Abstract.
-aux)
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Problem_D
-escription.aux)
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Introduct
-ion.aux)
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Backgroun
-d_theory.aux)
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Implement
-ation.aux)
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Testing.a
-ux)
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Conclusio
-n.aux)
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Further_W
-ork.aux)
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Acronyms.
-aux)
-(C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\Code.aux)
-)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 66.
+ (Project_main.aux (Titlepage.aux) (Abstract.aux)
+(Problem_Description.aux) (Introduction.aux) (Background_theory.aux)
+(Implementation.aux) (Testing.aux) (Conclusion.aux) (Further_Work.aux)
+(Acronyms.aux) (Code.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 66.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 66.
 Package rerunfilecheck Info: File `Project_main.out' has not changed.
 (rerunfilecheck)             Checksum: C3962E2ABA65114B8B87F3F271BF0281;2599.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 65.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 66.
  ) 
 Here is how much of TeX's memory you used:
- 7998 strings out of 493921
- 118829 string characters out of 3147278
- 229726 words of memory out of 3000000
- 11039 multiletter control sequences out of 15000+200000
+ 8134 strings out of 493698
+ 115306 string characters out of 3144406
+ 225063 words of memory out of 3000000
+ 11196 multiletter control sequences out of 15000+200000
  7934 words of font info for 29 fonts, out of 3000000 for 9000
- 841 hyphenation exceptions out of 8191
- 29i,6n,30p,684b,438s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 1025 hyphenation exceptions out of 8191
+ 29i,6n,30p,665b,582s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiK
@@ -1037,9 +1118,9 @@ e1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public
 /amsfonts/cm/cmr9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmti10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt1
 0.pfb>
-Output written on Project_main.pdf (15 pages, 169923 bytes).
+Output written on Project_main.pdf (22 pages, 242607 bytes).
 PDF statistics:
- 321 PDF objects out of 1000 (max. 8388607)
- 68 named destinations out of 1000 (max. 500000)
- 297 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 354 PDF objects out of 1000 (max. 8388607)
+ 74 named destinations out of 1000 (max. 500000)
+ 302 words of extra memory for PDF output out of 10000 (max. 10000000)
 
