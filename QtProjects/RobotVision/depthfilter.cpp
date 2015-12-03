@@ -5,7 +5,7 @@ using namespace std;
 
 DepthFilter::DepthFilter()
 {
-
+    initFloorPlaneFilter();
 }
 
 DepthFilter::~DepthFilter()
@@ -13,10 +13,96 @@ DepthFilter::~DepthFilter()
 
 }
 
+void DepthFilter::initFloorPlaneFilter()
+{
+    Mat imgMasked, imgInvThresh;
+    double cameraHeight = 55;
+    double verticalAngleArray[] = {1.375 , 4.125 , 6.875 , 9.625 ,
+                                   12.375 , 15.125 , 17.875 , 20.625};
+    double horizontalAngleArray[] = {24.75, 19.25, 13.72, 8.25, 2.75, 2.75 , 8.25 , 13.75 , 19.25 , 24.75};
+
+    double verticalAngle, horizontalAngle;
+    double floorDistance;
+
+
+    for(int i = 0; i < 10; i++)
+    {
+        for(int j = 0; j < 8; j++)
+        {
+            verticalAngle = verticalAngleArray[j];
+            horizontalAngle = horizontalAngleArray[ i ];
+            //qDebug() << "index: " + QString::number((int)qFabs(i-5));
+            //qDebug() << "verticalAngle: " + QString::number( qDegreesToRadians(verticalAngle) );
+            //qDebug() << "horizontalAngle: " + QString::number( qDegreesToRadians(horizontalAngle) );
+            floorDistance = ( cameraHeight/qSin(qDegreesToRadians(verticalAngle)) )/qCos(qDegreesToRadians(horizontalAngle));
+            floorDisparity[i][j] = dist2disp(floorDistance);
+            //qDebug() << "Distance: " + QString::number(floorDisparity[i][j]);
+        }
+    }
+
+    qDebug() << "done";
+}
+
+void DepthFilter::floorPlaneFilter(Mat &imgDisparity)
+{
+    Rect roi;
+    roi.height = 64;
+    roi.width = 128;
+
+    Scalar color = Scalar(255,128,0);
+
+    Mat imgInvThresh, imgMasked;
+    imshow("disp",imgDisparity);
+    waitKey();
+    for(int i = 0; i < 10; i++)
+    {
+        for(int j = 2; j < 8; j++)
+        {
+            //roi.tl() = Point(128*i,64*j);
+            roi.x = 128*i;
+            roi.y = 64*j+512;
+
+            //qDebug() << "Top left of ROI: " << QString::number(roi.tl().x ) << " " << QString::number(roi.tl().y );
+
+            Mat crop(imgDisparity, roi);
+
+            rectangle( imgDisparity, roi.tl(), roi.br(), color, 2, 8, 0 );
+
+            threshold(crop, imgInvThresh, floorDisparity[i][j]-1, floorDisparity[i][j]+1, CV_THRESH_BINARY_INV);
+
+            bitwise_and(crop, imgInvThresh, imgMasked);
+
+            imgMasked.copyTo(imgDisparity(roi));
+
+            imshow("disp",imgDisparity);
+            waitKey(200);
+        }
+    }
+
+}
+
 void DepthFilter::initDepthFilter(int _lowerDispThres, int _upperDispThres)
 {
     lowerDispThresh = _lowerDispThres;
     upperDispThresh = _upperDispThres;
+}
+
+double DepthFilter::disp2dist(double disparity)
+{
+    double a = 7275;
+    double b = -1.016;
+    double distance = a*qPow(disparity, b);
+
+    return distance;
+}
+
+double DepthFilter::dist2disp(double distance)
+{
+    double a = 7275;
+    double b = -1.016;
+    double disparity = qPow( (distance/a), (1/b) );
+
+    return disparity;
 }
 
 void DepthFilter::morphOps(Mat &image)
@@ -42,6 +128,7 @@ void DepthFilter::morphOps(Mat &image)
 
 void DepthFilter::filterAndMaskImage(Mat imgDisparityGray, int lowerThreshold, int upperThreshold, Mat &imgThreshold)
 {
+    floorPlaneFilter(imgDisparityGray);
     inRange(imgDisparityGray,lowerThreshold,upperThreshold,imgThreshold);
     morphOps(imgThreshold);
 
@@ -59,9 +146,9 @@ void DepthFilter::extractObstacles(Mat imgInput, Mat _imgDisparity, Mat _pointcl
 
     //cvtColor(imgDisparity,imgDisparityGray,CV_BGR2GRAY);
     //imshow("Disparity", imgDisparity);
-    for(int i = 0; i < 110; i+=10)
+    for(int i = 0; i < 150; i+=10)
     {
-        filterAndMaskImage(imgDisparity, 130-i, 140-i, imgMasked);
+        filterAndMaskImage(imgDisparity, 170-i, 180-i, imgMasked);
         trackFilteredObject(x,y,imgMasked);
         //qDebug() << "Next layer";
         //displayImage(imgOriginal);
@@ -133,14 +220,14 @@ void DepthFilter::trackFilteredObject(int &x, int &y, Mat threshold)
 
                     Scalar color = Scalar(255,128,0);
                     //drawContours( drawing, contours_poly, i, color, 1, 8, vector<Vec4i>(), 0, Point() );
-                    rectangle( imgOriginal, boundRect[index].tl(), boundRect[index].br(), color, 2, 8, 0 );
+                    //rectangle( imgOriginal, boundRect[index].tl(), boundRect[index].br(), color, 2, 8, 0 );
                     //cv::Rect roi(boundRect[index]);
                     //cv::Mat crop(imgDisparity, roi);
                     //cv::Mat crop(pointcloud, roi);
                     //imshow("crop",crop);
                     //waitKey();
 
-                      // Calculate ROI mean.
+                    // Calculate ROI mean.
                     //cv::Mat mask(cv::Mat::zeros(crop.rows, crop.cols, CV_8UC1)); //the mask with the size of cropped image
                     Mat mask = Mat::zeros(imgDisparity.size(), CV_8UC1);
                     //imshow("mask",mask);
@@ -162,11 +249,12 @@ void DepthFilter::trackFilteredObject(int &x, int &y, Mat threshold)
                     textPos.x += 20;
                     textPos.y += 20;
 
-                    putText(imgOriginal, to_string(mean[0]),textPos,2,1,Scalar(0,255,0),2);
+                    double distance = disp2dist(mean[0]);
+
+                    //putText(imgOriginal, to_string((int)distance)+" cm",textPos,2,1,Scalar(0,255,0),2);
                     //cout << "Depth: " << mean[0] << " mm" << endl;
 
-
-                    waitKey();
+                    //waitKey();
 
                     x = moment.m10/area;
                     y = moment.m01/area;

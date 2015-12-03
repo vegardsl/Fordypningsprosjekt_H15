@@ -20,6 +20,8 @@ public:
 
     void start(QString _appPath);
 
+    void show_rectified(cv::Size); //function to show live rectified feed from stereo camera
+
 private:
 
     const int LEFT = 0;
@@ -38,7 +40,6 @@ private:
     cv::Mat leftCameraFeed, rightCameraFeed, leftCameraFeed_rect, rightCameraFeed_rect;
 
     bool rectify(QString, cv::Size);
-    void show_rectified(cv::Size); //function to show live rectified feed from stereo camera
 
 signals:
     void frameReady(cv::Mat frame, int frameSide, int origin);

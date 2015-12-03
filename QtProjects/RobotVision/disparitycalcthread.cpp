@@ -87,13 +87,18 @@ void DisparityCalcThread::initDisparityCalcThread(QString filePath, cv::Size ima
 void DisparityCalcThread::disparityLoop()
 {
     qDebug() << "Entering Streaming Loop";
+
+    Size image_size = Size(1280,1024);
+    int fcc = CV_FOURCC('D','I','V','3');
+    VideoWriter writer = VideoWriter(filename,fcc,10,Size(1280,2048));
+
     Mat imgResult;
     while(1) {
         leftFrame = videoLeft.getCameraFeed();
         rightFrame = videoRight.getCameraFeed();
 
 
-        if(leftFrame.empty()||rightFrame.empty()){
+        if(leftFrame.empty()||rightFrame.empty()||!writer.isOpened()){
             //cout << "Waiting for video stream. Stand by." << endl;
             continue;
         }
@@ -143,7 +148,7 @@ void DisparityCalcThread::disparityLoop()
         dst.convertTo(disp32F, CV_32F,1./16);
 
         // Calculate 3D co-ordinates from disparity image
-        reprojectImageTo3D(disp32F, pointcloud, Q, true);
+        //reprojectImageTo3D(disp32F, pointcloud, Q, true); //Unused
 
         //Canny( disp8U, edge, 100, 200, 3);
 
@@ -156,11 +161,45 @@ void DisparityCalcThread::disparityLoop()
         {
             //imshow("Disparity Map", disp8U);
 
+
             depthFilter.extractObstacles(framel_rect,disp8U,pointcloud,imgResult);
             depthFilter.getResult(imgResult);
             emit frameReady(imgResult,LEFT,DISPARITY);
             emit frameReady(disp8U,RIGHT,DISPARITY);
+
+            //qDebug() << matType2str(leftFrame.type());
+
+            //Mat combo(image_size.height, 2 * image_size.width, CV_8UC3);
+            //leftFrame.copyTo(combo(Range::all(), Range(0, image_size.width)));
+            //rightFrame.copyTo(combo(Range::all(), Range(image_size.width, 2*image_size.width)));
+            //imshow("combo", combo);
+            //writer.write(combo);
         }
     }
     qDebug() << "DisparityCalcThread finished.";
+}
+
+QString DisparityCalcThread::matType2str(int type) {
+  string r;
+
+  uchar depth = type & CV_MAT_DEPTH_MASK;
+  uchar chans = 1 + (type >> CV_CN_SHIFT);
+
+  switch ( depth ) {
+    case CV_8U:  r = "8U"; break;
+    case CV_8S:  r = "8S"; break;
+    case CV_16U: r = "16U"; break;
+    case CV_16S: r = "16S"; break;
+    case CV_32S: r = "32S"; break;
+    case CV_32F: r = "32F"; break;
+    case CV_64F: r = "64F"; break;
+    default:     r = "User"; break;
+  }
+
+  r += "C";
+  r += (chans+'0');
+
+  QString qt_r = QString::fromUtf8(r.c_str());
+
+  return qt_r;
 }

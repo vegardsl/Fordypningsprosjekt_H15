@@ -52,6 +52,8 @@ private slots:
 
     void on_actionToggle_Depth_Perception_triggered();
 
+    void on_actionShow_Alignment_triggered();
+
 public slots:
     void recieveStreamedFrame(cv::Mat, int, int);
 
@@ -86,6 +88,9 @@ private:
     const int MODE_RIGHT_STREAM = 9;
     const int MODE_LEFT_CALIB = 10;
     const int MODE_RIGHT_CALIB = 11;
+
+    const int FRAME_WIDTH = 1280;
+    const int FRAME_HEIGHT = 1024;
 
     VideoStreamThread leftStreamThread, rightStreamThread;
     SingleCamCalibratorThread l_singleCamCalibrator, r_singleCamCalibrator;

@@ -208,6 +208,7 @@
      <addaction name="actionRectify_Images"/>
     </widget>
     <addaction name="menuCamera_Calibration"/>
+    <addaction name="actionShow_Alignment"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuVideo"/>
@@ -260,6 +261,11 @@
   <action name="actionToggle_Depth_Perception">
    <property name="text">
     <string>Toggle Depth Perception</string>
+   </property>
+  </action>
+  <action name="actionShow_Alignment">
+   <property name="text">
+    <string>Show Alignment</string>
    </property>
   </action>
  </widget>

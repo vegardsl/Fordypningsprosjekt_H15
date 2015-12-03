@@ -6,7 +6,7 @@
 
 #include <opencv2/opencv.hpp>
 #include <opencv2/highgui/highgui.hpp>
-#include "opencv2/imgproc/imgproc.hpp"
+#include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/calib3d/calib3d.hpp>
 #include <opencv2/core/utility.hpp>
 
@@ -98,6 +98,9 @@ private:
 
     void initDisparityCalcThread(QString, cv::Size);
     void disparityLoop();
+    QString matType2str(int type);
+    //cv::VideoWriter writer;
+    std::string filename = "C:\stereoTest_casual.avi";
 
 signals:
     void frameReady(cv::Mat frame, int frameSide, int origin);

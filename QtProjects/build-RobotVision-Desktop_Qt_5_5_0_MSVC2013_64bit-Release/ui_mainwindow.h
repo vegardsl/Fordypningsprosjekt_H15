@@ -38,6 +38,7 @@ public:
     QAction *actionCalibrate_Stereo_Camera;
     QAction *actionRectify_Images;
     QAction *actionToggle_Depth_Perception;
+    QAction *actionShow_Alignment;
     QWidget *centralWidget;
     QFrame *frame;
     QWidget *layoutWidget;
@@ -82,6 +83,8 @@ public:
         actionRectify_Images->setObjectName(QStringLiteral("actionRectify_Images"));
         actionToggle_Depth_Perception = new QAction(MainWindow);
         actionToggle_Depth_Perception->setObjectName(QStringLiteral("actionToggle_Depth_Perception"));
+        actionShow_Alignment = new QAction(MainWindow);
+        actionShow_Alignment->setObjectName(QStringLiteral("actionShow_Alignment"));
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         centralWidget->setMinimumSize(QSize(1400, 650));
@@ -172,6 +175,7 @@ public:
         menuLive_Stream->addAction(actionToggle_Left_Camera);
         menuLive_Stream->addAction(actionToggle_Right_Camera);
         menuCalibration->addAction(menuCamera_Calibration->menuAction());
+        menuCalibration->addAction(actionShow_Alignment);
         menuCamera_Calibration->addAction(actionCalibrate_Left_Camera);
         menuCamera_Calibration->addAction(actionCalibrate_Right_Camera);
         menuCamera_Calibration->addAction(actionCalibrate_Stereo_Camera);
@@ -193,6 +197,7 @@ public:
         actionCalibrate_Stereo_Camera->setText(QApplication::translate("MainWindow", "Calibrate Stereo Camera", 0));
         actionRectify_Images->setText(QApplication::translate("MainWindow", "Rectify Images", 0));
         actionToggle_Depth_Perception->setText(QApplication::translate("MainWindow", "Toggle Depth Perception", 0));
+        actionShow_Alignment->setText(QApplication::translate("MainWindow", "Show Alignment", 0));
         leftLabel->setText(QString());
         rightLabel->setText(QString());
         capture->setText(QApplication::translate("MainWindow", "Capture Image", 0));

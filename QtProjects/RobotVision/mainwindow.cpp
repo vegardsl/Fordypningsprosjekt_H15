@@ -240,3 +240,8 @@ void MainWindow::on_actionToggle_Depth_Perception_triggered()
                                            &DisparityCalcThread::start,
                                            QString(appPath));
 }
+
+void MainWindow::on_actionShow_Alignment_triggered()
+{
+    // TODO: Implement this!
+}
