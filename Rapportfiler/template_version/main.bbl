@@ -1,0 +1,8 @@
+\begin{thebibliography}{NNYY}
+
+\bibitem[NNYY]{Author:year:XYZ}
+Firstname~1 Name1 and Firstname2 Name2.
+\newblock A dummy title.
+\newblock {\em A Fake Journal}, 1(1):000--000, June YYYY.
+
+\end{thebibliography}

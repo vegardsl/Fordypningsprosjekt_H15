@@ -5,7 +5,7 @@
 
 
 \title{Title} % The title of your assignement; NB use \newlinetitle to start a newline
-\author{Firstname Lastname} % Your firstname and lastname
+\author{Vegard S. Lindrup} % Your firstname and lastname
 \professor{Firstname Lastname, Affiliation} % Affiliation = ITEM for instance
 \supervisor{Firstname Lastname, Affiliation}
 
@@ -15,7 +15,7 @@
 % \usepackage[bf]{caption}
 % \usepackage{subcaption}
 
-\DeclareGraphicsExtensions{.pdf,.jpg}
+\DeclareGraphicsExtensions{.pdf,.jpg,.png}
 \graphicspath{{./figs/}}
 
 \loadglsentries{glossary}
@@ -47,53 +47,60 @@
 \selectlanguage{english}% Change to 'norsk' if you are writing in Norwegian
 
 \include{preface}
-\cleardoublepage
+%\cleardoublepage
+
+%% include if relevant
+\listoffigures
+\clearpage
+	%\cleardoublepage
+	
+%% include if relevant
+\listoftables
+\clearpage
+%\cleardoublepage
+	
+%% include if relevant
+%\listofalgorithms
+%\addcontentsline{toc}{chapter}{List of Algorithms}
+%\cleardoublepage
+	
+%% include if relevant
+\printglossary[title=List of Symbols, style=long]
+%\cleardoublepage
+\glsaddall[]
+	
+%% include if relevant
+\printglossary[title=List of Acronyms,type=\acronymtype] % prints just the list of acronyms
+%\cleardoublepage
 
 % similarly you may add a separate acknowledgments page
 
 \tableofcontents*
-\cleardoublepage
-
-%% include if relevant
-\listoffigures
-\cleardoublepage
-
-%% include if relevant
-\listoftables
-\cleardoublepage
-
-%% include if relevant
-\listofalgorithms
-\addcontentsline{toc}{chapter}{List of Algorithms}
-\cleardoublepage
-
-%% include if relevant
-\printglossary[title=List of Symbols, style=long]
-\cleardoublepage
-\glsaddall[]
-
-%% include if relevant
-\printglossary[title=List of Acronyms,type=\acronymtype] % prints just the list of acronyms
-\cleardoublepage
+\clearpage
+%\cleardoublepage
 
 \pagenumbering{arabic}
 \pagestyle{ruled}
-\include{example_chapter}
+\include{introduction_chapter}
 %% include here the other chapters
+\include{theory_chapter}
+\include{example_chapter}
+\include{implementaion_chapter}
 
 \renewcommand*{\bibname}{References}
 \bibliographystyle{alpha}
 \bibliography{main}
 
-%% Uncomment the following if you have any appendix
-% \appendix
-% \addtocontents{toc}{%
-%  \protect\vspace{1em}% 
-%  \protect\noindent \bfseries \appendixtocname\protect\par
-%  \protect\vspace{-.5em}%
-% }
-% \renewcommand{\chaptername}{\appendixname}
+% Uncomment the following if you have any appendix
+ \appendix
+ \addtocontents{toc}{%
+  \protect\vspace{1em}% 
+  \protect\noindent \bfseries \appendixtocname\protect\par
+  \protect\vspace{-.5em}%
+ }
+ \renewcommand{\chaptername}{\appendixname}
 %% include below possible appendices (chapters)
+
 
 
 \end{document} 
