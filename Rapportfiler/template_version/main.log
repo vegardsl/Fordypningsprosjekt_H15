@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.18)  5 DEC 2015 22:35
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.18)  6 DEC 2015 18:36
 entering extended mode
 **main.tex
 
@@ -1569,12 +1569,50 @@ Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
 \c@blind@pangramcount=\count320
 \c@blind@pangrammax=\count321
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\subcaption.sty"
+Package: subcaption 2013/02/03 v1.1-62 Sub-captions (AR)
+
+
+Class memoir Warning: You are using the caption package with the memoir class. 
+To prepare we will now reset all captioning macros and configurations to kernel
+ defaults, and then let the caption package take over. Please remember to use t
+he caption package interfaces in order to configure your captions. .
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
+Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
+Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 57.
+\captionmargin=\dimen204
+\captionmargin@=\dimen205
+\captionwidth=\dimen206
+\caption@tempdima=\dimen207
+\caption@indent=\dimen208
+\caption@parindent=\dimen209
+\caption@hangindent=\dimen210
+)
+\c@ContinuedFloat=\count322
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: longtable package is loaded.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\caption\ltcaption.sty"
+Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
+)
+Package caption Info: supertabular package is loaded.
+Package caption Info: wrapfig package is loaded.
+)
+\c@subfigure=\count323
+\c@subtable=\count324
+)
 (C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\template_
 version\glossary.tex)
 \glo@main@file=\write5
-Package glossaries Info: Writing glossary file main.glo on input line 22.
+Package glossaries Info: Writing glossary file main.glo on input line 23.
 \glo@acronym@file=\write6
-Package glossaries Info: Writing glossary file main.acn on input line 22.
+Package glossaries Info: Writing glossary file main.acn on input line 23.
 
 (C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\template_
 version\main.aux
@@ -1590,43 +1628,43 @@ version\theory_chapter.aux)
 version\example_chapter.aux)
 (C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\template_
 version\implementaion_chapter.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 25.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count322
-\scratchdimen=\dimen204
+\scratchcounter=\count325
+\scratchdimen=\dimen211
 \scratchbox=\box72
-\nofMPsegments=\count323
-\nofMParguments=\count324
+\nofMPsegments=\count326
+\nofMParguments=\count327
 \everyMPshowfont=\toks59
-\MPscratchCnt=\count325
-\MPscratchDim=\dimen205
-\MPnumerator=\count326
-\makeMPintoPDFobject=\count327
+\MPscratchCnt=\count328
+\MPscratchDim=\dimen212
+\MPnumerator=\count329
+\makeMPintoPDFobject=\count330
 \everyMPtoPDFconversion=\toks60
 )
-LaTeX Info: Redefining \microtypecontext on input line 24.
+LaTeX Info: Redefining \microtypecontext on input line 25.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1641,7 +1679,7 @@ File: mt-cmr.cfg 2011/04/09 v2.1 microtype config. file: Computer Modern Roman
 (RS)
 )
 \AtBeginShipoutBox=\box73
-Package hyperref Info: Link coloring ON on input line 24.
+Package hyperref Info: Link coloring ON on input line 25.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1649,28 +1687,30 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count328
+\c@section@level=\count331
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 24.
-LaTeX Info: Redefining \ref on input line 24.
-LaTeX Info: Redefining \pageref on input line 24.
-LaTeX Info: Redefining \nameref on input line 24.
+LaTeX Info: Redefining \nameref on input line 25.
+LaTeX Info: Redefining \ref on input line 25.
+LaTeX Info: Redefining \pageref on input line 25.
+LaTeX Info: Redefining \nameref on input line 25.
 
 (C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\template_
 version\main.out)
 (C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\template_
 version\main.out)
 \@outlinefile=\write7
-\c@lstlisting=\count329
- <./figs/ntnu-logo.pdf, id=139, 241.4922pt x 52.79724pt>
+\c@lstlisting=\count332
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+ <./figs/ntnu-logo.pdf, id=155, 241.4922pt x 52.79724pt>
 File: ./figs/ntnu-logo.pdf Graphic file (type pdf)
 
 <use ./figs/ntnu-logo.pdf>
-Package pdftex.def Info: ./figs/ntnu-logo.pdf used on input line 30.
+Package pdftex.def Info: ./figs/ntnu-logo.pdf used on input line 31.
 (pdftex.def)             Requested size: 170.71652pt x 37.32436pt.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 30.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 31.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmss.fd"
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1678,14 +1718,14 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Calculating math sizes for size <11.49994> on input line 30
+LaTeX Font Info:    Calculating math sizes for size <11.49994> on input line 31
 .
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <11.49994> on input line 30.
+(Font)              <11.49994> on input line 31.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8.04991> on input line 30.
+(Font)              <8.04991> on input line 31.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.74997> on input line 30.
+(Font)              <5.74997> on input line 31.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\microtype\mt-msa.cfg"
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
@@ -1728,9 +1768,19 @@ version\introduction_chapter.tex
 
 LaTeX Warning: Reference `' on page 1 undefined on input line 4.
 
+<./figs/Robot_front.jpg, id=256, 1585.925pt x 3195.94pt>
+File: ./figs/Robot_front.jpg Graphic file (type jpg)
 
-LaTeX Warning: Reference `img:robot' on page 1 undefined on input line 17.
+<use ./figs/Robot_front.jpg>
+Package pdftex.def Info: ./figs/Robot_front.jpg used on input line 22.
+(pdftex.def)             Requested size: 109.20111pt x 220.03244pt.
 
+<./figs/Robot_side.jpg, id=257, 2502.34875pt x 2329.70375pt>
+File: ./figs/Robot_side.jpg Graphic file (type jpg)
+
+<use ./figs/Robot_side.jpg>
+Package pdftex.def Info: ./figs/Robot_side.jpg used on input line 27.
+(pdftex.def)             Requested size: 236.59778pt x 220.2577pt.
 
 Underfull \vbox (badness 4634) has occurred while \output is active []
 
@@ -1739,80 +1789,87 @@ Underfull \vbox (badness 4634) has occurred while \output is active []
 
 
 ]
-<./figs/hardwareSetup_cropped.png, id=233, 947.79094pt x 327.47343pt>
+<./figs/hardwareSetup_cropped.png, id=262, 947.79094pt x 327.47343pt>
 File: ./figs/hardwareSetup_cropped.png Graphic file (type png)
 
 <use ./figs/hardwareSetup_cropped.png>
-Package pdftex.def Info: ./figs/hardwareSetup_cropped.png used on input line 36
+Package pdftex.def Info: ./figs/hardwareSetup_cropped.png used on input line 55
 .
 (pdftex.def)             Requested size: 364.0pt x 125.76535pt.
-) [2 <C:/Users/Vegard/Documents/Skole/Fordypningsprosjekt_H15/Rapportfiler/temp
-late_version/figs/hardwareSetup_cropped.png>]
+ [2 <C:/Users/Vegard/Documents/Skole/Fordypningsprosjekt_H15/Rapportfiler/templ
+ate_version/figs/Robot_front.jpg> <C:/Users/Vegard/Documents/Skole/Fordypningsp
+rosjekt_H15/Rapportfiler/template_version/figs/Robot_side.jpg>]) [3 <C:/Users/V
+egard/Documents/Skole/Fordypningsprosjekt_H15/Rapportfiler/template_version/fig
+s/hardwareSetup_cropped.png>]
 (C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\template_
-version\theory_chapter.tex
-
-LaTeX Warning: Reference `' on page 3 undefined on input line 13.
-
-[3
+version\theory_chapter.tex [4
 
 
 
-]) [4]
+]
+
+LaTeX Warning: Reference `' on page 5 undefined on input line 13.
+
+[5] <./figs/3dScene.png, id=286, 800.9925pt x 363.759pt>
+File: ./figs/3dScene.png Graphic file (type png)
+
+<use ./figs/3dScene.png>
+Package pdftex.def Info: ./figs/3dScene.png used on input line 33.
+(pdftex.def)             Requested size: 320.39133pt x 145.50102pt.
+
+<./figs/StereoSpace.png, id=287, 923.8515pt x 431.81325pt>
+File: ./figs/StereoSpace.png Graphic file (type png)
+
+<use ./figs/StereoSpace.png>
+Package pdftex.def Info: ./figs/StereoSpace.png used on input line 39.
+(pdftex.def)             Requested size: 364.0pt x 170.13278pt.
+) [6 <C:/Users/Vegard/Documents/Skole/Fordypningsprosjekt_H15/Rapportfiler/temp
+late_version/figs/3dScene.png>] [7 <C:/Users/Vegard/Documents/Skole/Fordypnings
+prosjekt_H15/Rapportfiler/template_version/figs/StereoSpace.png>]
 (C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\template_
-version\example_chapter.tex
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 4.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 4.
- [5
+version\example_chapter.tex [8
 
 
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 4.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 4.
+ [9]
+LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 19.
- [6pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.32 
-     ]
+ [10]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 61.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 64.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
+put line 70.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 73.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 Package microtype Info: Loading generic settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-) [7pdfTeX warning (ext4): destination with the same identifier (name{table.3.1
-}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.87 \include{example_chapter}
-                              ]
+) [11] [12]
 (C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\template_
-version\implementaion_chapter.tex [8
+version\implementaion_chapter.tex) [13
 
 
 
-]) [9]
+]
 (C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\template_
-version\main.bbl [10
+version\main.bbl [14
 
 
 ]
 bibitemlist
-) [11]
+) [15]
 \tf@lof=\write8
 \tf@lot=\write9
 \tf@toc=\write10
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 106.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 107.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 107.
 
 (C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\template_
 version\main.aux
@@ -1828,37 +1885,31 @@ version\theory_chapter.aux)
 version\example_chapter.aux)
 (C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\template_
 version\implementaion_chapter.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 106.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 106.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 107.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 107.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: B27B9A07E49BBD703090D9012B24D5EF;2623.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: 97912DE72CAF663A5D4B0E7AF0BAD7C9;2321
-(rerunfilecheck)             After:  4DC89AB8BF0F3AA00278E3D7F0B3DF41;2313.
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 107.
  ) 
 Here is how much of TeX's memory you used:
- 21024 strings out of 493921
- 309157 string characters out of 3147278
- 552887 words of memory out of 3000000
- 23699 multiletter control sequences out of 15000+200000
- 103032 words of font info for 130 fonts, out of 3000000 for 9000
+ 22142 strings out of 493921
+ 329795 string characters out of 3147278
+ 574622 words of memory out of 3000000
+ 24785 multiletter control sequences out of 15000+200000
+ 103198 words of font info for 132 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 58i,12n,44p,1504b,487s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,12n,94p,1504b,608s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{glo:ntnu} has been referenced but does not exist,
  replaced by a fixed one
 
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiK
 TeX 2.9/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc
-/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-math
-sy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}<C:/Program Fi
+/dvips/lm/lm-mathsy.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-math
+it.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}<C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/lm/lmbx10.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/lm/lmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 lm/lmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:
@@ -1873,9 +1924,9 @@ am Files/MiKTeX 2.9/fonts/type1/public/lm/lmss17.pfb><C:/Program Files/MiKTeX 2
 .9/fonts/type1/public/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/lm/lmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy7.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (20 pages, 441233 bytes).
+Output written on main.pdf (24 pages, 3283719 bytes).
 PDF statistics:
- 386 PDF objects out of 1000 (max. 8388607)
- 63 named destinations out of 1000 (max. 500000)
- 27419 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 441 PDF objects out of 1000 (max. 8388607)
+ 76 named destinations out of 1000 (max. 500000)
+ 27471 words of extra memory for PDF output out of 29859 (max. 10000000)
 

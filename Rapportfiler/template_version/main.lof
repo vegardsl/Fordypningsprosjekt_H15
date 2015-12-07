@@ -3,7 +3,10 @@
 \select@language {english}
 \select@language {english}
 \addvspace {10pt}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces The robot used in the project.\relax }}{2}{figure.caption.3}
 \addvspace {10pt}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Left to right displacement on the image plane based on distance.\relax }}{6}{figure.caption.5}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Geometry of stereo vision.\relax }}{7}{figure.caption.6}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces A figure}}{6}{figure.3.1}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces A figure\relax }}{10}{figure.caption.7}
 \addvspace {10pt}

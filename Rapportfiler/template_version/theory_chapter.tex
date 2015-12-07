@@ -16,8 +16,32 @@ OpenCV started... 1999 Intel. Today, it is a fully open source library with a va
 
 Stereo vision and depth perception is one of the core topics within this report. Here, the theory behind a method using two cameras is presented, while some additional methods are mentioned to provide context.
 
+\subsection{Various Methods}
+
 Methods for computer vision can be separated into two main categories, i.e. active and passive. Active sensors will usually project a light pattern onto the scene to be perceived, before sensing how this pattern is displaced by the topology of the scene. The Kinect sensor and 3d-scanners using laser light are typical examples of active sensors. Passive depth perception makes use of many of the same cues we use to perceive depth. The most common passive sensors extract the depth information by observing observing a scene from at least two different positions. 
 
-Optical flow is another important method for depth perception. Optical flow may be either active or passive. The passive variant requires  only one camera, but depends on motion and a stream of images to extract depth information. Observing how much some chosen features in a scene has moved in the image frame at $t = 1$ compared to the frame at $t = 0$ is the basis of depth sensing from optical flow. In a static scene, objects that are far away will naturally have an optical flow field with a smaller magnitude than objects that are close. 
+Optical flow is another important method for depth perception. Optical flow may be either active or passive. The passive variant requires  only one camera, but depends on motion and a stream of images to extract depth information. Observing how much some chosen features in a scene has moved in the image frame at $t = 1$ compared to the frame at $t = 0$ is the basis of depth sensing from optical flow. In a scene where all objects are stationary, objects that are far away will naturally have an optical flow field with a smaller magnitude than objects that are close. 
 
-In this project, passive stereoscopic vision is achieved by using two identical (in theory) cameras placed on the same plane. The cameras are placed a few centimetres apart. This distance is called the baseline $B$. The gist of this method is based on the fact that objects close to the cameras will have a large displacement from the left to the right camera compared to objects that are further away. 
+\subsection{Stereoscopic Vision in General}
+
+In this project, passive stereoscopic vision is achieved by using two identical (in theory) cameras placed on the same plane. The cameras are placed a few centimetres apart. The gist of passive stereoscopic vision is based on the fact that objects close to the cameras will have a large displacement from the left to the right camera compared to objects that are further away. This is illustrated in figure \ref{fig:3dScene}. 
+
+Figure \ref{fig:StereoSpace} illustrates the epipolar geometry of stereo vision based on two pinhole camera models. The illustration shows an ideal stereo camera set-up where The image planes are parallel and are related by a horizontal translation $B$, which is called the baseline. This implies that the projection $X_L$ of the object $X$ on the left image plane, relates to the projection $X_R$ on the right image plane through $B$: $O_R = O_L + B$.
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.4]{3dScene}
+\caption{\label{fig:3dScene}Left to right displacement on the image plane based on distance.}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=1\textwidth]{StereoSpace}
+\caption{\label{fig:StereoSpace}Geometry of stereo vision.}
+\end{figure}
+
+Cite \cite{einstein}.
+
+\subsection{Stereoscopic Vision in OpenCV}
+
+The prebuilt version of OpenCV 3.0.0 comes with two stereo matching algorithms: Block Matching and Semi Global Block Matching. Additional algorithms are available if OpenCV is built with, e.g. CUDA.
