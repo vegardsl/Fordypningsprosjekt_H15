@@ -19,6 +19,18 @@
 
 \subsection{Overview}
 
+\subsection{The camera rig}
+
+The two IP cameras were moved together to form a stereo camera. This stereo camera was used in two positions. The first camera position is on the pan-tilt module on the robot arm, see figure \ref{fig:figure}. The second position is just over the LIDAR in front of the robot arm base, see figure \ref{fig:figure}.  The workshop at ITK made a mounting bracket, so that the cameras could be placed over the LIDAR. In stereo vision, it is essential that the positions of the cameras relative to each other is constant. One problem encountered throughout the project was that the camera assemby, when placed either at the pan-tilt module and over the LIDAR, were not rigid enough. The severity of this rigidity problem was somewhat alleviated by wrapping a strap around the cameras. This camera rig is ad hoc, i.e. suitable for the purpose of this project, but a better solution should be used for other projects.
+
+\subsection{Calibration}
+
+As mentioned in chapter \ref{chp:theory}, all cameras will have some distortion. If the distortion is too severe, as it often will be in the context of stereo vision, the camera must be calibrated. In addition, it was assumed that the image planes were located on the same plane, and that a projection pair, for example the projections $X_L$ and $X_R$ of an object $X$, form two equal epipolar lines, $e_1$ and $e_2$, on the two image planes. In practice, these conditions must be realized through stereo calibration. 
+
+\begin{figure}
+\includegraphics[scale=•]{•}
+\end{figure}
+
 \subsection{Stereo Matching}
 
 \subsection{Finding Obstructions}

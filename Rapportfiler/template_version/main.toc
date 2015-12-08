@@ -35,9 +35,11 @@
 \contentsline {subsection}{\numberline {4.1.6}Where it Fails}{13}{subsection.4.1.6}
 \contentsline {section}{\numberline {4.2}Depth Perception and Obstruction Detection}{13}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Overview}{13}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Stereo Matching}{13}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Finding Obstructions}{13}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Distance Measurment}{13}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Problems Encountered During Implementation }{13}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.2}The camera rig}{13}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Calibration}{14}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Stereo Matching}{14}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Finding Obstructions}{14}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.6}Distance Measurment}{14}{subsection.4.2.6}
+\contentsline {subsection}{\numberline {4.2.7}Problems Encountered During Implementation }{14}{subsection.4.2.7}
 \contentsline {chapter}{References}{15}{section*.10}
 \vspace {1em}\noindent \bfseries Appendices\par \vspace {-.5em}
