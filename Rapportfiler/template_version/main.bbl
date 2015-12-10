@@ -6,6 +6,12 @@ Albert Einstein.
   electrodynamics of moving bodies].
 \newblock {\em Annalen der Physik}, 322(10):891--921, 1905.
 
+\bibitem[Hir08]{hirschmullerstereo}
+Heiko Hirschmuller.
+\newblock Stereo processing by semiglobal matching and mutual information.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, 30(2), 2008.
+
 \bibitem[NN00]{Author:year:XYZ}
 Firstname~1 Name1 and Firstname2 Name2.
 \newblock A dummy title.

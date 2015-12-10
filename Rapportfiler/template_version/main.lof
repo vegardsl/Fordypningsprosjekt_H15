@@ -5,8 +5,13 @@
 \addvspace {10pt}
 \contentsline {figure}{\numberline {1.1}{\ignorespaces The robot used in the project.\relax }}{2}{figure.caption.3}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Left to right displacement on the image plane based on distance.\relax }}{6}{figure.caption.5}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Geometry of stereo vision.\relax }}{7}{figure.caption.6}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Elements in a cv::Mat representing an image. This is a 3-channel image with 8 bit RGB colors.\relax }}{6}{figure.caption.5}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Left to right displacement on the image plane based on distance.\relax }}{7}{figure.caption.6}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Geometry of a pinhole camera.\relax }}{7}{figure.caption.8}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Geometry of stereo vision.\relax }}{8}{figure.caption.10}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces A figure\relax }}{10}{figure.caption.7}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces A figure\relax }}{10}{figure.caption.13}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces The result of StereoSGBM.\relax }}{14}{figure.caption.18}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Classical Random Walk with various step sizes.\relax }}{16}{figure.caption.19}
 \addvspace {10pt}
