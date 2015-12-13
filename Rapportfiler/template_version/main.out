@@ -22,23 +22,25 @@
 \BOOKMARK [2][-]{subsection.3.1.2}{Mathematics}{section.3.1}% 22
 \BOOKMARK [2][-]{subsection.3.1.3}{Source code example}{section.3.1}% 23
 \BOOKMARK [0][-]{chapter.4}{Implementation}{}% 24
-\BOOKMARK [1][-]{section.4.1}{Vanishing Point Detection}{chapter.4}% 25
-\BOOKMARK [2][-]{subsection.4.1.1}{Overview}{section.4.1}% 26
-\BOOKMARK [2][-]{subsection.4.1.2}{Line Detection}{section.4.1}% 27
-\BOOKMARK [2][-]{subsection.4.1.3}{Line Filtering}{section.4.1}% 28
-\BOOKMARK [2][-]{subsection.4.1.4}{Vanishing Point Detection}{section.4.1}% 29
-\BOOKMARK [2][-]{subsection.4.1.5}{Graphical User Interface}{section.4.1}% 30
-\BOOKMARK [2][-]{subsection.4.1.6}{Where it Fails}{section.4.1}% 31
-\BOOKMARK [1][-]{section.4.2}{Depth Perception and Obstruction Detection}{chapter.4}% 32
-\BOOKMARK [2][-]{subsection.4.2.1}{Overview}{section.4.2}% 33
-\BOOKMARK [2][-]{subsection.4.2.2}{The camera rig}{section.4.2}% 34
-\BOOKMARK [2][-]{subsection.4.2.3}{Calibration}{section.4.2}% 35
-\BOOKMARK [2][-]{subsection.4.2.4}{Stereo Matching}{section.4.2}% 36
-\BOOKMARK [2][-]{subsection.4.2.5}{Finding Obstructions}{section.4.2}% 37
-\BOOKMARK [2][-]{subsection.4.2.6}{Distance Measurment}{section.4.2}% 38
-\BOOKMARK [2][-]{subsection.4.2.7}{Problems Encountered During Implementation }{section.4.2}% 39
-\BOOKMARK [0][-]{section*.21}{References}{}% 40
-\BOOKMARK [0][-]{appendix.A}{Setting up a project with Qt and OpenCV}{}% 41
-\BOOKMARK [1][-]{section.A.1}{Setting up OpenCV}{appendix.A}% 42
-\BOOKMARK [1][-]{section.A.2}{Setting up Qt Creator with OpenCV}{appendix.A}% 43
-\BOOKMARK [1][-]{section.A.3}{Building OpenCV with CUDA and Qt from source}{appendix.A}% 44
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 25
+\BOOKMARK [1][-]{section.4.2}{Vanishing Point Detection}{chapter.4}% 26
+\BOOKMARK [2][-]{subsection.4.2.1}{Overview}{section.4.2}% 27
+\BOOKMARK [2][-]{subsection.4.2.2}{Line Detection}{section.4.2}% 28
+\BOOKMARK [2][-]{subsection.4.2.3}{Line Filtering}{section.4.2}% 29
+\BOOKMARK [2][-]{subsection.4.2.4}{Vanishing Point Detection}{section.4.2}% 30
+\BOOKMARK [2][-]{subsection.4.2.5}{Graphical User Interface}{section.4.2}% 31
+\BOOKMARK [2][-]{subsection.4.2.6}{Where it Fails}{section.4.2}% 32
+\BOOKMARK [1][-]{section.4.3}{Depth Perception and Obstruction Detection}{chapter.4}% 33
+\BOOKMARK [2][-]{subsection.4.3.1}{Overview}{section.4.3}% 34
+\BOOKMARK [2][-]{subsection.4.3.2}{The camera rig}{section.4.3}% 35
+\BOOKMARK [2][-]{subsection.4.3.3}{Graphical User Interface}{section.4.3}% 36
+\BOOKMARK [2][-]{subsection.4.3.4}{Calibration}{section.4.3}% 37
+\BOOKMARK [2][-]{subsection.4.3.5}{Stereo Matching}{section.4.3}% 38
+\BOOKMARK [2][-]{subsection.4.3.6}{Finding Obstructions}{section.4.3}% 39
+\BOOKMARK [2][-]{subsection.4.3.7}{Distance Measurment}{section.4.3}% 40
+\BOOKMARK [2][-]{subsection.4.3.8}{Problems Encountered During Implementation }{section.4.3}% 41
+\BOOKMARK [0][-]{section*.23}{References}{}% 42
+\BOOKMARK [0][-]{appendix.A}{Setting up a project with Qt and OpenCV}{}% 43
+\BOOKMARK [1][-]{section.A.1}{Setting up OpenCV}{appendix.A}% 44
+\BOOKMARK [1][-]{section.A.2}{Setting up Qt Creator with OpenCV}{appendix.A}% 45
+\BOOKMARK [1][-]{section.A.3}{Building OpenCV with CUDA and Qt from source}{appendix.A}% 46

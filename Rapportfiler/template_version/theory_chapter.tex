@@ -64,7 +64,27 @@ Figure \ref{fig:StereoSpace} shows an ideal stereo camera model.  The model comp
 
 \paragraph{Camera Distortion}
 
-Cite \cite{einstein}.
+A downside of the otherwise cheap and useful pinhole camera is camera distortion. The distortion is usually severe enough to render the camera useless as a sensor if it is not calibrated. Calibration in OpenCV accounts for radial and tangential distortion by finding five distortion coefficients:
+
+%\vspace{-1em}
+\begin{equation*}
+	 Distortion_{coefficients} = (k_1 \quad k_2 \quad p_1 \quad p_2 \quad k_3)
+\end{equation*}
+%\vspace{-0.2em}
+\textbf{where} 
+%\vspace{-1.1em}
+\begin{equation*}
+ 	p_i \quad with \quad i \in \left\{1, 2\right\}
+\end{equation*}
+%\vspace{-0.3em}
+\textbf{are the radial distortion constants, and}
+%\vspace{-0.2em}
+\begin{equation*}
+	k_i \quad \textrm{with} \quad i \in \left\{1, 2, 3\right\}  
+\end{equation*}
+%\vspace{-0.5em}
+\textbf{are the radial distortion constants.} 
+%\vspace{-0.5em}
 
 \subsection{Stereoscopic Vision in OpenCV}
 
