@@ -5,6 +5,8 @@ A level-1 auxiliary file: introduction_chapter.aux
 A level-1 auxiliary file: theory_chapter.aux
 A level-1 auxiliary file: example_chapter.aux
 A level-1 auxiliary file: implementaion_chapter.aux
+A level-1 auxiliary file: assessment_chapter.aux
+A level-1 auxiliary file: conclusion_chapter.aux
 The style file: alpha.bst
 A level-1 auxiliary file: chapter_project_setup.aux
 Database file #1: main.bib
@@ -12,4 +14,6 @@ I was expecting an "="---line 47 of file main.bib
  :  month 
  :        "feb",
 I'm skipping whatever remains of this entry
+Warning--to sort, need author or key in 3dCalib
+Warning--to sort, need author or key in cannyedge
 (There was 1 error message)

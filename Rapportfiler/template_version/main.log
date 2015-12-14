@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.18)  12 DEC 2015 23:44
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.18)  14 DEC 2015 10:28
 entering extended mode
 **main.tex
 
@@ -1763,7 +1763,6 @@ version\main.lof) [6
 version\main.lot) [7
 
 ]
-No file main.gls.
 No file main.acr.
 
 (C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\template_
@@ -1775,14 +1774,14 @@ version\introduction_chapter.tex
 
 LaTeX Warning: Reference `' on page 1 undefined on input line 4.
 
-<./figs/Robot_front.jpg, id=310, 1585.925pt x 3195.94pt>
+<./figs/Robot_front.jpg, id=314, 1585.925pt x 3195.94pt>
 File: ./figs/Robot_front.jpg Graphic file (type jpg)
 
 <use ./figs/Robot_front.jpg>
 Package pdftex.def Info: ./figs/Robot_front.jpg used on input line 22.
 (pdftex.def)             Requested size: 109.20111pt x 220.03244pt.
 
-<./figs/Robot_side.jpg, id=311, 2502.34875pt x 2329.70375pt>
+<./figs/Robot_side.jpg, id=315, 2502.34875pt x 2329.70375pt>
 File: ./figs/Robot_side.jpg Graphic file (type jpg)
 
 <use ./figs/Robot_side.jpg>
@@ -1796,7 +1795,7 @@ Underfull \vbox (badness 4634) has occurred while \output is active []
 
 
 ]
-<./figs/hardwareSetup_cropped.png, id=316, 947.79094pt x 327.47343pt>
+<./figs/hardwareSetup_cropped.png, id=320, 947.79094pt x 327.47343pt>
 File: ./figs/hardwareSetup_cropped.png Graphic file (type png)
 
 <use ./figs/hardwareSetup_cropped.png>
@@ -1814,10 +1813,7 @@ version\theory_chapter.tex [4
 
 
 ]
-
-LaTeX Warning: Reference `' on page 5 undefined on input line 13.
-
-<./figs/SjakkMat.png, id=335, 452.892pt x 309.5565pt>
+<./figs/SjakkMat.png, id=340, 452.892pt x 309.5565pt>
 File: ./figs/SjakkMat.png Graphic file (type png)
 
 <use ./figs/SjakkMat.png>
@@ -1827,7 +1823,7 @@ Package pdftex.def Info: ./figs/SjakkMat.png used on input line 17.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [6 <C:/Users/Vegard/Documents/Skole/Fordypningsprosjekt_H15/Rapportfiler/templ
-ate_version/figs/SjakkMat.png>] <./figs/3dScene.png, id=347, 800.9925pt x 363.7
+ate_version/figs/SjakkMat.png>] <./figs/3dScene.png, id=352, 800.9925pt x 363.7
 59pt>
 File: ./figs/3dScene.png Graphic file (type png)
 
@@ -1835,10 +1831,7 @@ File: ./figs/3dScene.png Graphic file (type png)
 Package pdftex.def Info: ./figs/3dScene.png used on input line 38.
 (pdftex.def)             Requested size: 320.39133pt x 145.50102pt.
 
-
-LaTeX Warning: Reference `fig:pinhole' on page 7 undefined on input line 44.
-
-<./figs/pinhole.png, id=348, 701.62125pt x 405.01312pt>
+<./figs/pinhole.png, id=354, 701.62125pt x 405.01312pt>
 File: ./figs/pinhole.png Graphic file (type png)
 
 <use ./figs/pinhole.png>
@@ -1847,28 +1840,28 @@ Package pdftex.def Info: ./figs/pinhole.png used on input line 49.
  [7 <C:/Users/Vegard/Documents/Skole/Fordypningsprosjekt_H15/Rapportfiler/templ
 ate_version/figs/3dScene.png> <C:/Users/Vegard/Documents/Skole/Fordypningsprosj
 ekt_H15/Rapportfiler/template_version/figs/pinhole.png>] <./figs/StereoSpace.pn
-g, id=359, 911.8065pt x 458.31226pt>
+g, id=365, 911.8065pt x 458.31226pt>
 File: ./figs/StereoSpace.png Graphic file (type png)
 
 <use ./figs/StereoSpace.png>
 Package pdftex.def Info: ./figs/StereoSpace.png used on input line 61.
 (pdftex.def)             Requested size: 364.0pt x 182.965pt.
 ) [8 <C:/Users/Vegard/Documents/Skole/Fordypningsprosjekt_H15/Rapportfiler/temp
-late_version/figs/StereoSpace.png>]
+late_version/figs/StereoSpace.png>] [9]
 (C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\template_
-version\example_chapter.tex
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 4.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 4.
- [9
+version\example_chapter.tex [10
 
 
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 4.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 4.
+ [11]
+LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 19.
- [10]
+ [12]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
 put line 77.
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 80.
@@ -1884,133 +1877,176 @@ Package microtype Info: Loading generic settings for font family
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [11] [12]
+) [13] [14]
 (C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\template_
-version\implementaion_chapter.tex
-<./figs/VPGuiBlurred.png, id=410, 531.78674pt x 363.759pt>
+version\implementaion_chapter.tex [15
+
+
+
+]
+<./figs/VPGuiBlurred.png, id=440, 531.78674pt x 363.759pt>
 File: ./figs/VPGuiBlurred.png Graphic file (type png)
 
 <use ./figs/VPGuiBlurred.png>
-Package pdftex.def Info: ./figs/VPGuiBlurred.png used on input line 21.
+Package pdftex.def Info: ./figs/VPGuiBlurred.png used on input line 45.
 (pdftex.def)             Requested size: 372.24818pt x 254.62956pt.
 
-Overfull \hbox (8.24818pt too wide) in paragraph at lines 21--22
+Overfull \hbox (8.24818pt too wide) in paragraph at lines 45--46
 [][] 
  []
 
 
-LaTeX Warning: Reference `fig:figure' on page 13 undefined on input line 34.
+LaTeX Warning: Reference `fig:figure' on page 16 undefined on input line 58.
 
 
-LaTeX Warning: Reference `fig:figure' on page 13 undefined on input line 34.
+LaTeX Warning: Reference `fig:figure' on page 16 undefined on input line 58.
 
-[13
+[16]
+Underfull \vbox (badness 7540) has occurred while \output is active []
 
-
-
-] <./figs/StereoGui.png, id=416, 986.18437pt x 487.06969pt>
+ [17 <C:/Users/Vegard/Documents/Skole/Fordypningsprosjekt_H15/Rapportfiler/temp
+late_version/figs/VPGuiBlurred.png>]
+<./figs/StereoGui.png, id=455, 986.18437pt x 487.06969pt>
 File: ./figs/StereoGui.png Graphic file (type png)
 
 <use ./figs/StereoGui.png>
-Package pdftex.def Info: ./figs/StereoGui.png used on input line 41.
+Package pdftex.def Info: ./figs/StereoGui.png used on input line 65.
 (pdftex.def)             Requested size: 364.8825pt x 180.21295pt.
 
-Overfull \hbox (0.8825pt too wide) in paragraph at lines 41--42
+Overfull \hbox (0.8825pt too wide) in paragraph at lines 65--66
 [][] 
  []
 
+[18 <C:/Users/Vegard/Documents/Skole/Fordypningsprosjekt_H15/Rapportfiler/templ
+ate_version/figs/StereoGui.png>]
 
-LaTeX Warning: Reference `chp:theory' on page 14 undefined on input line 48.
+LaTeX Warning: Reference `' on page 19 undefined on input line 80.
 
 
-Package natbib Warning: Citation `mal' on page 14 undefined on input line 48.
+Overfull \hbox (65.44875pt too wide) in paragraph at lines 96--96
+[]    \T1/lmtt/m/n/10 1.4432743079138295e+003 4.7609546427843065e+002 0. 0. 1.<
+/data></cameraMatrix>[] 
+ []
 
-[14 <C:/Users/Vegard/Documents/Skole/Fordypningsprosjekt_H15/Rapportfiler/templ
-ate_version/figs/VPGuiBlurred.png>]
-<./figs/OriginalExample.png, id=422, 963.6pt x 542.025pt>
-File: ./figs/OriginalExample.png Graphic file (type png)
-
-<use ./figs/OriginalExample.png>
-Package pdftex.def Info: ./figs/OriginalExample.png used on input line 71.
-(pdftex.def)             Requested size: 163.79889pt x 92.13475pt.
-
-<./figs/DispExample.png, id=423, 963.6pt x 542.025pt>
-File: ./figs/DispExample.png Graphic file (type png)
-
-<use ./figs/DispExample.png>
-Package pdftex.def Info: ./figs/DispExample.png used on input line 76.
-(pdftex.def)             Requested size: 163.79889pt x 92.13475pt.
-
-<./figs/DepthLayer1.png, id=424, 578.16pt x 325.81725pt>
+[19] <./figs/DepthLayer1.png, id=472, 578.16pt x 325.81725pt>
 File: ./figs/DepthLayer1.png Graphic file (type png)
 
 <use ./figs/DepthLayer1.png>
-Package pdftex.def Info: ./figs/DepthLayer1.png used on input line 89.
-(pdftex.def)             Requested size: 145.59778pt x 82.05069pt.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 89.
+Package pdftex.def Info: ./figs/DepthLayer1.png used on input line 115.
+(pdftex.def)             Requested size: 127.40222pt x 71.79436pt.
 
-<./figs/DepthLayer2.png, id=425, 578.16pt x 325.215pt>
+<./figs/DepthLayer2.png, id=473, 578.16pt x 325.215pt>
 File: ./figs/DepthLayer2.png Graphic file (type png)
 
 <use ./figs/DepthLayer2.png>
-Package pdftex.def Info: ./figs/DepthLayer2.png used on input line 92.
-(pdftex.def)             Requested size: 145.59778pt x 81.89903pt.
+Package pdftex.def Info: ./figs/DepthLayer2.png used on input line 119.
+(pdftex.def)             Requested size: 127.40222pt x 71.66165pt.
 
-<./figs/DepthLayer4.png, id=426, 578.16pt x 325.215pt>
-File: ./figs/DepthLayer4.png Graphic file (type png)
-
-<use ./figs/DepthLayer4.png>
-Package pdftex.def Info: ./figs/DepthLayer4.png used on input line 95.
-(pdftex.def)             Requested size: 145.59778pt x 81.89903pt.
-
-<./figs/DepthLayer5.png, id=427, 578.16pt x 325.215pt>
-File: ./figs/DepthLayer5.png Graphic file (type png)
-
-<use ./figs/DepthLayer5.png>
-Package pdftex.def Info: ./figs/DepthLayer5.png used on input line 98.
-(pdftex.def)             Requested size: 145.59778pt x 81.89903pt.
-
-<./figs/DepthLayer6.png, id=428, 578.16pt x 325.215pt>
+<./figs/DepthLayer6.png, id=474, 578.16pt x 325.215pt>
 File: ./figs/DepthLayer6.png Graphic file (type png)
 
 <use ./figs/DepthLayer6.png>
-Package pdftex.def Info: ./figs/DepthLayer6.png used on input line 101.
+Package pdftex.def Info: ./figs/DepthLayer6.png used on input line 123.
+(pdftex.def)             Requested size: 127.40222pt x 71.66165pt.
+
+<./figs/DepthLayer7.png, id=475, 578.16pt x 325.215pt>
+File: ./figs/DepthLayer7.png Graphic file (type png)
+
+<use ./figs/DepthLayer7.png>
+Package pdftex.def Info: ./figs/DepthLayer7.png used on input line 127.
+(pdftex.def)             Requested size: 127.40222pt x 71.66165pt.
+
+<./figs/DepthLayer8.png, id=476, 578.16pt x 325.215pt>
+File: ./figs/DepthLayer8.png Graphic file (type png)
+
+<use ./figs/DepthLayer8.png>
+Package pdftex.def Info: ./figs/DepthLayer8.png used on input line 131.
+(pdftex.def)             Requested size: 127.40222pt x 71.66165pt.
+
+<./figs/OriginalExample.png, id=479, 963.6pt x 542.025pt>
+File: ./figs/OriginalExample.png Graphic file (type png)
+
+<use ./figs/OriginalExample.png>
+Package pdftex.def Info: ./figs/OriginalExample.png used on input line 153.
+(pdftex.def)             Requested size: 163.79889pt x 92.13475pt.
+
+<./figs/DispExample.png, id=480, 963.6pt x 542.025pt>
+File: ./figs/DispExample.png Graphic file (type png)
+
+<use ./figs/DispExample.png>
+Package pdftex.def Info: ./figs/DispExample.png used on input line 158.
+(pdftex.def)             Requested size: 163.79889pt x 92.13475pt.
+
+
+Package wrapfig Warning: Collision between wrapping environments on input line 
+167.
+
+File: ./figs/DepthLayer1.png Graphic file (type png)
+<use ./figs/DepthLayer1.png>
+Package pdftex.def Info: ./figs/DepthLayer1.png used on input line 171.
+(pdftex.def)             Requested size: 145.59778pt x 82.05069pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 171.
+File: ./figs/DepthLayer2.png Graphic file (type png)
+ <use ./figs/DepthLayer2.png>
+Package pdftex.def Info: ./figs/DepthLayer2.png used on input line 174.
+(pdftex.def)             Requested size: 145.59778pt x 81.89903pt.
+
+<./figs/DepthLayer4.png, id=481, 578.16pt x 325.215pt>
+File: ./figs/DepthLayer4.png Graphic file (type png)
+
+<use ./figs/DepthLayer4.png>
+Package pdftex.def Info: ./figs/DepthLayer4.png used on input line 177.
+(pdftex.def)             Requested size: 145.59778pt x 81.89903pt.
+
+<./figs/DepthLayer5.png, id=482, 578.16pt x 325.215pt>
+File: ./figs/DepthLayer5.png Graphic file (type png)
+
+<use ./figs/DepthLayer5.png>
+Package pdftex.def Info: ./figs/DepthLayer5.png used on input line 180.
+(pdftex.def)             Requested size: 145.59778pt x 81.89903pt.
+File: ./figs/DepthLayer6.png Graphic file (type png)
+ <use ./figs/DepthLayer6.png>
+Package pdftex.def Info: ./figs/DepthLayer6.png used on input line 183.
 (pdftex.def)             Requested size: 145.59778pt x 81.89903pt.
 
 
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 10
-6.
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 19
+0.
 
 
-Package wrapfig Warning: Stationary wrapfigure forced to float on input line 10
-8.
+Package wrapfig Warning: Stationary wrapfigure forced to float on input line 19
+2.
 
 )
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15 <C:/Users/Vegard/Documents/Skole/Fordypningsprosjekt_H15/Rapportfiler/temp
-late_version/figs/StereoGui.png>]
+ [20 <C:/Users/Vegard/Documents/Skole/Fordypningsprosjekt_H15/Rapportfiler/temp
+late_version/figs/OriginalExample.png> <C:/Users/Vegard/Documents/Skole/Fordypn
+ingsprosjekt_H15/Rapportfiler/template_version/figs/DispExample.png> <C:/Users/
+Vegard/Documents/Skole/Fordypningsprosjekt_H15/Rapportfiler/template_version/fi
+gs/DepthLayer1.png> <C:/Users/Vegard/Documents/Skole/Fordypningsprosjekt_H15/Ra
+pportfiler/template_version/figs/DepthLayer2.png> <C:/Users/Vegard/Documents/Sk
+ole/Fordypningsprosjekt_H15/Rapportfiler/template_version/figs/DepthLayer6.png>
+ <C:/Users/Vegard/Documents/Skole/Fordypningsprosjekt_H15/Rapportfiler/template
+_version/figs/DepthLayer7.png> <C:/Users/Vegard/Documents/Skole/Fordypningspros
+jekt_H15/Rapportfiler/template_version/figs/DepthLayer8.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16 <C:/Users/Vegard/Documents/Skole/Fordypningsprosjekt_H15/Rapportfiler/temp
-late_version/figs/OriginalExample.png> <C:/Users/Vegard/Documents/Skole/Fordypn
-ingsprosjekt_H15/Rapportfiler/template_version/figs/DispExample.png>]
-Overfull \vbox (83.43556pt too high) has occurred while \output is active []
+ [21]
+Overfull \vbox (98.39565pt too high) has occurred while \output is active []
 
 
-[17 <C:/Users/Vegard/Documents/Skole/Fordypningsprosjekt_H15/Rapportfiler/templ
-ate_version/figs/DepthLayer1.png> <C:/Users/Vegard/Documents/Skole/Fordypningsp
-rosjekt_H15/Rapportfiler/template_version/figs/DepthLayer2.png> <C:/Users/Vegar
-d/Documents/Skole/Fordypningsprosjekt_H15/Rapportfiler/template_version/figs/De
-pthLayer4.png> <C:/Users/Vegard/Documents/Skole/Fordypningsprosjekt_H15/Rapport
-filer/template_version/figs/DepthLayer5.png> <C:/Users/Vegard/Documents/Skole/F
-ordypningsprosjekt_H15/Rapportfiler/template_version/figs/DepthLayer6.png>]
+[22 <C:/Users/Vegard/Documents/Skole/Fordypningsprosjekt_H15/Rapportfiler/templ
+ate_version/figs/DepthLayer4.png> <C:/Users/Vegard/Documents/Skole/Fordypningsp
+rosjekt_H15/Rapportfiler/template_version/figs/DepthLayer5.png>]
 No file assessment_chapter.tex.
 No file conclusion_chapter.tex.
 
 (C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\template_
-version\main.bbl [18
+version\main.bbl
+bibitemlist
+) [23
 
 
 
@@ -2018,16 +2054,11 @@ version\main.bbl [18
 
 
 ]
-bibitemlist
-) [19]
 (C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\template_
-version\chapter_project_setup.tex [20
+version\chapter_project_setup.tex [24
 
 
-]) [21]
-
-Package natbib Warning: There were undefined citations.
-
+]) [25]
 \tf@lof=\write8
 \tf@lot=\write9
 \tf@toc=\write10
@@ -2057,7 +2088,7 @@ version\chapter_project_setup.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 111.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 111.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0C8295639B5748A3D1B01062DC981ADC;3215.
+(rerunfilecheck)             Checksum: 827DE82E23DB636DD3D6A18E0971DE80;3217.
 
 
 LaTeX Warning: There were undefined references.
@@ -2065,15 +2096,18 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 111.
  ) 
 Here is how much of TeX's memory you used:
- 22319 strings out of 493921
- 334142 string characters out of 3147278
- 581433 words of memory out of 3000000
- 24887 multiletter control sequences out of 15000+200000
- 110780 words of font info for 145 fonts, out of 3000000 for 9000
+ 22424 strings out of 493921
+ 335700 string characters out of 3147278
+ 582538 words of memory out of 3000000
+ 24967 multiletter control sequences out of 15000+200000
+ 111112 words of font info for 149 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  62i,12n,94p,1504b,608s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{glo:ntnu} has been referenced but does not exist,
  replaced by a fixed one
+
+pdfTeX warning (dest): name{glo:bm} has been referenced but does not exist, rep
+laced by a fixed one
 
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.enc}{C:/Program Files/MiK
 TeX 2.9/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc
@@ -2094,9 +2128,9 @@ m Files/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Program Files/MiKTeX 2.
 lic/lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy7.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (30 pages, 6587498 bytes).
+Output written on main.pdf (34 pages, 6748136 bytes).
 PDF statistics:
- 560 PDF objects out of 1000 (max. 8388607)
- 105 named destinations out of 1000 (max. 500000)
- 30150 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 614 PDF objects out of 1000 (max. 8388607)
+ 121 named destinations out of 1000 (max. 500000)
+ 30160 words of extra memory for PDF output out of 35830 (max. 10000000)
 

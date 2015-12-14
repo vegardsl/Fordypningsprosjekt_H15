@@ -1,4 +1,4 @@
-\chapter{Background Theory}
+\chapter{Background Theory}\label{chp:theory}
 
 \section{Introduction to Computer Vision}
 
@@ -10,7 +10,7 @@ nanana
 
 \subsection{OpenCV}
 
-OpenCV (Open Source Computer Vision Library) is an  open source library with a vast number of advanced computer vision and machine learning algorithms. The library supports Windows, Linux, iOS and Android, and has interfaces to C, C++, Python, Java and MATLAB. All OpenCV applications in this project uses OpenCV 3.0.0 for Windows. OpenCV for Windows can be downloaded from sourceforge.net. This download contains source files, sample programs, sample data and a pre-built library for MSVC 2010 and 2013. The pre-build library can quickly be plugged into  an IDE such as Qt Creator or Visual Studio 2013, thus giving the programmer access to all basic OpenCV features. A steb-by-step guide for using both the pre-built and a custom-built library can be found in Appendix \ref{}.
+OpenCV (Open Source Computer Vision Library) is an  open source library with a vast number of advanced computer vision and machine learning algorithms. The library supports Windows, Linux, iOS and Android, and has interfaces to C, C++, Python, Java and MATLAB. All OpenCV applications in this project uses OpenCV 3.0.0 for Windows. OpenCV for Windows can be downloaded from sourceforge.net. This download contains source files, sample programs, sample data and a pre-built library for MSVC 2010 and 2013. The pre-build library can quickly be plugged into  an IDE such as Qt Creator or Visual Studio 2013, thus giving the programmer access to all basic OpenCV features. A steb-by-step guide for using both the pre-built and a custom-built library can be found in Appendix \ref{chp:setup}.
 
 \begin{figure}
 \centering
@@ -47,7 +47,7 @@ Figure \ref{fig:pinhole} illustrates the geometry of a pinhole camera. In a pinh
     \vspace{-10pt} % Remove exessive whitespace
     \centering
     \includegraphics[width=0.6\textwidth]{pinhole}
-    \caption{Geometry of a pinhole camera.}
+    \caption{\label{fig:pinhole}Geometry of a pinhole camera.}
     \vspace{-10pt} % Remove exessive whitespace
     \label{phantompic}
 \end{wrapfigure}
@@ -64,7 +64,7 @@ Figure \ref{fig:StereoSpace} shows an ideal stereo camera model.  The model comp
 
 \paragraph{Camera Distortion}
 
-A downside of the otherwise cheap and useful pinhole camera is camera distortion. The distortion is usually severe enough to render the camera useless as a sensor if it is not calibrated. Calibration in OpenCV accounts for radial and tangential distortion by finding five distortion coefficients:
+A downside of the otherwise cheap and useful pinhole camera is camera distortion. The distortion is usually severe enough to render the camera useless as a sensor if it is not calibrated. Calibration in OpenCV accounts for radial and tangential distortion by finding five distortion coefficients \cite{3dCalib}:
 
 %\vspace{-1em}
 \begin{equation*}
@@ -83,12 +83,12 @@ A downside of the otherwise cheap and useful pinhole camera is camera distortion
 	k_i \quad \textrm{with} \quad i \in \left\{1, 2, 3\right\}  
 \end{equation*}
 %\vspace{-0.5em}
-\textbf{are the radial distortion constants.} 
+\textbf{are the tangential distortion constants.} 
 %\vspace{-0.5em}
 
 \subsection{Stereoscopic Vision in OpenCV}
 
-The prebuilt version of OpenCV 3.0.0 comes with two stereo matching algorithms: Block Matching (StereoBM) and Semi Global Block Matching (StereoSGBM). Additional algorithms are available if OpenCV is built with, e.g. CUDA.
+The prebuilt version of OpenCV 3.0.0 comes with two stereo matching algorithms: \gls{bm} Block Matching (StereoBM) and Semi Global Block Matching (StereoSGBM). Additional algorithms are available if OpenCV is built with, e.g. CUDA.
 
 \paragraph{StereoSGBM}\cite{hirschmullerstereo}
-blablabalb
+blablabalb \gls{bm}.

@@ -1,10 +1,25 @@
-\begin{thebibliography}{Ein05}
+\begin{thebibliography}{GNL12}
 
-\bibitem[Ein05]{einstein}
-Albert Einstein.
-\newblock {Zur Elektrodynamik bewegter K{\"o}rper}. ({German}) [{On} the
-  electrodynamics of moving bodies].
-\newblock {\em Annalen der Physik}, 322(10):891--921, 1905.
+\bibitem[3dC]{3dCalib}
+Camera calibration with opencv.
+\newblock
+  \url{http://docs.opencv.org/2.4/doc/tutorials/calib3d/camera_calibration/camera_calibration.html}.
+
+\bibitem[Bra13]{practicalopencv}
+Samarth Brahmbhatt.
+\newblock {\em Practical OpenCV}.
+\newblock Apress: Berkeley, CA, 2013.
+
+\bibitem[can]{cannyedge}
+Canny edge detection with opencv.
+\newblock
+  \url{http://docs.opencv.org/2.4/doc/tutorials/imgproc/imgtrans/canny_detector/canny_detector.html}.
+
+\bibitem[GNL12]{gerogiannisvp}
+Demetrios Gerogiannis, Christophoros Nikou, and Aristidis Likas.
+\newblock Fast and efficient vanishing point detection in indoor images.
+\newblock {\em Pattern Recognition (ICPR), 2012 21st International Conference
+  on}, pages 3244 -- 2347, nov 2012.
 
 \bibitem[Hir08]{hirschmullerstereo}
 Heiko Hirschmuller.
