@@ -28,7 +28,7 @@
 \BOOKMARK [2][-]{subsection.4.2.2}{Line Detection}{section.4.2}% 28
 \BOOKMARK [2][-]{subsection.4.2.3}{Line Filtering}{section.4.2}% 29
 \BOOKMARK [2][-]{subsection.4.2.4}{Vanishing Point Detection}{section.4.2}% 30
-\BOOKMARK [2][-]{subsection.4.2.5}{Graphical User Interface}{section.4.2}% 31
+\BOOKMARK [2][-]{subsection.4.2.5}{Vanishing Point Detector Application}{section.4.2}% 31
 \BOOKMARK [2][-]{subsection.4.2.6}{Cause of Failure}{section.4.2}% 32
 \BOOKMARK [1][-]{section.4.3}{Depth Perception and Obstruction Detection}{chapter.4}% 33
 \BOOKMARK [2][-]{subsection.4.3.1}{Overview}{section.4.3}% 34
@@ -39,7 +39,7 @@
 \BOOKMARK [2][-]{subsection.4.3.6}{Finding Obstructions}{section.4.3}% 39
 \BOOKMARK [2][-]{subsection.4.3.7}{Distance Measurment}{section.4.3}% 40
 \BOOKMARK [2][-]{subsection.4.3.8}{Problems Encountered During Implementation }{section.4.3}% 41
-\BOOKMARK [0][-]{section*.24}{References}{}% 42
+\BOOKMARK [0][-]{section*.25}{References}{}% 42
 \BOOKMARK [0][-]{appendix.A}{Setting up a project with Qt and OpenCV}{}% 43
 \BOOKMARK [1][-]{section.A.1}{Setting up OpenCV}{appendix.A}% 44
 \BOOKMARK [1][-]{section.A.2}{Setting up Qt Creator with OpenCV}{appendix.A}% 45

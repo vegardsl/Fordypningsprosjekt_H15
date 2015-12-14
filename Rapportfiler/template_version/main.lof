@@ -12,9 +12,9 @@
 \addvspace {10pt}
 \contentsline {figure}{\numberline {3.1}{\ignorespaces A figure\relax }}{12}{figure.caption.13}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Graphical user interface for the vanishing point detector.\relax }}{17}{figure.caption.15}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Graphical user interface for stereo matching. A disparity map is computed from the Tsukuba samples by using StereoSGBM. \relax }}{18}{figure.caption.16}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces The result of StereoSGBM.\relax }}{20}{figure.caption.21}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Some of the depth layers in figure \ref {fig:StereoMatching} separated by color filtering. The top image is the closest layer, while the most distant layer is at the bottom.\relax }}{20}{figure.caption.18}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Depth layers separated by color filtering.\relax }}{22}{figure.caption.22}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Graphical user interface for the vanishing point detector.\relax }}{17}{figure.caption.16}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Graphical user interface for stereo matching. A disparity map is computed from the Tsukuba samples by using StereoSGBM. \relax }}{18}{figure.caption.17}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces The result of StereoSGBM.\relax }}{21}{figure.caption.22}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Some of the depth layers in figure \ref {fig:StereoMatching} separated by color filtering. The top image is the closest layer, while the most distant layer is at the bottom.\relax }}{21}{figure.caption.19}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Depth layers separated by color filtering.\relax }}{23}{figure.caption.23}
 \addvspace {10pt}

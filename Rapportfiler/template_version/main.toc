@@ -36,23 +36,24 @@
 \contentsline {subsection}{\numberline {4.2.2}Line Detection}{16}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Line Filtering}{16}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}Vanishing Point Detection}{16}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Graphical User Interface}{16}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.5}Vanishing Point Detector Application}{16}{subsection.4.2.5}
+\contentsline {paragraph}{Graphical User Interface}{16}{section*.15}
 \contentsline {subsection}{\numberline {4.2.6}Cause of Failure}{17}{subsection.4.2.6}
 \contentsline {section}{\numberline {4.3}Depth Perception and Obstruction Detection}{17}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Overview}{17}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}The camera rig}{17}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Graphical User Interface}{18}{subsection.4.3.3}
 \contentsline {subsection}{\numberline {4.3.4}Calibration}{18}{subsection.4.3.4}
-\contentsline {paragraph}{Single Camera Calibration}{19}{section*.17}
-\contentsline {paragraph}{Stereo Calibration}{20}{section*.19}
-\contentsline {paragraph}{Stereo Rectification}{20}{section*.20}
-\contentsline {subsection}{\numberline {4.3.5}Stereo Matching}{22}{subsection.4.3.5}
-\contentsline {subsection}{\numberline {4.3.6}Finding Obstructions}{22}{subsection.4.3.6}
-\contentsline {subsection}{\numberline {4.3.7}Distance Measurment}{22}{subsection.4.3.7}
-\contentsline {subsection}{\numberline {4.3.8}Problems Encountered During Implementation }{22}{subsection.4.3.8}
-\contentsline {chapter}{References}{23}{section*.24}
+\contentsline {paragraph}{Single Camera Calibration}{19}{section*.18}
+\contentsline {paragraph}{Stereo Calibration}{21}{section*.20}
+\contentsline {paragraph}{Stereo Rectification}{21}{section*.21}
+\contentsline {subsection}{\numberline {4.3.5}Stereo Matching}{23}{subsection.4.3.5}
+\contentsline {subsection}{\numberline {4.3.6}Finding Obstructions}{23}{subsection.4.3.6}
+\contentsline {subsection}{\numberline {4.3.7}Distance Measurment}{23}{subsection.4.3.7}
+\contentsline {subsection}{\numberline {4.3.8}Problems Encountered During Implementation }{23}{subsection.4.3.8}
+\contentsline {chapter}{References}{25}{section*.25}
 \vspace {1em}\noindent \bfseries Appendices\par \vspace {-.5em}
-\contentsline {appendix}{\chapternumberline {A}Setting up a project with Qt and OpenCV}{25}{appendix.A}
-\contentsline {section}{\numberline {A.1}Setting up OpenCV}{25}{section.A.1}
-\contentsline {section}{\numberline {A.2}Setting up Qt Creator with OpenCV}{25}{section.A.2}
-\contentsline {section}{\numberline {A.3}Building OpenCV with CUDA and Qt from source}{25}{section.A.3}
+\contentsline {appendix}{\chapternumberline {A}Setting up a project with Qt and OpenCV}{27}{appendix.A}
+\contentsline {section}{\numberline {A.1}Setting up OpenCV}{27}{section.A.1}
+\contentsline {section}{\numberline {A.2}Setting up Qt Creator with OpenCV}{27}{section.A.2}
+\contentsline {section}{\numberline {A.3}Building OpenCV with CUDA and Qt from source}{27}{section.A.3}
