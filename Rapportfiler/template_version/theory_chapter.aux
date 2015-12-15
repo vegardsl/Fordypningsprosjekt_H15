@@ -4,32 +4,37 @@
 \@writefile{lot}{\addvspace {10pt}}
 \@writefile{toc}{\contentsline {chapter}{\chapternumberline {2}Background Theory}{5}{chapter.2}}
 \newlabel{chp:theory}{{\M@TitleReference {2}{Background Theory}}{5}{Background Theory}{chapter.2}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.1}Introduction to Computer Vision}{5}{section.2.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}Introduction}{5}{subsection.2.1.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}How it's Done}{5}{subsection.2.1.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Introduction}{5}{section.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}Chapter Scope}{5}{subsection.2.1.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}Brief Introduction to Computer Vision}{5}{subsection.2.1.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}OpenCV}{5}{subsection.2.1.3}}
-\@writefile{toc}{\contentsline {section}{\numberline {2.2}Stereo Vision and Depth Perception}{5}{section.2.2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Elements in a cv::Mat representing an image. This is a 3-channel image with 8 bit RGB colors.\relax }}{6}{figure.caption.5}}
-\newlabel{fig:matGrid}{{\M@TitleReference {2.1}{Elements in a cv::Mat representing an image. This is a 3-channel image with 8 bit RGB colors.\relax }}{6}{Elements in a cv::Mat representing an image. This is a 3-channel image with 8 bit RGB colors.\relax }{figure.caption.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Various Methods}{6}{subsection.2.2.1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Left to right displacement on the image plane based on distance.\relax }}{7}{figure.caption.6}}
-\newlabel{fig:3dScene}{{\M@TitleReference {2.2}{Left to right displacement on the image plane based on distance.\relax }}{7}{Left to right displacement on the image plane based on distance.\relax }{figure.caption.6}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Stereoscopic Vision in General}{7}{subsection.2.2.2}}
-\@writefile{toc}{\contentsline {paragraph}{The Pinhole Camera Model}{7}{section*.7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Geometry of a pinhole camera.\relax }}{7}{figure.caption.8}}
-\newlabel{fig:pinhole}{{\M@TitleReference {2.3}{Geometry of a pinhole camera.\relax }}{7}{Geometry of a pinhole camera.\relax }{figure.caption.8}{}}
-\newlabel{phantompic}{{\M@TitleReference {2.3}{Geometry of a pinhole camera.\relax }}{7}{Geometry of a pinhole camera.\relax }{figure.caption.8}{}}
-\@writefile{toc}{\contentsline {paragraph}{Stereo Cameras}{7}{section*.9}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}The Pinhole Camera Model}{5}{section.2.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Model Description}{5}{subsection.2.2.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Elements in a cv::Mat representing an image. This is a 3-channel image with 8 bit RGB colors.\relax }}{6}{figure.caption.8}}
+\newlabel{fig:matGrid}{{\M@TitleReference {2.1}{Elements in a cv::Mat representing an image. This is a 3-channel image with 8 bit RGB colors.\relax }}{6}{Elements in a cv::Mat representing an image. This is a 3-channel image with 8 bit RGB colors.\relax }{figure.caption.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Geometry of a pinhole camera.\relax }}{6}{figure.caption.9}}
+\newlabel{fig:pinhole}{{\M@TitleReference {2.2}{Geometry of a pinhole camera.\relax }}{6}{Geometry of a pinhole camera.\relax }{figure.caption.9}{}}
+\newlabel{phantompic}{{\M@TitleReference {2.2}{Geometry of a pinhole camera.\relax }}{6}{Geometry of a pinhole camera.\relax }{figure.caption.9}{}}
+\citation{oreillycv}
+\citation{oreillycv}
 \citation{3dCalib}
+\newlabel{eq:pinhole}{{2.1}{7}{Model Description}{equation.2.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Camera Distortion}{7}{subsection.2.2.2}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Projective Geometry and Vanishing Points}{7}{section.2.3}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Stereo Vision and Depth Perception}{7}{section.2.4}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Left to right displacement on the image plane based on distance.\relax }}{8}{figure.caption.10}}
+\newlabel{fig:3dScene}{{\M@TitleReference {2.3}{Left to right displacement on the image plane based on distance.\relax }}{8}{Left to right displacement on the image plane based on distance.\relax }{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.1}Various Methods}{8}{subsection.2.4.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.2}Stereoscopic Vision in General}{8}{subsection.2.4.2}}
 \citation{hirschmullerstereo}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Geometry of stereo vision.\relax }}{8}{figure.caption.10}}
-\newlabel{fig:StereoSpace}{{\M@TitleReference {2.4}{Geometry of stereo vision.\relax }}{8}{Geometry of stereo vision.\relax }{figure.caption.10}{}}
-\@writefile{toc}{\contentsline {paragraph}{Camera Distortion}{8}{section*.11}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.3}Stereoscopic Vision in OpenCV}{8}{subsection.2.2.3}}
-\@writefile{toc}{\contentsline {paragraph}{StereoSGBM}{9}{section*.12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Geometry of rectified stereo vision.\relax }}{9}{figure.caption.12}}
+\newlabel{fig:StereoSpace}{{\M@TitleReference {2.4}{Geometry of rectified stereo vision.\relax }}{9}{Geometry of rectified stereo vision.\relax }{figure.caption.12}{}}
+\@writefile{toc}{\contentsline {paragraph}{Stereo Cameras}{9}{section*.11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4.3}Stereoscopic Vision in OpenCV}{9}{subsection.2.4.3}}
+\@writefile{toc}{\contentsline {paragraph}{StereoSGBM}{9}{section*.13}}
 \@setckpt{theory_chapter}{
 \setcounter{page}{10}
-\setcounter{equation}{0}
+\setcounter{equation}{1}
 \setcounter{enumi}{0}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}
@@ -41,7 +46,7 @@
 \setcounter{book}{0}
 \setcounter{part}{0}
 \setcounter{chapter}{2}
-\setcounter{section}{2}
+\setcounter{section}{4}
 \setcounter{subsection}{3}
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
@@ -86,7 +91,7 @@
 \setcounter{Hfootnote}{0}
 \setcounter{memhycontfloat}{0}
 \setcounter{Hpagenote}{0}
-\setcounter{bookmark@seq@number}{18}
+\setcounter{bookmark@seq@number}{21}
 \setcounter{AM@survey}{0}
 \setcounter{parentequation}{0}
 \setcounter{theorem}{0}

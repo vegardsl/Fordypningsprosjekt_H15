@@ -1,16 +1,16 @@
 \chapter{Background Theory}\label{chp:theory}
 
-\section{Introduction to Computer Vision}
+\section{Introduction}
 
-\subsection{Introduction}
+\subsection{Chapter Scope}
 This chapter contains the background theory which is necessary to understand the implementations in chapter \ref{chp:implementation} and how they are intended to work. 
 
-\subsection{How it's Done}
-nanana
+\subsection{Brief Introduction to Computer Vision}
+Computer Vision is the field of giving computers the ability to duplicate the way we perceive and understand our surroundings. This is not an easy task for several reasons. Image and video processing is generally performed on quantized 2D projections of the real world. 
 
 \subsection{OpenCV}
 
-OpenCV (Open Source Computer Vision Library) is an  open source library with a vast number of advanced computer vision and machine learning algorithms. The library supports Windows, Linux, iOS and Android, and has interfaces to C, C++, Python, Java and MATLAB. All OpenCV applications in this project uses OpenCV 3.0.0 for Windows. OpenCV for Windows can be downloaded from sourceforge.net. This download contains source files, sample programs, sample data and a pre-built library for MSVC 2010 and 2013. The pre-build library can quickly be plugged into  an IDE such as Qt Creator or Visual Studio 2013, thus giving the programmer access to all basic OpenCV features. A steb-by-step guide for using both the pre-built and a custom-built library can be found in Appendix \ref{chp:setup}.
+\gls{opencv} is an  open source library with a vast number of advanced computer vision and machine learning algorithms. The library supports Windows, Linux, iOS and Android, and has interfaces to C, C++, Python, Java and MATLAB. All OpenCV applications in this project uses \gls{opencv} 3.0.0 for Windows. \gls{opencv} for Windows can be downloaded from sourceforge.net. This download contains source files, sample programs, sample data and a pre-built library for MSVC 2010 and 2013. The pre-build library can quickly be plugged into  an IDE such as Qt Creator or Visual Studio 2013, thus giving the programmer access to all basic OpenCV features. A steb-by-step guide for using both the pre-built and a custom-built library can be found in Appendix \ref{chp:setup}.
 
 \begin{figure}
 \centering
@@ -19,13 +19,65 @@ OpenCV (Open Source Computer Vision Library) is an  open source library with a v
 \label{fig:matGrid}
 \end{figure}
 
+\section{The Pinhole Camera Model}
+
+\subsection{Model Description}
+
+\begin{wrapfigure}{r}{0.65\textwidth}
+	\vspace{-10pt} % Remove exessive whitespace
+	\centering
+	\includegraphics[width=0.7\textwidth]{pinhole}
+	\caption{\label{fig:pinhole}Geometry of a pinhole camera.}
+	\vspace{-10pt} % Remove exessive whitespace
+	\label{phantompic}
+\end{wrapfigure}
+
+Figure \ref{fig:pinhole} illustrates the geometry of a pinhole camera. In a pinhole camera, light reflected from some object in a scene will be projected onto an image plane inside the camera house. The light is projected through the "pinhole", that is the camera projection point $O$, which is located at the origin. Imagine that a single ray enters the camera house through the pinhole, before it hits and exites a sensor element on the image plane. The values retreived from these sensor elements will make up the pixels in an image. The focal length $f$ is the distance from the projection point $O$ to the image plane $\pi$. In a true pinhole camera the image plane will be located behind the lens and the projection point $O$, and the scene projection will be rotated by $180^{\circ}$. A virtual image plane placed in front of $O$ is intended to make the figure more straightforward and the mathmatics easier. 
+
+\begin{equation}
+M = \begin{bmatrix}
+f_x & 0 & c_x \\
+0 & f_y & c_y \\
+0 & 0 & 1
+\end{bmatrix}
+\label{eq:pinhole}
+\end{equation}
+
+"Learning OpenCV" by Gary Bradski\cite{oreillycv} shows how a pinhole camera can be modelled by a 3 by 3 camera matrix $M$ (equation \ref{eq:pinhole}). This model accounts for two important differences between the ideal and real pinhole camera. First, the imaging chip will often be displaced from the optical center. This displacement is described by the parameters $c_x$ and $c_y$. The second real world problem is that the pixels on the image sensor are shaped as rectangles, not squares. This is accounted for by $f_x$ and $f_y$, the focal lengths in the $x$ and $y$ direction given in pixels. These values are the product of the actual focal length $f$ and size of the individual imager elements $s_x$ and $s_y$. The reason for using these values in the camera model is because $s$ and $f$ cannot be measured without actually dismantling the camera\cite{oreillycv}.
+
+\subsection{Camera Distortion}
+
+A downside of the otherwise cheap and useful pinhole camera is camera distortion. The distortion is usually severe enough to render the camera useless as a sensor if it is not calibrated. Calibration in OpenCV accounts for radial and tangential distortion by finding five distortion coefficients \cite{3dCalib}:
+
+%\vspace{-1em}
+\begin{equation*}
+Distortion_{coefficients} = (k_1 \quad k_2 \quad p_1 \quad p_2 \quad k_3)
+\end{equation*}
+%\vspace{-0.2em}
+\textbf{where} 
+%\vspace{-1.1em}
+\begin{equation*}
+p_i \quad with \quad i \in \left\{1, 2\right\}
+\end{equation*}
+%\vspace{-0.3em}
+\textbf{are the radial distortion constants, and}
+%\vspace{-0.2em}
+\begin{equation*}
+k_i \quad \textrm{with} \quad i \in \left\{1, 2, 3\right\}  
+\end{equation*}
+%\vspace{-0.5em}
+\textbf{are the tangential distortion constants.} 
+%\vspace{-0.5em}
+
+\section{Projective Geometry and Vanishing Points}
+
 \section{Stereo Vision and Depth Perception}
 
 Stereo vision and depth perception is one of the core topics within this report. Here, the theory behind a method using two cameras is presented, while some additional methods are mentioned to provide context. 
 
 \subsection{Various Methods}
 
-Methods for depth perception in computer vision can be separated into two main categories, i.e. active and passive. Active sensors will usually project a light pattern onto the scene to be perceived, before sensing how this pattern is displaced by the topology of the scene. The Kinect sensor and 3d-scanners using laser light are typical examples of active sensors. Passive depth perception makes use of many of the same cues we use to perceive depth. The most common passive sensors extract the depth information by observing observing a scene from at least two different positions. 
+Methods for depth perception in computer vision can be separated into two main categories, active and passive. Active sensors will usually project a light pattern onto the scene to be perceived, before sensing how this pattern is displaced by the topology of the scene. The Kinect sensor and 3d-scanners using laser light are typical examples of active sensors. Passive depth perception makes use of many of the same cues we use to perceive depth. The most common passive sensors extract the depth information by observing observing a scene from at least two different positions. 
 
 Optical flow is another important method for depth perception. Optical flow may be either active or passive. The passive variant requires  only one camera, but depends on motion and a stream of images to extract depth information. Observing how much some chosen features in a scene has moved in the image frame at $t = 1$ compared to the frame at $t = 0$ is the basis of depth sensing from optical flow. When the camera moves through a scene where all objects are stationary, objects that are far away will naturally have an optical flow field with a smaller magnitude than objects that are close. 
 
@@ -39,19 +91,6 @@ In this project, passive stereoscopic vision is achieved by using two identical 
 \caption{\label{fig:3dScene}Left to right displacement on the image plane based on distance.}
 \end{figure} 
 
-\paragraph{The Pinhole Camera Model}
-
-Figure \ref{fig:pinhole} illustrates the geometry of a pinhole camera. In a pinhole camera, a scene will be projected onto an image plane, often denoted $\pi$, through the camera projection point $O$ which is located at the origin. The focal length $f$ is the distance from the projection point $O$ to the image plane $\pi$. In a true pinhole camera the image plane will be located behind the lens and the projection point $O$, and the scene projection will be rotated by $180^{\circ}$. A virtual image plane placed in front of $O$ is intended to make the figure more straightforward. 
-
-\begin{wrapfigure}{r}{0.6\textwidth}
-    \vspace{-10pt} % Remove exessive whitespace
-    \centering
-    \includegraphics[width=0.6\textwidth]{pinhole}
-    \caption{\label{fig:pinhole}Geometry of a pinhole camera.}
-    \vspace{-10pt} % Remove exessive whitespace
-    \label{phantompic}
-\end{wrapfigure}
-
 \paragraph{Stereo Cameras}
 
 Figure \ref{fig:StereoSpace} shows an ideal stereo camera model.  The model comprise two pinhole camera models where the virtual image planes are located on the same plane. The two image planes are separated by a horizontal translation $B$ which is called the baseline. This implies that the projection point $O_L$  in the left camera, relates to the projection point $O_R$ on the right camera through $B$: $O_R = O_L + B$. Each of the two image planes has a left handed pixel based coordinate system $u,v$, i.e. the origin is in the top left corner and the opposite pixel is in the bottom right corner. 
@@ -59,32 +98,8 @@ Figure \ref{fig:StereoSpace} shows an ideal stereo camera model.  The model comp
 \begin{figure}
 \centering
 \includegraphics[width=1\textwidth]{StereoSpace}
-\caption{\label{fig:StereoSpace}Geometry of stereo vision.}
+\caption{\label{fig:StereoSpace}Geometry of rectified stereo vision.}
 \end{figure}
-
-\paragraph{Camera Distortion}
-
-A downside of the otherwise cheap and useful pinhole camera is camera distortion. The distortion is usually severe enough to render the camera useless as a sensor if it is not calibrated. Calibration in OpenCV accounts for radial and tangential distortion by finding five distortion coefficients \cite{3dCalib}:
-
-%\vspace{-1em}
-\begin{equation*}
-	 Distortion_{coefficients} = (k_1 \quad k_2 \quad p_1 \quad p_2 \quad k_3)
-\end{equation*}
-%\vspace{-0.2em}
-\textbf{where} 
-%\vspace{-1.1em}
-\begin{equation*}
- 	p_i \quad with \quad i \in \left\{1, 2\right\}
-\end{equation*}
-%\vspace{-0.3em}
-\textbf{are the radial distortion constants, and}
-%\vspace{-0.2em}
-\begin{equation*}
-	k_i \quad \textrm{with} \quad i \in \left\{1, 2, 3\right\}  
-\end{equation*}
-%\vspace{-0.5em}
-\textbf{are the tangential distortion constants.} 
-%\vspace{-0.5em}
 
 \subsection{Stereoscopic Vision in OpenCV}
 

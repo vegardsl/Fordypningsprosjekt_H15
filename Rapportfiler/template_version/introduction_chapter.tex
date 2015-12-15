@@ -14,7 +14,11 @@ The field of computer vision has seen an enormous growth over the last few decad
 
 \section{System Overview}
 
-The mobile robot being worked on in this project is shown in figure \ref{fig:RobotFront}. The manipulator arm  has been used in previous projects on robotic maintenance, and it was placed on the mobile platform during the master thesis of (Aspunvik og siter). This section provides a short description of the hardware. If a more detailed description of the robot and it's equipment is required, consult the thesis of Aspunvik[cite]. 
+The mobile robot being worked on in this project is shown in figure \ref{fig:RobotFront}. The manipulator arm  has been used in previous projects on robotic maintenance, and it was placed on the mobile platform during the master thesis of Petter Aspunvik. This section provides a short description of the systems used in this project and other surrounding equipment. If a more detailed description of the robot and it's equipment is required, consult the thesis of Aspunvik \cite{aspunvik}.
+
+\subsection{The Robot} 
+
+The robot in its current state is the result of several preceeding projects, where the master thesis of Petter Aspunvik \cite{aspunvik} and Mikael Berg \cite{berg} are the most recent contributions. 
 
 \begin{figure}
 \centering
@@ -31,13 +35,13 @@ The mobile robot being worked on in this project is shown in figure \ref{fig:Rob
     \caption{\label{fig:RobotView}The robot used in the project.}
 \end{figure}
 
-\subsection{Propulsion}
+\paragraph{Propulsion}
 
-The steel chassis of the robot stands upon four omni-wheels. The wheel pairs are placed in parallel, making the vehicle uncontrollable along the lateral axis. Each wheel is powered by an electrical motor and motor driver. The motor drivers are controlled with pulse width modulation by an evaluation board from Atmel,(atmel kort).  
+The steel chassis of the robot stands upon four omni-wheels. The wheel pairs are placed in parallel, making the vehicle uncontrollable along the lateral axis. Each wheel is powered by an electrical motor and motor driver. The motor drivers are controlled with pulse width modulation by an evaluation board from Atmel (Xmega A3BU).  
 
-\subsection{Sensors}
+\paragraph{Sensors}
 
-The robot was outfitted with several sensors over the course of previous projects. These are:
+The robot has been outfitted with several sensors over the course of previous projects. These are:
 \begin{itemize}
 	\item Two odometer wheels with encoders. One on each side. 
 	\item Two infrared distance sensors. 
@@ -47,10 +51,18 @@ The robot was outfitted with several sensors over the course of previous project
 
 Only the cameras were used in this projects. 
 
-\subsection{The Manipulator}
+\paragraph{Robot Arm}
+
+A robot arm, SCORBOT-ER 4u from Intelitek, is monted on the wagon. It is intended for educational use in the context of automation and work cells. The robot has five rotation joints plus a servo gripper at the outer joint. Control of the robot in this project is done from the on-board computer on the wagon, which is connected to the robot arm through a USB cable. 
+
+
+\subsection{Project Set-up}
+
+Vanishing points and stereo vision are the main topics in this report. The stereo vision portion consist of the two IP cameras, a pair of wireless routers and a remote computer. The remote computer can be any computer which is able to run \gls{opencv} and receive video feed from the camera pair. The vanishing point detector is simply a desktop application which accesses a web camera. Both the stereo vision and vanishing point detector applications have been developed with Qt and run on Windows 7.
 
 \begin{figure}
 	\includegraphics[width=1\textwidth]{hardwareSetup_cropped}
+	\caption{\label{fig:hardware}Stereo vision set-up.}
 \end{figure}
 
 \section{Report Structure}

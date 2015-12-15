@@ -5,6 +5,21 @@ Camera calibration with opencv.
 \newblock
   \url{http://docs.opencv.org/2.4/doc/tutorials/calib3d/camera_calibration/camera_calibration.html}.
 
+\bibitem[Asp13]{aspunvik}
+Petter Aspunvik.
+\newblock Robotisert vedlikehold.
+\newblock Master's thesis, NTNU, 2013.
+
+\bibitem[Ber13]{berg}
+Mikael Berg.
+\newblock Navigation with simultaneous localization and mapping.
+\newblock Master's thesis, NTNU, 2013.
+
+\bibitem[Bra08]{oreillycv}
+Gary Bradski.
+\newblock {\em Learning OpenCV}.
+\newblock O'Reilly Media, 2008.
+
 \bibitem[Bra13]{practicalopencv}
 Samarth Brahmbhatt.
 \newblock {\em Practical OpenCV}.
