@@ -8,7 +8,7 @@ An obstruction detector and a vanishing point detector are the two attempted imp
 
 \subsection{Overview}
 
-The goal of the vanishing point detector is to provide a setpoint for the robot to steer towards. In other words, steering towards a vanishing point is a good way to reach the end of a hallway or corridor. This was considered to be a good starting point, and possible expantions could be added later. Choosing a method as a basis for a vanishing point detector was not easy. The selected method should be simple, suitable for in \gls{opencv} and not go too far beyond the prior knowledge of the author. Another important factor was that spending too much time on this implementation would come at the expense of the obstruction detector. A vanishing point detector method by D. Gerogiannis et. al. \cite{gerogiannisvp} showed promise as it was based on line detection, which has good support in OpenCV. The method in \cite{gerogiannisvp} appears to be suitable for structured environments with many straight lines, such as hallways, streets and corridors. The steps in the detection procedure are:
+The goal of the vanishing point detector is to provide a setpoint for the robot to steer towards. In other words, steering towards a vanishing point is a good way to reach the end of a hallway or corridor. This was considered to be a good starting point, and possible expantions could be added later. Choosing a method as a basis for a vanishing point detector was not easy. The selected method should be simple, suitable for \gls{opencv} and not go too far beyond the prior knowledge of the author. Another important factor was that spending too much time on this implementation would come at the expense of the obstruction detector. A vanishing point detector method by D. Gerogiannis et. al. \cite{gerogiannisvp} showed promise as it was based on line detection, which has good support in OpenCV. The method in \cite{gerogiannisvp} appears to be suitable for structured environments with many straight lines, such as hallways, streets and corridors. The steps in the detection procedure are:
 
 \begin{enumerate}
 	\item Detect edges in the image, e.g. by using Canny edge detection.
@@ -22,26 +22,45 @@ The goal of the vanishing point detector is to provide a setpoint for the robot 
 
 Line detection comprise step 1 and 2 from the list above. OpenCV comes with an implementation of the Canny edge detector ready for use. The detector returns a binary image of the detected edges. Edges are detected by convolving the input image with two kernels $G_x$ and $G_y$. The convolutions will indicate change gradients in the $x$ and $y$ directions which in turn will give the direction of a potential edge. Finally, the detector rejects or accepts potential edges based on two gradient thresholds. Gradients below the lower threshold are rejected, edges above the upper threshold are accepted, and edges between the thresholds are only accepted if their neighbouring gradients are above the upper threshold\cite{cannyedge}. 
 
-Line detection is performed by using the probabilistic Hough line transform. This is an already implemented function, which takes in the edge image from the previous step, and return a set of point pairs representing line segments. The benefit of using the probabilistic detector is that is can perceive an edge with a discontinuity as a singe line. The code excerpt show the line detection procedure.
-
-\begin{verbatim}
-        cvtColor(cameraImg,grayImg,CV_RGB2GRAY);
-        blur( grayImg, blurredImg, Size(3,3) );
-        Canny(blurredImg, edgesImg, lowerThresh, upperThresh, 3);
-        gpu_edgesImg.upload(edgesImg);
-        lines = detectHoughLines(gpu_edgesImg);        
-\end{verbatim}
-
-
+At this point, we only have a simple binary image where edges are represented as white pixels on a black background. The next step is to interpret these edges as lines. Line detection is performed by using the probabilistic Hough line transform. This is an already implemented function, which takes in the edge image from the previous step, and return a set of point pairs representing line segments. The benefit of using the probabilistic detector is that it can perceive an edge with a discontinuity as a singe line. 
 
 \subsection{Line Filtering}
 
-Line filtering is performed by splitting and merging ellipses until their major axis represents a set of approximations to collinear points. The points is the set of points that define the previously detected line segments.
+\begin{wrapfigure}{r}{0.55\textwidth}
+	\vspace{-10pt} % Remove exessive whitespace
+	\centering
+	\includegraphics[width=0.6\textwidth]{GerogiannisLines}
+	\caption{\label{fig:GerogiannisLines}Gerogiannis concept of representing lines by eccentric ellipses. This image is taken directly from \cite{gerogiannisvp}.}
+	\vspace{-10pt} % Remove exessive whitespace
+\end{wrapfigure}
+
+Line filtering is performed by splitting and merging ellipses until their major axis represents a set of approximations to collinear points. The points is the set of points that define the previously detected line segments. This algorithm is called \gls{dsam}, and it is explained in another paper by D. Gerogiannis \cite{gerogiannisshape}. Line segments returned from the probabilistic Hough transform will often overlap or be very close to each other. The purpose of this step is to get a cleaner representation of the contours in the environment.
 
 \subsection{Vanishing Point Detection}
 
 
 \subsection{Vanishing Point Detector Application}
+
+\paragraph{Program Structure}
+
+\begin{algorithm}[h]
+  \caption{Vanishing point detector loop. Several lines of code are omitted in this example to make the processing more clear.}
+  \label{alg:edgelines}
+\begin{verbatim}
+	while(){
+		capture.read(cameraImg);
+        cvtColor(cameraImg,grayImg,CV_RGB2GRAY);
+        blur( grayImg, blurredImg, Size(3,3) );
+        Canny(blurredImg, edgesImg, lowerThresh, upperThresh, 3);
+        gpu_edgesImg.upload(edgesImg);
+        lines = detectHoughLines(gpu_edgesImg);   
+        newLines = mLineEllipseFilter.filterLines(lines,originalImage);
+        Point vanishingPoint = vpDetector.getVp(newLines,cameraImg);     
+    }
+\end{verbatim}
+\end{algorithm}
+
+  
 
 \paragraph{Graphical User Interface}
 

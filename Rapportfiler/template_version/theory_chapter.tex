@@ -6,11 +6,13 @@
 This chapter contains the background theory which is necessary to understand the implementations in chapter \ref{chp:implementation} and how they are intended to work. 
 
 \subsection{Brief Introduction to Computer Vision}
-Computer Vision is the field of giving computers the ability to duplicate the way we perceive and understand our surroundings. This is not an easy task for several reasons. Image and video processing is generally performed on quantized 2D projections of the real world. 
+Computer Vision is the field of giving computers the ability to duplicate the way we perceive and understand our surroundings. This is not an easy task for several reasons. Much information is lost in the process of representing a 3d world on a 2d surface. As image processing really is digital signal processing in 2d, it is also subject information loss and noise through quantization. In short, the field of computer vision can be summed up to be the science of drawing conclusions about the real world based on pixel values in an image matrix, or a series of such matrices.
 
-\subsection{OpenCV}
+\subsection{Introduction to OpenCV}
 
 \gls{opencv} is an  open source library with a vast number of advanced computer vision and machine learning algorithms. The library supports Windows, Linux, iOS and Android, and has interfaces to C, C++, Python, Java and MATLAB. All OpenCV applications in this project uses \gls{opencv} 3.0.0 for Windows. \gls{opencv} for Windows can be downloaded from sourceforge.net. This download contains source files, sample programs, sample data and a pre-built library for MSVC 2010 and 2013. The pre-build library can quickly be plugged into  an IDE such as Qt Creator or Visual Studio 2013, thus giving the programmer access to all basic OpenCV features. A steb-by-step guide for using both the pre-built and a custom-built library can be found in Appendix \ref{chp:setup}.
+
+\paragraph{cv::Mat - The Image Container}
 
 \begin{figure}
 \centering
@@ -70,6 +72,14 @@ k_i \quad \textrm{with} \quad i \in \left\{1, 2, 3\right\}
 %\vspace{-0.5em}
 
 \section{Projective Geometry and Vanishing Points}
+
+\begin{wrapfigure}{r}{0.5\textwidth}
+	\vspace{-10pt} % Remove exessive whitespace
+	\centering
+	\includegraphics[width=0.5\textwidth]{VpConseptBl}
+	\caption{\label{fig:VpConseptBl}Two parallel lines are projected onto an image plane, where they form two lines. These projected lines converge towards a vanishing point on the horizon.}
+	\vspace{-10pt} % Remove exessive whitespace
+\end{wrapfigure}
 
 \section{Stereo Vision and Depth Perception}
 

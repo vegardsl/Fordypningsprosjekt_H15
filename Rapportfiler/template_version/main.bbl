@@ -30,6 +30,12 @@ Canny edge detection with opencv.
 \newblock
   \url{http://docs.opencv.org/2.4/doc/tutorials/imgproc/imgtrans/canny_detector/canny_detector.html}.
 
+\bibitem[GNL11]{gerogiannisshape}
+Demetrios Gerogiannis, Christophoros Nikou, and Aristidis Likas.
+\newblock A split-and-merge framework for 2d shape summarization.
+\newblock {\em Image and Signal Processing and Analysis (ISPA), 2011 7th
+  International Symposium on}, pages 206 -- 211, sep 2011.
+
 \bibitem[GNL12]{gerogiannisvp}
 Demetrios Gerogiannis, Christophoros Nikou, and Aristidis Likas.
 \newblock Fast and efficient vanishing point detection in indoor images.
