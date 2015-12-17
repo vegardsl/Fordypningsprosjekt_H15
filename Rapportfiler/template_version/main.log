@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.18)  17 DEC 2015 10:22
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2013.10.18)  17 DEC 2015 14:07
 entering extended mode
 **main.tex
 
@@ -1842,10 +1842,9 @@ Package pdftex.def Info: ./figs/SjakkMat.png used on input line 19.
 (pdftex.def)             Requested size: 317.02223pt x 216.68806pt.
  [5] [6 <C:/Users/Vegard/Documents/Skole/Fordypningsprosjekt_H15/Rapportfiler/t
 emplate_version/figs/SjakkMat.png>]
-<./figs/pinhole.png, id=500, 701.62125pt x 405.01312pt>
+<./figs/pinhole.png, id=500, 561.297pt x 324.0105pt>
 File: ./figs/pinhole.png Graphic file (type png)
-
-<use ./figs/pinhole.png>
+ <use ./figs/pinhole.png>
 Package pdftex.def Info: ./figs/pinhole.png used on input line 61.
 (pdftex.def)             Requested size: 254.79889pt x 147.08386pt.
 
@@ -1855,7 +1854,7 @@ Overfull \hbox (18.20111pt too wide) in paragraph at lines 61--62
 
 [7 <C:/Users/Vegard/Documents/Skole/Fordypningsprosjekt_H15/Rapportfiler/templa
 te_version/figs/pinhole.png>]
-<./figs/VpConseptBl.png, id=520, 426.99525pt x 310.761pt>
+<./figs/VpConseptBl.png, id=519, 426.99525pt x 310.761pt>
 File: ./figs/VpConseptBl.png Graphic file (type png)
 
 <use ./figs/VpConseptBl.png>
@@ -1876,7 +1875,7 @@ Underfull \hbox (badness 3838) in paragraph at lines 120--121
 \T1/lmr/m/n/10 (+20) com-puter vi-sion can be sep-a-rated
  []
 
-<./figs/3dScene.png, id=532, 800.9925pt x 363.759pt>
+<./figs/3dScene.png, id=531, 800.9925pt x 363.759pt>
 File: ./figs/3dScene.png Graphic file (type png)
  <use ./figs/3dScene.png>
 Package pdftex.def Info: ./figs/3dScene.png used on input line 130.
@@ -1884,7 +1883,7 @@ Package pdftex.def Info: ./figs/3dScene.png used on input line 130.
 
 [9 <C:/Users/Vegard/Documents/Skole/Fordypningsprosjekt_H15/Rapportfiler/templa
 te_version/figs/VpConseptBl.png>]
-<./figs/StereoSpace.png, id=539, 911.8065pt x 458.31226pt>
+<./figs/StereoSpace.png, id=538, 911.8065pt x 458.31226pt>
 File: ./figs/StereoSpace.png Graphic file (type png)
 
 <use ./figs/StereoSpace.png>
@@ -1911,8 +1910,8 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 19.
  [14]
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 80.
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 83.
+put line 81.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 84.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1925,14 +1924,18 @@ Package microtype Info: Loading generic settings for font family
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [15] [16]
+)
+Underfull \vbox (badness 1442) has occurred while \output is active []
+
+ [15]
+[16]
 (C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\template_
 version\implementaion_chapter.tex [17
 
 
 
 ]
-<./figs/GerogiannisLines.png, id=609, 322.20375pt x 423.984pt>
+<./figs/GerogiannisLines.png, id=608, 322.20375pt x 423.984pt>
 File: ./figs/GerogiannisLines.png Graphic file (type png)
 
 <use ./figs/GerogiannisLines.png>
@@ -1950,7 +1953,7 @@ Underfull \hbox (badness 1142) in paragraph at lines 37--38
 
 [18 <C:/Users/Vegard/Documents/Skole/Fordypningsprosjekt_H15/Rapportfiler/templ
 ate_version/figs/GerogiannisLines.png>]
-<./figs/getVp.png, id=625, 222.07968pt x 342.5297pt>
+<./figs/getVp.png, id=624, 222.07968pt x 342.5297pt>
 File: ./figs/getVp.png Graphic file (type png)
  <use ./figs/getVp.png>
 Package pdftex.def Info: ./figs/getVp.png used on input line 46.
@@ -1963,7 +1966,7 @@ Overfull \hbox (3.638pt too wide) in paragraph at lines 46--47
 
 LaTeX Warning: Reference `alg:getVp' on page 19 undefined on input line 52.
 
-<./figs/findVp.png, id=628, 670.75594pt x 646.66594pt>
+<./figs/findVp.png, id=627, 670.75594pt x 646.66594pt>
 File: ./figs/findVp.png Graphic file (type png)
  <use ./figs/findVp.png>
 Package pdftex.def Info: ./figs/findVp.png used on input line 60.
@@ -1975,7 +1978,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [19 <C:/Users/Vegard/Documents/Skole/Fordypningsprosjekt_H15/Rapportfiler/templ
 ate_version/figs/getVp.png>] [20 <C:/Users/Vegard/Documents/Skole/Fordypningspr
 osjekt_H15/Rapportfiler/template_version/figs/findVp.png>]
-<./figs/VpAppSequence.png, id=646, 969.6225pt x 460.72125pt>
+<./figs/VpAppSequence.png, id=645, 969.6225pt x 460.72125pt>
 File: ./figs/VpAppSequence.png Graphic file (type png)
 
 <use ./figs/VpAppSequence.png>
@@ -1983,7 +1986,7 @@ Package pdftex.def Info: ./figs/VpAppSequence.png used on input line 90.
 (pdftex.def)             Requested size: 533.29402pt x 253.39746pt.
  [21 <C:/Users/Vegard/Documents/Skole/Fordypningsprosjekt_H15/Rapportfiler/temp
 late_version/figs/VpAppSequence.png>]
-<./figs/VPGuiBlurred.png, id=652, 531.78674pt x 363.759pt>
+<./figs/VPGuiBlurred.png, id=651, 531.78674pt x 363.759pt>
 File: ./figs/VPGuiBlurred.png Graphic file (type png)
 
 <use ./figs/VPGuiBlurred.png>
@@ -2002,7 +2005,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  <C:/Users/Vegard/Documents/Skole/Fordypningsprosjekt_H15/Rapportfiler/template
 _version/figs/VPGuiBlurred.png>]
-<./figs/rig_pantilt.jpg, id=662, 4143.48pt x 2330.7075pt>
+<./figs/rig_pantilt.jpg, id=661, 4143.48pt x 2330.7075pt>
 File: ./figs/rig_pantilt.jpg Graphic file (type jpg)
 
 <use ./figs/rig_pantilt.jpg>
@@ -2013,7 +2016,7 @@ File: ./figs/rig_pantilt.jpg Graphic file (type jpg)
 Package pdftex.def Info: ./figs/rig_pantilt.jpg used on input line 126.
 (pdftex.def)             Requested size: 163.79889pt x 92.10994pt.
 
-<./figs/StereoGui.png, id=664, 986.18437pt x 487.06969pt>
+<./figs/StereoGui.png, id=663, 986.18437pt x 487.06969pt>
 File: ./figs/StereoGui.png Graphic file (type png)
 
 <use ./figs/StereoGui.png>
@@ -2029,21 +2032,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [23 <C:/Users/Vegard/Documents/Skole/Fordypningsprosjekt_H15/Rapportfiler/temp
 late_version/figs/rig_pantilt.jpg>]
-<./figs/StereoInit.png, id=674, 470.50781pt x 624.08156pt>
+<./figs/StereoInit.png, id=673, 470.50781pt x 624.08156pt>
 File: ./figs/StereoInit.png Graphic file (type png)
 
 <use ./figs/StereoInit.png>
 Package pdftex.def Info: ./figs/StereoInit.png used on input line 156.
 (pdftex.def)             Requested size: 329.35321pt x 436.85411pt.
 
-<./figs/chess_pattern.png, id=675, 1377.64688pt x 1001.24063pt>
+<./figs/chess_pattern.png, id=674, 1377.64688pt x 1001.24063pt>
 File: ./figs/chess_pattern.png Graphic file (type png)
 
 <use ./figs/chess_pattern.png>
 Package pdftex.def Info: ./figs/chess_pattern.png used on input line 164.
 (pdftex.def)             Requested size: 327.59778pt x 238.0874pt.
 
-<./figs/CamCalibDistorted.png, id=676, 961.34157pt x 540.51938pt>
+<./figs/CamCalibDistorted.png, id=675, 961.34157pt x 540.51938pt>
 File: ./figs/CamCalibDistorted.png Graphic file (type png)
 
 <use ./figs/CamCalibDistorted.png>
@@ -2055,56 +2058,56 @@ ngsprosjekt_H15/Rapportfiler/template_version/figs/StereoInit.png>] [26 <C:/Use
 rs/Vegard/Documents/Skole/Fordypningsprosjekt_H15/Rapportfiler/template_version
 /figs/chess_pattern.png (PNG copy)> <C:/Users/Vegard/Documents/Skole/Fordypning
 sprosjekt_H15/Rapportfiler/template_version/figs/CamCalibDistorted.png>] [27]
-<./figs/DepthLayer1.png, id=700, 578.16pt x 325.81725pt>
+<./figs/DepthLayer1.png, id=699, 578.16pt x 325.81725pt>
 File: ./figs/DepthLayer1.png Graphic file (type png)
 
 <use ./figs/DepthLayer1.png>
 Package pdftex.def Info: ./figs/DepthLayer1.png used on input line 209.
 (pdftex.def)             Requested size: 127.40222pt x 71.79436pt.
 
-<./figs/DepthLayer2.png, id=701, 578.16pt x 325.215pt>
+<./figs/DepthLayer2.png, id=700, 578.16pt x 325.215pt>
 File: ./figs/DepthLayer2.png Graphic file (type png)
 
 <use ./figs/DepthLayer2.png>
 Package pdftex.def Info: ./figs/DepthLayer2.png used on input line 213.
 (pdftex.def)             Requested size: 127.40222pt x 71.66165pt.
 
-<./figs/DepthLayer6.png, id=702, 578.16pt x 325.215pt>
+<./figs/DepthLayer6.png, id=701, 578.16pt x 325.215pt>
 File: ./figs/DepthLayer6.png Graphic file (type png)
 
 <use ./figs/DepthLayer6.png>
 Package pdftex.def Info: ./figs/DepthLayer6.png used on input line 217.
 (pdftex.def)             Requested size: 127.40222pt x 71.66165pt.
 
-<./figs/DepthLayer7.png, id=703, 578.16pt x 325.215pt>
+<./figs/DepthLayer7.png, id=702, 578.16pt x 325.215pt>
 File: ./figs/DepthLayer7.png Graphic file (type png)
 
 <use ./figs/DepthLayer7.png>
 Package pdftex.def Info: ./figs/DepthLayer7.png used on input line 221.
 (pdftex.def)             Requested size: 127.40222pt x 71.66165pt.
 
-<./figs/DepthLayer8.png, id=704, 578.16pt x 325.215pt>
+<./figs/DepthLayer8.png, id=703, 578.16pt x 325.215pt>
 File: ./figs/DepthLayer8.png Graphic file (type png)
 
 <use ./figs/DepthLayer8.png>
 Package pdftex.def Info: ./figs/DepthLayer8.png used on input line 225.
 (pdftex.def)             Requested size: 127.40222pt x 71.66165pt.
 
-<./figs/OriginalExample.png, id=707, 963.6pt x 542.025pt>
+<./figs/OriginalExample.png, id=706, 963.6pt x 542.025pt>
 File: ./figs/OriginalExample.png Graphic file (type png)
 
 <use ./figs/OriginalExample.png>
 Package pdftex.def Info: ./figs/OriginalExample.png used on input line 247.
 (pdftex.def)             Requested size: 163.79889pt x 92.13475pt.
 
-<./figs/DispExample.png, id=708, 963.6pt x 542.025pt>
+<./figs/DispExample.png, id=707, 963.6pt x 542.025pt>
 File: ./figs/DispExample.png Graphic file (type png)
 
 <use ./figs/DispExample.png>
 Package pdftex.def Info: ./figs/DispExample.png used on input line 252.
 (pdftex.def)             Requested size: 163.79889pt x 92.13475pt.
 
-<./figs/obstruction.png, id=709, 965.10562pt x 386.94562pt>
+<./figs/obstruction.png, id=708, 965.10562pt x 386.94562pt>
 File: ./figs/obstruction.png Graphic file (type png)
 
 <use ./figs/obstruction.png>
@@ -2170,11 +2173,6 @@ version\implementaion_chapter.aux)
 version\assessment_chapter.aux)
 (C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\template_
 version\conclusion_chapter.aux)
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
-
 (C:\Users\Vegard\Documents\Skole\Fordypningsprosjekt_H15\Rapportfiler\template_
 version\chapter_project_setup.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 112.
@@ -2190,7 +2188,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 112.
 Here is how much of TeX's memory you used:
  22785 strings out of 493921
  342185 string characters out of 3147278
- 589373 words of memory out of 3000000
+ 589374 words of memory out of 3000000
  25245 multiletter control sequences out of 15000+200000
  117759 words of font info for 150 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -2238,9 +2236,9 @@ les/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/lm/lmss17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (46 pages, 11687869 bytes).
+Output written on main.pdf (46 pages, 11680423 bytes).
 PDF statistics:
- 874 PDF objects out of 1000 (max. 8388607)
+ 873 PDF objects out of 1000 (max. 8388607)
  184 named destinations out of 1000 (max. 500000)
  26736 words of extra memory for PDF output out of 29859 (max. 10000000)
 
