@@ -3,14 +3,14 @@
 \section{Introduction}
 
 \subsection{Chapter Scope}
-This chapter contains the background theory which is necessary to understand the implementations in chapter \ref{chp:implementation} and how they are intended to work. 
+This chapter contains the background theory which is necessary to understand the implementations in chapter \ref{chp:implementation} and how they are intended to work. Methods for vision based autonomous navigation is also discussed on a . 
 
 \subsection{Brief Introduction to Computer Vision}
-Computer Vision is the field of giving computers the ability to duplicate the way we perceive and understand our surroundings. This is not an easy task for several reasons. Much information is lost in the process of representing a 3d world on a 2d surface. As image processing really is digital signal processing in 2d, it is also subject information loss and noise through quantization. In short, the field of computer vision can be summed up to be the science of drawing conclusions about the real world based on pixel values in an image matrix, or a series of such matrices.
+Computer Vision is the field of giving computers the ability to duplicate the way we perceive and understand our surroundings. This is not an easy task for several reasons. Much information is lost in the process of representing a 3d world on a 2d surface. As image processing really is digital signal processing in 2d, it is subject to irreversible information loss and noise through quantization. In short, the field of computer vision can be summed up to be the science of drawing conclusions about the real world based on pixel values in an image matrix, or a series of such matrices.
 
 \subsection{Introduction to OpenCV}
 
-\gls{opencv} is an  open source library with a vast number of advanced computer vision and machine learning algorithms. The library supports Windows, Linux, iOS and Android, and has interfaces to C, C++, Python, Java and MATLAB. All OpenCV applications in this project uses \gls{opencv} 3.0.0 for Windows. \gls{opencv} for Windows can be downloaded from sourceforge.net. This download contains source files, sample programs, sample data and a pre-built library for MSVC 2010 and 2013. The pre-build library can quickly be plugged into  an IDE such as Qt Creator or Visual Studio 2013, thus giving the programmer access to all basic OpenCV features. A steb-by-step guide for using both the pre-built and a custom-built library can be found in Appendix \ref{chp:setup}.
+\gls{opencv} is an  open source library with a vast number of advanced computer vision and machine learning algorithms. The library is written in C and C++; it supports Windows, Linux, iOS and Android; and has interfaces to Python, Java and MATLAB. All OpenCV applications in this project uses \gls{opencv} 3.0.0 for Windows. \gls{opencv} for Windows can be downloaded from \textit{sourceforge.net} or "itseez" on GitHub. The download from \textit{sourceforge.net} contains source files, sample programs, sample data and a pre-built library for MSVC 2010 and 2013. The pre-build library can quickly be plugged into  an IDE such as Qt Creator or Visual Studio 2013, thus giving the programmer access to all basic OpenCV features. A steb-by-step guide for using both the pre-built and a custom-built library can be found in Appendix \ref{chp:setup}.
 
 \paragraph{cv::Mat - The Image Container}
 
@@ -25,7 +25,7 @@ Computer Vision is the field of giving computers the ability to duplicate the wa
 
 \subsection{Simultanious Localization and Mapping (SLAM)}
 
-Consider a robot that is placed in an unknown environment with no a priori information of the surroundings. If this robot is capable of solving the \gls{slam} problem, it is implied that it can build a map of the surroundings while it determines, simultaniously, where it is located on the same map. This section fill, very briefly, present some solutions to the \gls{slam} problem. From \cite{SLAMp1} a preliminary description of the \gls{slam} problem is based on the following parameters at time $k$ is:
+Consider a robot that is placed in an unknown environment with no a priori information of the surroundings. If this robot is capable of solving the \gls{slam} problem, it is implied that it can build a map of the surroundings while it determines, simultaniously, where it is located on the same map. This section will, in brief, present some variants of and solutions to the \gls{slam} problem. From \cite{SLAMp1} a preliminary description of the \gls{slam} problem is based on the following parameters at time $k$ is:
 \vspace{-10pt} % Remove exessive whitespace
 \begin{description}
 	\item[\boldmath$x_k$:] "State vection describing position and orientation of the vehicle"\cite{SLAMp1}.
@@ -38,10 +38,12 @@ Consider a robot that is placed in an unknown environment with no a priori infor
 \end{description}
 
 \paragraph{Probabilistic SLAM}
-Probabilistic \gls{slam} computes the probability distrobution $P(x_k,m|Z_{0:k},U_{0_k},x_0)$ at all time steps $k$\cite{SLAMp1}, i.e. the joint probability that the robot is in state \boldmath$x_k$ and that the landmarks can be described by a map,\boldmath$m$, given historic inputs, landmark observations and vehicle states.
+Probabilistic \gls{slam} computes the probability distrobution $P(x_k,m|Z_{0:k},U_{0_k},x_0)$ at all time steps $k$\cite{SLAMp1}, i.e. the joint probability that the robot is in state \boldmath$x_k$ and that the landmarks can be described by a map,\boldmath$m$, given historic inputs, landmark observations and vehicle states. The solution algorithm can be implemented in two steps: A time update based on the last updated observation history and current input, and a measurment update where $P(x_k,m|Z_{0:k},U_{0_k},x_0)$ is computed based on bayes theorem. 
+
 
 \paragraph{EKF-SLAM}
 
+The inclusion of \gls{awgn} leads to the application of the \gls{ekf} to the \gls{slam} problem\cite{SLAMp1}.
 \paragraph{MonoSLAM}
 
 MonoSLAM by Davison et. al. (2007) is the first successful vision based real-time \gls{slam} algorithm\cite{monoSLAM}. The algorithm works by maintaining a probabilistic 3d map of a sparse set of landmarks. The map is continously updated by an \gls{ekf}. Landmarks are chosen based on som prominent features in the surroundings. In the algorithm, they are represented as flat surfaces with a certain orientation in 3d space. This solution will approximate the fact that the appearence of a feature will change based on the position from where they are observed.
@@ -82,9 +84,10 @@ f_x & 0 & c_x \\
 A downside of the otherwise cheap and useful pinhole camera is camera distortion. The distortion is usually severe enough to render the camera useless as a sensor if it is not calibrated. Calibration in OpenCV accounts for radial and tangential distortion by finding five distortion coefficients \cite{3dCalib}:
 
 %\vspace{-1em}
-\begin{equation*}
+\begin{equation}
 Distortion_{coefficients} = (k_1 \quad k_2 \quad p_1 \quad p_2 \quad k_3)
-\end{equation*}
+\label{eq:distortion}
+\end{equation}
 %\vspace{-0.2em}
 \textbf{where} 
 %\vspace{-1.1em}
@@ -101,15 +104,23 @@ k_i \quad \textrm{with} \quad i \in \left\{1, 2, 3\right\}
 \textbf{are the tangential distortion constants.} 
 %\vspace{-0.5em}
 
-\section{Projective Geometry and Vanishing Points}
+\section{Perspectives and Vanishing Points}
 
 \begin{wrapfigure}{r}{0.5\textwidth}
 	\vspace{-10pt} % Remove exessive whitespace
 	\centering
 	\includegraphics[width=0.5\textwidth]{VpConseptBl}
 	\caption{\label{fig:VpConseptBl}Two parallel lines are projected onto an image plane, where they form two lines. These projected lines converge towards a vanishing point on the horizon.}
-	\vspace{-10pt} % Remove exessive whitespace
+	\vspace{15pt} % Remove exessive whitespace
 \end{wrapfigure}
+
+\paragraph{Vanishing Points}
+
+A vanishing point is the result of prespective projection. A prespective can be described as the way a 3d world appears when it is projected on a two-dimentional surface. Consider a set of two parallel lines in 3d space that are projected onto an image plane. If these two lines are not parallel to the image plane, their projected representatons will converge to a vanishing point. If the lines are parallel to the image plane, their corresponding vanishing points will be at infinity. The projected lines are formed by the projection lines, that is the direct lines from the parallel lines and the projection center $O$ (figure \ref{fig:pinhole} and \ref{fig:StereoSpace}). Figure \ref{fig:VpConseptBl} illustrates the consept of vanishing points with two parallel horizontal lines.
+
+\paragraph{Perspective Transformations}
+
+When the intrinsic camera parameters (equation \eqref{eq:pinhole}) and distortion coefficients (equation \ref{eq:distortion}) have been calculated, it will be possible to map a point in the outside 3d world to the image plane. This knowlegde allows perspective transformations. A perspective transformation can be used to transform a wall viewed at an angle to an observation point that is perpendicular to the wall. Likewise, the view of a road from a car can be transformed to a birds-eye representation. This birds-eye view can for example be used in combination with a \gls{lidar}\cite{oreillycv}.
 
 \section{Stereo Vision and Depth Perception}
 
@@ -119,7 +130,7 @@ Stereo vision and depth perception is one of the core topics within this report.
 
 Methods for depth perception in computer vision can be separated into two main categories, active and passive\cite{autorobot}. Active sensors will usually project a light pattern onto the scene to be perceived, before sensing how this pattern is displaced by the topology of the scene. The Kinect sensor and 3d-scanners using laser light are typical examples of active sensors. Passive depth perception makes use of many of the same cues we use to perceive depth. The most common passive sensors extract the depth information by observing observing a scene from at least two different positions. 
 
-Optical flow is another important method for depth perception. Optical flow may be either active or passive. The passive variant requires  only one camera, but depends on motion and a stream of images to extract depth information. Observing how much some chosen features in a scene has moved in the image frame at $t = 1$ compared to the frame at $t = 0$ is the basis of depth sensing from optical flow. When the camera moves through a scene where all objects are stationary, objects that are far away will naturally have an optical flow field with a smaller magnitude than objects that are close. 
+Optical flow is another important method for depth perception. Optical flow may be either active or passive. The passive variant requires  only one camera, but depends on motion and a stream of images to extract depth information.\cite{optflwdepth} \cite{optflwego} Observing how much some chosen features in a scene has moved in the image frame at $t = 1$ compared to the frame at $t = 0$ is the basis of depth sensing from optical flow. When the camera moves through a scene where all objects are stationary, objects that are far away will naturally have an optical flow field with a smaller magnitude than objects that are close. 
 
 \subsection{Stereoscopic Vision in General}
 
@@ -141,9 +152,14 @@ Figure \ref{fig:StereoSpace} shows an ideal stereo camera model.  The model comp
 \caption{\label{fig:StereoSpace}Geometry of rectified stereo vision.}
 \end{figure}
 
+\begin{wrapfigure}{r}{0.5\textwidth}
+	\vspace{-10pt} % Remove exessive whitespace
+	\centering
+	\includegraphics[width=0.6\textwidth]{blockMatching}
+	\caption{Geometry of rectified stereo vision.}
+	\label{fig:blockMatching}
+\end{wrapfigure}
+
 \subsection{Stereoscopic Vision in OpenCV}
 
-The prebuilt version of OpenCV 3.0.0 comes with two stereo matching algorithms: \gls{bm} Block Matching (StereoBM) and Semi Global Block Matching (StereoSGBM). Additional algorithms are available if OpenCV is built with, e.g. CUDA.
-
-\paragraph{StereoSGBM}\cite{hirschmullerstereo}
-blablabalb \gls{bm}.
+The prebuilt version of OpenCV 3.0.0 comes with two stereo matching algorithms: \gls{bm} Block Matching (StereoBM) and Semi Global Block Matching (StereoSGBM)\cite{hirschmullerstereo}. Additional algorithms are available if OpenCV is built with, e.g. CUDA. Both algoritms require a rectified pair of images as input. The basic idea of block matching is illustrated in figure \ref{fig:blockMatching}. The algorithm will search for blocks in the right image that corresponds to similar blocks in the right image. In \cite{hirschmullerstereo}, this process is described as "pixelwise matching of mutual information". This search for mutual information is simplified significantly if the search direction can be limited to a one dimentional constraint: a horizontal line. This is easy to do, given that the assumption of coplanar image planes holds. The disparity is a measure of how far the matching blocks are displaced from each other. 

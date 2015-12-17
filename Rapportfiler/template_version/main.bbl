@@ -59,10 +59,21 @@ Heiko Hirschmuller.
 \newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
   on}, 30(2), 2008.
 
+\bibitem[LC12]{optflwdepth}
+Chao Liu and L.~Christopher.
+\newblock Depth map estimation from motion for 2d to 3d conversion.
+\newblock In {\em Electro/Information Technology (EIT), 2012 IEEE International
+  Conference on}, pages 1--4, May 2012.
+
 \bibitem[NN00]{Author:year:XYZ}
 Firstname~1 Name1 and Firstname2 Name2.
 \newblock A dummy title.
 \newblock {\em A Fake Journal}, 1(1):000--000, June 2000.
+
+\bibitem[Pra80]{optflwego}
+K.~Prazdny.
+\newblock Egomotion and relative depth map from optical flow.
+\newblock {\em Biological Cybernetics}, 36(2):87--102, 1980.
 
 \bibitem[XWS06]{autorobot}
 Jian Xu, Han Wang, and Andrew Shacklock.

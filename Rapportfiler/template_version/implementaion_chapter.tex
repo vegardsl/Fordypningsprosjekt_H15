@@ -73,14 +73,14 @@ The vanishing point detector was implemented as a QWidget Application in the Qt 
 	\label{alg:edgelines}
 	\begin{verbatim}
 	while(){
-		capture.read(cameraImg);
-		cvtColor(cameraImg,grayImg,CV_RGB2GRAY);
-		blur( grayImg, blurredImg, Size(3,3) );
-		Canny(blurredImg, edgesImg, lowerThresh, upperThresh, 3);
-		gpu_edgesImg.upload(edgesImg);
-		lines = detectHoughLines(gpu_edgesImg);   
-		newLines = mLineEllipseFilter.filterLines(lines,originalImage);
-		Point vanishingPoint = vpDetector.getVp(newLines,cameraImg);     
+	    capture.read(cameraImg);
+	    cvtColor(cameraImg,grayImg,CV_RGB2GRAY);
+	    blur( grayImg, blurredImg, Size(3,3) );
+	    Canny(blurredImg, edgesImg, lowerThresh, upperThresh, 3);
+	    gpu_edgesImg.upload(edgesImg);
+	    lines = detectHoughLines(gpu_edgesImg);   
+	    newLines = mLineEllipseFilter.filterLines(lines,originalImage);
+	    Point vanishingPoint = vpDetector.getVp(newLines,cameraImg);     
 	}
 	\end{verbatim}
 \end{algorithm}
@@ -145,7 +145,7 @@ Tuning the parameters for stereo matching in OpenCV is a wearisome task, especia
 As mentioned in chapter \ref{chp:theory}, all cameras will have some distortion. If the distortion is too severe, as it often will be in the context of stereo vision, the camera must be calibrated. In addition, it was assumed that the image planes were located on the same plane, and that a projection pair, for example the projections $X_L$ and $X_R$ of an object $X$, form two equal epipolar lines, $e_1$ and $e_2$, on the two image planes. In practice, these conditions are achieved through stereo calibration. The second purpose of the calibration procedure is to relate the sensor data to real world quantities, in order to measure the distance to detected objects. Code listings from Practical OpenCV by Samarth Brahmbhatt \cite{practicalopencv} has been used as a basis for calibration in this project. Some parts of his code is almost unchanged, while other parts of the listings are altered and expanded significantly. There are three steps in the calibration procedure:
 
 \begin{enumerate}
-	\item Single camera calibration.
+	\item Single camera calibration: 
 	\item Stereo calibration.
 	\item Image rectification.
 \end{enumerate}
@@ -167,7 +167,7 @@ See figure \ref{fig:calibproc} for an overview of the calibration procedure. All
 	\end{subfigure}
 	\begin{subfigure}[b]{0.90\textwidth}
 		\includegraphics[width=\textwidth]{CamCalibDistorted}
-		\caption{Chessboard detection. This is one of the sample images used to calibrate the camera. Note the distortion in the lower right corner.}
+		\caption{Chessboard detection. This is one of the sample images used to calibrate the camera. Notice the distortion in the lower right corner.}
 		\label{fig:chessdetection}
 	\end{subfigure}
 	\caption{\label{fig:calibrationpattern}}
@@ -175,7 +175,15 @@ See figure \ref{fig:calibproc} for an overview of the calibration procedure. All
 
 \paragraph{Single Camera Calibration}
 
-In this step, the cameras are calibrated separately.  The purpose of this calibration procedure is to counter the constant radial and tangential distortion in a pinhole camera, and to relate the image pixels to real world quantities. The result of this procedure is the $3x3$ camera matrix and the five distortion coefficients mentioned in the theory chapter. The results are stored in a .xml file:
+\begin{wrapfigure}{r}{0.48\textwidth}
+	\vspace{-10pt} % Remove exessive whitespace
+	\centering
+	\includegraphics[width=0.50\textwidth]{singleCamCalib}
+	\caption{\label{fig:singleCamCalib} Single camera calibration.}
+	\vspace{-20pt} % Remove exessive whitespace
+\end{wrapfigure}
+
+In this step, the cameras are calibrated separately.  The purpose of this calibration procedure is to counter the constant radial and tangential distortion in a pinhole camera, and to identify the pinole camera model. The result of this procedure is the 3 by 3 camera matrix and the five distortion coefficients mentioned in the theory chapter. In the flowchart in figure \ref{fig:singleCamCalib}, assume that enough useful sample images are gathered and read into the program. In the last step, \gls{opencv}s calibration function will take inn the detected corners from the sample images and the chessboard dimentions. Finally, the calibration results are stored in an .xml file:
 
 \begin{verbatim}
 <?xml version="1.0"?>
@@ -233,7 +241,36 @@ When all the image samples has been read into the program, the program will chec
 
 \paragraph{Stereo Calibration}
 
+Stereo calibration is almost exactly the same as single camera calibration. An important difference is obviously that sample images must be taken from both cameras simultaniously. The calibration pattern must be detectable in both frames. Stereo calibration will generate a new set of data:
+
+\begin{description}
+	\item[R: ] 3 by 3 rotation matrix between the two cameras.
+	\item[T: ] Translation between the two cameras. Denoted $B$ in the theory chapter. Relates the left camera to the right together with $R$. 
+	\item[E: ] 3 by 3 essential matrix.
+	\item[F: ] 3 by 3 fundamental matrix.
+\end{description}
+
+These matrices will be stored in a new file ''stereo\_calib.xml'' together with the distortion coefficients and camera matrices from the two single camera calibrations. These values will be applied in the next calibration step.
+
 \paragraph{Stereo Rectification}
+
+Rectification is the final step before stereo matching can be performed. In this step, the information that is necessary to align the stereo frames. When the frames are aligned, Rectification is completed by:
+
+\begin{enumerate}
+	\item Loading ''stereo\_calib.xml'' and reading in the camera matrices, distortion coefficients, $R$ and $T$.
+	\item Calling ''stereoRectify()'' with the data above as input.
+\end{enumerate}
+
+ ''stereoRectify()'' will write data unto a set of new matrices:
+
+\begin{description}
+	\item[Rl: ] 3 by 3 rotation matrix between the two cameras.
+	\item[Rr: ] Translation between the two cameras. Denoted $B$ in the theory chapter. Relates the left camera to the right together with $R$. 
+	\item[Pl: ] 3 by 3 essential matrix.
+	\item[Pr: ] 3 by 3 fundamental matrix.
+	\item[Q: ] 3 by 3 fundamental matrix.
+
+\end{description}
 
 %\begin{figure}
 %\includegraphics[scale=•]{•}

@@ -1,61 +1,62 @@
 \BOOKMARK [0][-]{section*.4}{List of Figures}{}% 1
 \BOOKMARK [0][-]{section*.5}{List of Tables}{}% 2
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 3
-\BOOKMARK [1][-]{section.1.1}{Mobile Autonomous Robotics and Computer Vision}{chapter.1}% 4
-\BOOKMARK [1][-]{section.1.2}{System Overview}{chapter.1}% 5
-\BOOKMARK [2][-]{subsection.1.2.1}{The Robot}{section.1.2}% 6
-\BOOKMARK [2][-]{subsection.1.2.2}{Project Set-up}{section.1.2}% 7
-\BOOKMARK [1][-]{section.1.3}{Report Structure}{chapter.1}% 8
-\BOOKMARK [0][-]{chapter.2}{Background Theory}{}% 9
-\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 10
-\BOOKMARK [2][-]{subsection.2.1.1}{Chapter Scope}{section.2.1}% 11
-\BOOKMARK [2][-]{subsection.2.1.2}{Brief Introduction to Computer Vision}{section.2.1}% 12
-\BOOKMARK [2][-]{subsection.2.1.3}{Introduction to OpenCV}{section.2.1}% 13
-\BOOKMARK [1][-]{section.2.2}{A Brief Introduction to Vision Based Autonomous Navigation}{chapter.2}% 14
-\BOOKMARK [2][-]{subsection.2.2.1}{Simultanious Localization and Mapping \(SLAM\)}{section.2.2}% 15
-\BOOKMARK [1][-]{section.2.3}{The Pinhole Camera Model}{chapter.2}% 16
-\BOOKMARK [2][-]{subsection.2.3.1}{Model Description}{section.2.3}% 17
-\BOOKMARK [2][-]{subsection.2.3.2}{Camera Distortion}{section.2.3}% 18
-\BOOKMARK [1][-]{section.2.4}{Projective Geometry and Vanishing Points}{chapter.2}% 19
-\BOOKMARK [1][-]{section.2.5}{Stereo Vision and Depth Perception}{chapter.2}% 20
-\BOOKMARK [2][-]{subsection.2.5.1}{Various Methods}{section.2.5}% 21
-\BOOKMARK [2][-]{subsection.2.5.2}{Stereoscopic Vision in General}{section.2.5}% 22
-\BOOKMARK [2][-]{subsection.2.5.3}{Stereoscopic Vision in OpenCV}{section.2.5}% 23
-\BOOKMARK [0][-]{chapter.3}{Example}{}% 24
-\BOOKMARK [1][-]{section.3.1}{First section}{chapter.3}% 25
-\BOOKMARK [2][-]{subsection.3.1.1}{First subsection with some Math symbol}{section.3.1}% 26
-\BOOKMARK [2][-]{subsection.3.1.2}{Mathematics}{section.3.1}% 27
-\BOOKMARK [2][-]{subsection.3.1.3}{Source code example}{section.3.1}% 28
-\BOOKMARK [0][-]{chapter.4}{Implementation}{}% 29
-\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 30
-\BOOKMARK [1][-]{section.4.2}{Vanishing Point Detection}{chapter.4}% 31
-\BOOKMARK [2][-]{subsection.4.2.1}{Overview}{section.4.2}% 32
-\BOOKMARK [2][-]{subsection.4.2.2}{Line Detection}{section.4.2}% 33
-\BOOKMARK [2][-]{subsection.4.2.3}{Line Filtering}{section.4.2}% 34
-\BOOKMARK [2][-]{subsection.4.2.4}{Vanishing Point Detection}{section.4.2}% 35
-\BOOKMARK [2][-]{subsection.4.2.5}{Vanishing Point Detector Application}{section.4.2}% 36
-\BOOKMARK [2][-]{subsection.4.2.6}{Cause of Failure}{section.4.2}% 37
-\BOOKMARK [1][-]{section.4.3}{Depth Perception and Obstruction Detection}{chapter.4}% 38
-\BOOKMARK [2][-]{subsection.4.3.1}{Overview}{section.4.3}% 39
-\BOOKMARK [2][-]{subsection.4.3.2}{The camera rig}{section.4.3}% 40
-\BOOKMARK [2][-]{subsection.4.3.3}{Graphical User Interface}{section.4.3}% 41
-\BOOKMARK [2][-]{subsection.4.3.4}{Calibration}{section.4.3}% 42
-\BOOKMARK [2][-]{subsection.4.3.5}{Stereo Matching}{section.4.3}% 43
-\BOOKMARK [2][-]{subsection.4.3.6}{Finding Obstructions}{section.4.3}% 44
-\BOOKMARK [2][-]{subsection.4.3.7}{Distance Measurment}{section.4.3}% 45
-\BOOKMARK [2][-]{subsection.4.3.8}{Problems Encountered During Implementation }{section.4.3}% 46
-\BOOKMARK [0][-]{chapter.5}{Assessment}{}% 47
-\BOOKMARK [1][-]{section.5.1}{Vanishing Point Detection}{chapter.5}% 48
-\BOOKMARK [1][-]{section.5.2}{Depth Perception and Obstruction Detection}{chapter.5}% 49
-\BOOKMARK [2][-]{subsection.5.2.1}{Real-time Disparity Map Calculation}{section.5.2}% 50
-\BOOKMARK [2][-]{subsection.5.2.2}{Range Measurement and Object Detection}{section.5.2}% 51
-\BOOKMARK [2][-]{subsection.5.2.3}{Weaknesses and Limitations}{section.5.2}% 52
-\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 53
-\BOOKMARK [1][-]{section.6.1}{Task Fulfilment}{chapter.6}% 54
-\BOOKMARK [1][-]{section.6.2}{Future Work}{chapter.6}% 55
-\BOOKMARK [1][-]{section.6.3}{Conclusion}{chapter.6}% 56
-\BOOKMARK [0][-]{section*.43}{References}{}% 57
-\BOOKMARK [0][-]{appendix.A}{Setting up a project with Qt and OpenCV}{}% 58
-\BOOKMARK [1][-]{section.A.1}{Setting up OpenCV}{appendix.A}% 59
-\BOOKMARK [1][-]{section.A.2}{Setting up Qt Creator with OpenCV}{appendix.A}% 60
-\BOOKMARK [1][-]{section.A.3}{Building OpenCV with CUDA and Qt from source}{appendix.A}% 61
+\BOOKMARK [1][-]{section.1.1}{About this Report}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.2}{Mobile Autonomous Robotics and Computer Vision}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.3}{System Overview}{chapter.1}% 6
+\BOOKMARK [2][-]{subsection.1.3.1}{The Robot}{section.1.3}% 7
+\BOOKMARK [2][-]{subsection.1.3.2}{Project Set-up}{section.1.3}% 8
+\BOOKMARK [1][-]{section.1.4}{Report Structure}{chapter.1}% 9
+\BOOKMARK [0][-]{chapter.2}{Background Theory}{}% 10
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.1.1}{Chapter Scope}{section.2.1}% 12
+\BOOKMARK [2][-]{subsection.2.1.2}{Brief Introduction to Computer Vision}{section.2.1}% 13
+\BOOKMARK [2][-]{subsection.2.1.3}{Introduction to OpenCV}{section.2.1}% 14
+\BOOKMARK [1][-]{section.2.2}{A Brief Introduction to Vision Based Autonomous Navigation}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.2.1}{Simultanious Localization and Mapping \(SLAM\)}{section.2.2}% 16
+\BOOKMARK [1][-]{section.2.3}{The Pinhole Camera Model}{chapter.2}% 17
+\BOOKMARK [2][-]{subsection.2.3.1}{Model Description}{section.2.3}% 18
+\BOOKMARK [2][-]{subsection.2.3.2}{Camera Distortion}{section.2.3}% 19
+\BOOKMARK [1][-]{section.2.4}{Perspectives and Vanishing Points}{chapter.2}% 20
+\BOOKMARK [1][-]{section.2.5}{Stereo Vision and Depth Perception}{chapter.2}% 21
+\BOOKMARK [2][-]{subsection.2.5.1}{Various Methods}{section.2.5}% 22
+\BOOKMARK [2][-]{subsection.2.5.2}{Stereoscopic Vision in General}{section.2.5}% 23
+\BOOKMARK [2][-]{subsection.2.5.3}{Stereoscopic Vision in OpenCV}{section.2.5}% 24
+\BOOKMARK [0][-]{chapter.3}{Example}{}% 25
+\BOOKMARK [1][-]{section.3.1}{First section}{chapter.3}% 26
+\BOOKMARK [2][-]{subsection.3.1.1}{First subsection with some Math symbol}{section.3.1}% 27
+\BOOKMARK [2][-]{subsection.3.1.2}{Mathematics}{section.3.1}% 28
+\BOOKMARK [2][-]{subsection.3.1.3}{Source code example}{section.3.1}% 29
+\BOOKMARK [0][-]{chapter.4}{Implementation}{}% 30
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 31
+\BOOKMARK [1][-]{section.4.2}{Vanishing Point Detection}{chapter.4}% 32
+\BOOKMARK [2][-]{subsection.4.2.1}{Overview}{section.4.2}% 33
+\BOOKMARK [2][-]{subsection.4.2.2}{Line Detection}{section.4.2}% 34
+\BOOKMARK [2][-]{subsection.4.2.3}{Line Filtering}{section.4.2}% 35
+\BOOKMARK [2][-]{subsection.4.2.4}{Vanishing Point Detection}{section.4.2}% 36
+\BOOKMARK [2][-]{subsection.4.2.5}{Vanishing Point Detector Application}{section.4.2}% 37
+\BOOKMARK [2][-]{subsection.4.2.6}{Cause of Failure}{section.4.2}% 38
+\BOOKMARK [1][-]{section.4.3}{Depth Perception and Obstruction Detection}{chapter.4}% 39
+\BOOKMARK [2][-]{subsection.4.3.1}{Overview}{section.4.3}% 40
+\BOOKMARK [2][-]{subsection.4.3.2}{The camera rig}{section.4.3}% 41
+\BOOKMARK [2][-]{subsection.4.3.3}{Graphical User Interface}{section.4.3}% 42
+\BOOKMARK [2][-]{subsection.4.3.4}{Calibration}{section.4.3}% 43
+\BOOKMARK [2][-]{subsection.4.3.5}{Stereo Matching}{section.4.3}% 44
+\BOOKMARK [2][-]{subsection.4.3.6}{Finding Obstructions}{section.4.3}% 45
+\BOOKMARK [2][-]{subsection.4.3.7}{Distance Measurment}{section.4.3}% 46
+\BOOKMARK [2][-]{subsection.4.3.8}{Problems Encountered During Implementation }{section.4.3}% 47
+\BOOKMARK [0][-]{chapter.5}{Assessment}{}% 48
+\BOOKMARK [1][-]{section.5.1}{Vanishing Point Detection}{chapter.5}% 49
+\BOOKMARK [1][-]{section.5.2}{Depth Perception and Obstruction Detection}{chapter.5}% 50
+\BOOKMARK [2][-]{subsection.5.2.1}{Real-time Disparity Map Calculation}{section.5.2}% 51
+\BOOKMARK [2][-]{subsection.5.2.2}{Range Measurement and Object Detection}{section.5.2}% 52
+\BOOKMARK [2][-]{subsection.5.2.3}{Weaknesses and Limitations}{section.5.2}% 53
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 54
+\BOOKMARK [1][-]{section.6.1}{Task Fulfilment}{chapter.6}% 55
+\BOOKMARK [1][-]{section.6.2}{Future Work}{chapter.6}% 56
+\BOOKMARK [1][-]{section.6.3}{Conclusion}{chapter.6}% 57
+\BOOKMARK [0][-]{section*.46}{References}{}% 58
+\BOOKMARK [0][-]{appendix.A}{Setting up a project with Qt and OpenCV}{}% 59
+\BOOKMARK [1][-]{section.A.1}{Setting up OpenCV}{appendix.A}% 60
+\BOOKMARK [1][-]{section.A.2}{Setting up Qt Creator with OpenCV}{appendix.A}% 61
+\BOOKMARK [1][-]{section.A.3}{Building OpenCV with CUDA and Qt from source}{appendix.A}% 62
