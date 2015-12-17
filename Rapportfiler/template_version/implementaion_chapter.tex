@@ -22,45 +22,78 @@ The goal of the vanishing point detector is to provide a setpoint for the robot 
 
 Line detection comprise step 1 and 2 from the list above. OpenCV comes with an implementation of the Canny edge detector ready for use. The detector returns a binary image of the detected edges. Edges are detected by convolving the input image with two kernels $G_x$ and $G_y$. The convolutions will indicate change gradients in the $x$ and $y$ directions which in turn will give the direction of a potential edge. Finally, the detector rejects or accepts potential edges based on two gradient thresholds. Gradients below the lower threshold are rejected, edges above the upper threshold are accepted, and edges between the thresholds are only accepted if their neighbouring gradients are above the upper threshold\cite{cannyedge}. 
 
-At this point, we only have a simple binary image where edges are represented as white pixels on a black background. The next step is to interpret these edges as lines. Line detection is performed by using the probabilistic Hough line transform. This is an already implemented function, which takes in the edge image from the previous step, and return a set of point pairs representing line segments. The benefit of using the probabilistic detector is that it can perceive an edge with a discontinuity as a singe line. 
-
-\subsection{Line Filtering}
-
 \begin{wrapfigure}{r}{0.55\textwidth}
 	\vspace{-10pt} % Remove exessive whitespace
 	\centering
 	\includegraphics[width=0.6\textwidth]{GerogiannisLines}
 	\caption{\label{fig:GerogiannisLines}Gerogiannis concept of representing lines by eccentric ellipses. This image is taken directly from \cite{gerogiannisvp}.}
-	\vspace{-10pt} % Remove exessive whitespace
+	\vspace{-60pt} % Remove exessive whitespace
 \end{wrapfigure}
+
+At this point, we only have a simple binary image where edges are represented as white pixels on a black background. The next step is to interpret these edges as lines. Line detection is performed by using the probabilistic Hough line transform. This is an already implemented function, which takes in the edge image from the previous step, and return a set of point pairs representing line segments. The benefit of using the probabilistic detector is that it can perceive an edge with a discontinuity as a singe line. 
+
+\subsection{Line Filtering}
 
 Line filtering is performed by splitting and merging ellipses until their major axis represents a set of approximations to collinear points. The points is the set of points that define the previously detected line segments. This algorithm is called \gls{dsam}, and it is explained in another paper by D. Gerogiannis \cite{gerogiannisshape}. Line segments returned from the probabilistic Hough transform will often overlap or be very close to each other. The purpose of this step is to get a cleaner representation of the contours in the environment.
 
+Figure \ref{fig:GerogiannisLines}, taken from \cite{gerogiannisvp}, illustrates the steps in the \gls{dsam} algorithm.
+
 \subsection{Vanishing Point Detection}
 
+\begin{wrapfigure}{r}{0.35\textwidth}
+	\vspace{-10pt} % Remove exessive whitespace
+	\centering
+	\includegraphics[width=0.36\textwidth]{getVp}
+	\caption{\label{fig:getVp}Two steps in "getVanishingPoint()".}
+	\vspace{-60pt} % Remove exessive whitespace
+\end{wrapfigure}
+
+
+When the detected lines have been filtered and stored, they will be passed to the vanishing point detector in the function "getVanishingPoint(lines)". This function will perform two steps (figure \ref{alg:getVp}):
+
+\begin{enumerate}
+	\item Find, store and assign weights to the points where the lines intersect. Lines that are either too vertical or too horizintal will not be included in the calculations. Intersectionpoints outside the image frame are rejected.
+	\item Find the vanishing point based on the valid weighted intersection points. This is done by a voting scheme described in \cite{gerogiannisvp}, and illustrated as a flowchart in figure \ref{fig:findVp}. 
+\end{enumerate}
+
+\begin{figure}
+	\includegraphics[scale=0.5]{findVp}
+	\caption{Sequence diagram illustrating program execution when the user activates camera feed and VP detection.}
+	\label{fig:findVp}
+\end{figure}
 
 \subsection{Vanishing Point Detector Application}
 
 \paragraph{Program Structure}
 
+The vanishing point detector was implemented as a QWidget Application in the Qt Creator IDE. The code excerpt shown in algorithm \ref{alg:edgelines} contains the most important image processing steps. A main thread, which may be called the GUI thread, handles all user related input and output. All image processing is done in the class "ImageProcessing" which inherits from QThread. This means that "ImageProcessing" controls a protected function "run()" which contains the threaded code and image processing steps. Figure \ref{fig:VpAppSequence} is a sequence diagram that shows the different classes and threads interact. The ellipse filter step is ommitted in the illustration; if it had been included, it would be called between "hough->detect()" and "getVanishingPoint()".
+
 \begin{algorithm}[h]
-  \caption{Vanishing point detector loop. Several lines of code are omitted in this example to make the processing more clear.}
-  \label{alg:edgelines}
-\begin{verbatim}
+	\caption{Vanishing point detector loop. Several lines of code are omitted in this example to make the processing more clear.}
+	\label{alg:edgelines}
+	\begin{verbatim}
 	while(){
 		capture.read(cameraImg);
-        cvtColor(cameraImg,grayImg,CV_RGB2GRAY);
-        blur( grayImg, blurredImg, Size(3,3) );
-        Canny(blurredImg, edgesImg, lowerThresh, upperThresh, 3);
-        gpu_edgesImg.upload(edgesImg);
-        lines = detectHoughLines(gpu_edgesImg);   
-        newLines = mLineEllipseFilter.filterLines(lines,originalImage);
-        Point vanishingPoint = vpDetector.getVp(newLines,cameraImg);     
-    }
-\end{verbatim}
+		cvtColor(cameraImg,grayImg,CV_RGB2GRAY);
+		blur( grayImg, blurredImg, Size(3,3) );
+		Canny(blurredImg, edgesImg, lowerThresh, upperThresh, 3);
+		gpu_edgesImg.upload(edgesImg);
+		lines = detectHoughLines(gpu_edgesImg);   
+		newLines = mLineEllipseFilter.filterLines(lines,originalImage);
+		Point vanishingPoint = vpDetector.getVp(newLines,cameraImg);     
+	}
+	\end{verbatim}
 \end{algorithm}
 
-  
+\begin{landscape}
+	\begin{figure}
+		\includegraphics[scale=0.55]{VpAppSequence}
+		\caption{Sequence diagram illustrating program execution when the user activates camera feed and VP detection.}
+		\label{fig:VpAppSequence}
+	\end{figure}
+\end{landscape}
+
+
 
 \paragraph{Graphical User Interface}
 

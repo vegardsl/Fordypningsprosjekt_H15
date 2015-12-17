@@ -1,4 +1,4 @@
-\begin{thebibliography}{GNL12}
+\begin{thebibliography}{DWB06}
 
 \bibitem[3dC]{3dCalib}
 Camera calibration with opencv.
@@ -30,6 +30,11 @@ Canny edge detection with opencv.
 \newblock
   \url{http://docs.opencv.org/2.4/doc/tutorials/imgproc/imgtrans/canny_detector/canny_detector.html}.
 
+\bibitem[DWB06]{SLAMp1}
+H~Durrant-Whyte and Tim Bailey.
+\newblock Simultaneous localization and mapping: part i.
+\newblock {\em Robotics \& Automation Magazine, IEEE}, (2), jun 2006.
+
 \bibitem[GNL11]{gerogiannisshape}
 Demetrios Gerogiannis, Christophoros Nikou, and Aristidis Likas.
 \newblock A split-and-merge framework for 2d shape summarization.
@@ -47,6 +52,11 @@ Heiko Hirschmuller.
 \newblock Stereo processing by semiglobal matching and mutual information.
 \newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
   on}, 30(2), 2008.
+
+\bibitem[mon07]{monoSLAM}
+Monoslam: Real-time single camera slam.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, (6), jun 2007.
 
 \bibitem[NN00]{Author:year:XYZ}
 Firstname~1 Name1 and Firstname2 Name2.

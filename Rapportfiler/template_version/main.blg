@@ -14,6 +14,10 @@ I was expecting an "="---line 47 of file main.bib
  :  month 
  :        "feb",
 I'm skipping whatever remains of this entry
+Warning--to sort, need author or key in monoSLAM
 Warning--to sort, need author or key in 3dCalib
 Warning--to sort, need author or key in cannyedge
+Warning--there's a number but no volume in SLAMp1
+Warning--empty author in monoSLAM
+Warning--there's a number but no volume in monoSLAM
 (There was 1 error message)

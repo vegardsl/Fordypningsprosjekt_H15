@@ -21,6 +21,36 @@ Computer Vision is the field of giving computers the ability to duplicate the wa
 \label{fig:matGrid}
 \end{figure}
 
+\section{A Brief Introduction to Vision Based Autonomous Navigation}
+
+\subsection{Simultanious Localization and Mapping (SLAM)}
+
+Consider a robot that is placed in an unknown environment with no a priori information of the surroundings. If this robot is capable of solving the \gls{slam} problem, it is implied that it can build a map of the surroundings while it determines, simultaniously, where it is located on the same map. This section fill, very briefly, present some solutions to the \gls{slam} problem. From \cite{SLAMp1} a preliminary description of the \gls{slam} problem is based on the following parameters at time $k$ is:
+\vspace{-10pt} % Remove exessive whitespace
+\begin{description}
+	\item[\boldmath$x_k$:] "State vection describing position and orientation of the vehicle"\cite{SLAMp1}.
+	\item[\boldmath$u_k$:] Control input at time $k - 1$. Used to drive the vehicle to $x_k$. 
+	\item[\boldmath$m_i$:] The position of the $ith$ landmark. The true position is assumed to be time invariant.
+	\item[\boldmath$z_{ik}$:] Observed position of the $ith$ landmark relative to the vehicle at time $k$.
+	\item[\boldmath$X_{0:k} = \{ x_0, x_1, ... , x_k\} = \{ X_{0:k-1}, x_l \}$] A set of all previous vehicle locations. 
+	\item[\boldmath$X_{0:k} = \{ x_0, x_1, ... , x_k\} = \{ X_{0:k-1}, x_l \}$] All previous control inputs.
+	\item[\boldmath$X_{0:k} = \{ x_0, x_1, ... , x_k\} = \{ X_{0:k-1}, x_l \}$] All previous landmark observations.
+\end{description}
+
+\paragraph{Probabilistic SLAM}
+Probabilistic \gls{slam} computes the probability distrobution $P(x_k,m|Z_{0:k},U_{0_k},x_0)$ at all time steps $k$\cite{SLAMp1}, i.e. the joint probability that the robot is in state \boldmath$x_k$ and that the landmarks can be described by a map,\boldmath$m$, given historic inputs, landmark observations and vehicle states.
+
+\paragraph{EKF-SLAM}
+
+\paragraph{MonoSLAM}
+
+MonoSLAM is the first successful vision based real-time \gls{slam} algorithm\cite{monoSLAM}. The algorithm works by maintaining a probabilistic 3d map of a sparse set of landmarks. The map is continously updated by an \gls{ekf}. Landmarks are chosen based on som prominent features in the surroundings. In the algorithm, they are represented as flat surfaces with a certain orientation in 3d space. This solution will approximate the fact that the appearence of a feature will change based on the position from where they are observed.
+
+\paragraph{The Kinect Sensor and SLAM}
+
+The Kinect sensor has been a remarkable contribution to the field of \gls{slam} and computer vision. It is a cheap sensor capable of generating high quality, but noisy, depth maps at $30 Hz$. By applying \gls{slam} to the real-time depth data, it is possible to generate a very accurate 3d reconstruction of the surroundings.
+
+
 \section{The Pinhole Camera Model}
 
 \subsection{Model Description}

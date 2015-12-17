@@ -8,22 +8,25 @@
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Stereo vision set-up.\relax }}{3}{figure.caption.10}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Elements in a cv::Mat representing an image. This is a 3-channel image with 8 bit RGB colors.\relax }}{6}{figure.caption.12}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Geometry of a pinhole camera.\relax }}{6}{figure.caption.13}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Two parallel lines are projected onto an image plane, where they form two lines. These projected lines converge towards a vanishing point on the horizon.\relax }}{8}{figure.caption.14}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Left to right displacement on the image plane based on distance.\relax }}{9}{figure.caption.15}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Geometry of rectified stereo vision.\relax }}{9}{figure.caption.17}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Geometry of a pinhole camera.\relax }}{7}{figure.caption.17}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Two parallel lines are projected onto an image plane, where they form two lines. These projected lines converge towards a vanishing point on the horizon.\relax }}{9}{figure.caption.18}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Left to right displacement on the image plane based on distance.\relax }}{10}{figure.caption.19}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Geometry of rectified stereo vision.\relax }}{10}{figure.caption.21}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces A figure\relax }}{12}{figure.caption.19}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces A figure\relax }}{14}{figure.caption.23}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Gerogiannis concept of representing lines by eccentric ellipses. This image is taken directly from \cite {gerogiannisvp}.\relax }}{16}{figure.caption.21}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Graphical user interface for the vanishing point detector. Note that the detected line segments are actually several lines overlapping each other.\relax }}{18}{figure.caption.24}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces The two camera positions.\relax }}{19}{figure.caption.25}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Graphical user interface for stereo matching. A disparity map is computed from the Tsukuba samples by using StereoSGBM. \relax }}{19}{figure.caption.26}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces An overview of the calibration procedure.\relax }}{21}{figure.caption.27}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces \relax }}{22}{figure.caption.28}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces The result of StereoSGBM.\relax }}{24}{figure.caption.33}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Dummy text. \relax }}{24}{figure.caption.34}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Some of the depth layers in figure \ref {fig:StereoMatching} separated by color filtering. The top image is the closest layer, while the most distant layer is at the bottom.\relax }}{24}{figure.caption.30}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Gerogiannis concept of representing lines by eccentric ellipses. This image is taken directly from \cite {gerogiannisvp}.\relax }}{18}{figure.caption.25}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Two steps in "getVanishingPoint()".\relax }}{19}{figure.caption.26}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Sequence diagram illustrating program execution when the user activates camera feed and VP detection.\relax }}{20}{figure.caption.27}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Sequence diagram illustrating program execution when the user activates camera feed and VP detection.\relax }}{21}{figure.caption.29}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Graphical user interface for the vanishing point detector. Note that the detected line segments are actually several lines overlapping each other.\relax }}{22}{figure.caption.31}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces The two camera positions.\relax }}{23}{figure.caption.32}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Graphical user interface for stereo matching. A disparity map is computed from the Tsukuba samples by using StereoSGBM. \relax }}{24}{figure.caption.33}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces An overview of the calibration procedure.\relax }}{25}{figure.caption.34}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces \relax }}{26}{figure.caption.35}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces The result of StereoSGBM.\relax }}{28}{figure.caption.40}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Dummy text. \relax }}{28}{figure.caption.41}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Some of the depth layers in figure \ref {fig:StereoMatching} separated by color filtering. The top image is the closest layer, while the most distant layer is at the bottom.\relax }}{28}{figure.caption.37}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
