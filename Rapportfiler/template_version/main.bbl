@@ -1,4 +1,4 @@
-\begin{thebibliography}{DWB06}
+\begin{thebibliography}{DRMS07}
 
 \bibitem[3dC]{3dCalib}
 Camera calibration with opencv.
@@ -30,6 +30,12 @@ Canny edge detection with opencv.
 \newblock
   \url{http://docs.opencv.org/2.4/doc/tutorials/imgproc/imgtrans/canny_detector/canny_detector.html}.
 
+\bibitem[DRMS07]{monoSLAM}
+A.J. Davison, I.D Reid, N.D Molton, and O.~Stasse.
+\newblock Monoslam: Real-time single camera slam.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, (6), jun 2007.
+
 \bibitem[DWB06]{SLAMp1}
 H~Durrant-Whyte and Tim Bailey.
 \newblock Simultaneous localization and mapping: part i.
@@ -53,14 +59,15 @@ Heiko Hirschmuller.
 \newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
   on}, 30(2), 2008.
 
-\bibitem[mon07]{monoSLAM}
-Monoslam: Real-time single camera slam.
-\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
-  on}, (6), jun 2007.
-
 \bibitem[NN00]{Author:year:XYZ}
 Firstname~1 Name1 and Firstname2 Name2.
 \newblock A dummy title.
 \newblock {\em A Fake Journal}, 1(1):000--000, June 2000.
+
+\bibitem[XWS06]{autorobot}
+Jian Xu, Han Wang, and Andrew Shacklock.
+\newblock Visual guidance for autonomous vehicles.
+\newblock In {\em Autonomous Mobile Robots}, chapter~1, pages 5 -- 40. CRC
+  Press, may 2006.
 
 \end{thebibliography}
