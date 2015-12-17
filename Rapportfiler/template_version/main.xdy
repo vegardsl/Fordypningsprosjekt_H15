@@ -51,9 +51,7 @@
  "hypersc" 
  "pagehypersc"
  "hyperemph" 
- "pagehyperemph"
- "glsignore" 
- "pageglsignore")))
+ "pagehyperemph")))
 
 ; user defined alphabets
 
@@ -332,7 +330,6 @@
 \providecommand*\glsXpageXhypersl[2]{\setentrycounter[#1]{page}\hypersl{#2}}
 \providecommand*\glsXpageXhypersc[2]{\setentrycounter[#1]{page}\hypersc{#2}}
 \providecommand*\glsXpageXhyperemph[2]{\setentrycounter[#1]{page}\hyperemph{#2}}
-\providecommand*\glsXpageXglsignore[2]{\setentrycounter[#1]{page}\glsignore{#2}}
 \begin{theglossary}\glossaryheader~n" 
    :close "%~n\end{theglossary}\glossarypostamble~n" 
    :tree)
@@ -412,9 +409,6 @@
 (markup-locref :open "~n\glsXpageXhyperemph" 
  :close "" 
  :attr "pagehyperemph")
-(markup-locref :open "~n\glsXpageXglsignore" 
- :close "" 
- :attr "pageglsignore")
 
 ; define letter group list format
 
