@@ -42,7 +42,7 @@ private:
 
     int lowerDispThresh;
     int upperDispThresh;
-    cv::Mat imgResult, imgOriginal, pointcloud, pointcloud_roi, z_roi, imgDisparity;
+    cv::Mat imgResult, imgOriginal, poinextcloud, pointcloud_roi, z_roi, imgDisparity;
     //cv::Mat imgOriginal, imgDisparity, imgDisparityGray, imgThreshold;
 
     double floorDisparity[10][8];
