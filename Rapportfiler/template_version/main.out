@@ -45,18 +45,17 @@
 \BOOKMARK [2][-]{subsection.4.3.6}{Finding Obstructions}{section.4.3}% 45
 \BOOKMARK [2][-]{subsection.4.3.7}{Distance Measurment}{section.4.3}% 46
 \BOOKMARK [2][-]{subsection.4.3.8}{Problems Encountered During Implementation }{section.4.3}% 47
-\BOOKMARK [0][-]{chapter.5}{Assessment}{}% 48
+\BOOKMARK [0][-]{chapter.5}{Capabilities}{}% 48
 \BOOKMARK [1][-]{section.5.1}{Vanishing Point Detection}{chapter.5}% 49
 \BOOKMARK [1][-]{section.5.2}{Depth Perception and Obstruction Detection}{chapter.5}% 50
-\BOOKMARK [2][-]{subsection.5.2.1}{Real-time Disparity Map Calculation}{section.5.2}% 51
-\BOOKMARK [2][-]{subsection.5.2.2}{Range Measurement and Object Detection}{section.5.2}% 52
-\BOOKMARK [2][-]{subsection.5.2.3}{Weaknesses and Limitations}{section.5.2}% 53
-\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 54
-\BOOKMARK [1][-]{section.6.1}{Task Fulfilment}{chapter.6}% 55
-\BOOKMARK [1][-]{section.6.2}{Future Work}{chapter.6}% 56
-\BOOKMARK [1][-]{section.6.3}{Conclusion}{chapter.6}% 57
-\BOOKMARK [0][-]{section*.46}{References}{}% 58
-\BOOKMARK [0][-]{appendix.A}{Setting up a project with Qt and OpenCV}{}% 59
-\BOOKMARK [1][-]{section.A.1}{Setting up OpenCV}{appendix.A}% 60
-\BOOKMARK [1][-]{section.A.2}{Setting up Qt Creator with OpenCV}{appendix.A}% 61
-\BOOKMARK [1][-]{section.A.3}{Building OpenCV with CUDA and Qt from source}{appendix.A}% 62
+\BOOKMARK [2][-]{subsection.5.2.1}{Range Measurement and Object Detection}{section.5.2}% 51
+\BOOKMARK [2][-]{subsection.5.2.2}{Weaknesses and Limitations}{section.5.2}% 52
+\BOOKMARK [0][-]{chapter.6}{Conclusion}{}% 53
+\BOOKMARK [1][-]{section.6.1}{Task Fulfilment}{chapter.6}% 54
+\BOOKMARK [1][-]{section.6.2}{Future Work}{chapter.6}% 55
+\BOOKMARK [1][-]{section.6.3}{Conclusion}{chapter.6}% 56
+\BOOKMARK [0][-]{section*.46}{References}{}% 57
+\BOOKMARK [0][-]{appendix.A}{Setting up a project with Qt and OpenCV}{}% 58
+\BOOKMARK [1][-]{section.A.1}{Setting up OpenCV}{appendix.A}% 59
+\BOOKMARK [1][-]{section.A.2}{Setting up Qt Creator with OpenCV}{appendix.A}% 60
+\BOOKMARK [1][-]{section.A.3}{Building OpenCV with CUDA and Qt from source}{appendix.A}% 61

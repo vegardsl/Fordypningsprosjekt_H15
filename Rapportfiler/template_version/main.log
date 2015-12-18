@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.8.21)  17 DEC 2015 23:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.8.21)  18 DEC 2015 01:39
 entering extended mode
 **main.tex
 (main.tex
@@ -1693,7 +1693,7 @@ LaTeX Info: Redefining \nameref on input line 27.
 \c@lstlisting=\count332
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
- <./figs/ntnu-logo.pdf, id=251, 241.4922pt x 52.79724pt>
+ <./figs/ntnu-logo.pdf, id=247, 241.4922pt x 52.79724pt>
 File: ./figs/ntnu-logo.pdf Graphic file (type pdf)
 
 <use ./figs/ntnu-logo.pdf>
@@ -1769,21 +1769,21 @@ No file main.acr.
 
 
 ]
-<./figs/Robot_front.jpg, id=448, 1585.925pt x 3195.94pt>
+<./figs/Robot_front.jpg, id=443, 1585.925pt x 3195.94pt>
 File: ./figs/Robot_front.jpg Graphic file (type jpg)
 
 <use ./figs/Robot_front.jpg>
 Package pdftex.def Info: ./figs/Robot_front.jpg used on input line 23.
 (pdftex.def)             Requested size: 109.20111pt x 220.03244pt.
 
-<./figs/Robot_side.jpg, id=449, 2502.34875pt x 2329.70375pt>
+<./figs/Robot_side.jpg, id=444, 2502.34875pt x 2329.70375pt>
 File: ./figs/Robot_side.jpg Graphic file (type jpg)
 
 <use ./figs/Robot_side.jpg>
 Package pdftex.def Info: ./figs/Robot_side.jpg used on input line 28.
 (pdftex.def)             Requested size: 236.59778pt x 220.2577pt.
  [2 <./figs/Robot_front.jpg> <./figs/Robot_side.jpg>] <./figs/hardwareSetup_cro
-pped.png, id=460, 945.5325pt x 325.215pt>
+pped.png, id=455, 945.5325pt x 325.215pt>
 File: ./figs/hardwareSetup_cropped.png Graphic file (type png)
 
 <use ./figs/hardwareSetup_cropped.png>
@@ -1795,14 +1795,14 @@ Package pdftex.def Info: ./figs/hardwareSetup_cropped.png used on input line 61
 
 
 
-] <./figs/SjakkMat.png, id=479, 452.892pt x 309.5565pt>
+] <./figs/SjakkMat.png, id=474, 452.892pt x 309.5565pt>
 File: ./figs/SjakkMat.png Graphic file (type png)
 
 <use ./figs/SjakkMat.png>
 Package pdftex.def Info: ./figs/SjakkMat.png used on input line 19.
 (pdftex.def)             Requested size: 317.02223pt x 216.68806pt.
  [5] [6 <./figs/SjakkMat.png>]
-<./figs/pinhole.png, id=514, 561.297pt x 324.0105pt>
+<./figs/pinhole.png, id=509, 561.297pt x 324.0105pt>
 File: ./figs/pinhole.png Graphic file (type png)
  <use ./figs/pinhole.png>
 Package pdftex.def Info: ./figs/pinhole.png used on input line 63.
@@ -1813,14 +1813,14 @@ Overfull \hbox (18.20111pt too wide) in paragraph at lines 63--64
  []
 
 [7 <./figs/pinhole.png>] [8]
-<./figs/VpConseptBl.png, id=549, 426.99525pt x 310.761pt>
+<./figs/VpConseptBl.png, id=544, 426.99525pt x 310.761pt>
 File: ./figs/VpConseptBl.png Graphic file (type png)
 
 <use ./figs/VpConseptBl.png>
 Package pdftex.def Info: ./figs/VpConseptBl.png used on input line 112.
 (pdftex.def)             Requested size: 182.0pt x 132.45813pt.
  [9 <./figs/VpConseptBl.png>]
-<./figs/3dScene.png, id=568, 800.9925pt x 363.759pt>
+<./figs/3dScene.png, id=563, 800.9925pt x 363.759pt>
 File: ./figs/3dScene.png Graphic file (type png)
  <use ./figs/3dScene.png>
 Package pdftex.def Info: ./figs/3dScene.png used on input line 141.
@@ -1828,7 +1828,7 @@ Package pdftex.def Info: ./figs/3dScene.png used on input line 141.
 
 Underfull \vbox (badness 2478) has occurred while \output is active []
 
- [10 <./figs/3dScene.png>] <./figs/StereoSpace.png, id=577, 911.8065pt x 458.31
+ [10 <./figs/3dScene.png>] <./figs/StereoSpace.png, id=572, 911.8065pt x 458.31
 226pt>
 File: ./figs/StereoSpace.png Graphic file (type png)
 
@@ -1836,7 +1836,7 @@ File: ./figs/StereoSpace.png Graphic file (type png)
 Package pdftex.def Info: ./figs/StereoSpace.png used on input line 151.
 (pdftex.def)             Requested size: 364.0pt x 182.965pt.
 
-<./figs/blockMatching.png, id=578, 710.655pt x 289.83281pt>
+<./figs/blockMatching.png, id=573, 710.655pt x 289.83281pt>
 File: ./figs/blockMatching.png Graphic file (type png)
 
 <use ./figs/blockMatching.png>
@@ -1889,7 +1889,7 @@ Underfull \vbox (badness 1442) has occurred while \output is active []
 
 
 ]
-<./figs/GerogiannisLines.png, id=642, 322.20375pt x 423.984pt>
+<./figs/GerogiannisLines.png, id=637, 322.20375pt x 423.984pt>
 File: ./figs/GerogiannisLines.png Graphic file (type png)
 
 <use ./figs/GerogiannisLines.png>
@@ -1906,7 +1906,7 @@ Underfull \hbox (badness 1142) in paragraph at lines 37--38
  []
 
 [18 <./figs/GerogiannisLines.png>]
-<./figs/getVp.png, id=658, 222.07968pt x 342.5297pt>
+<./figs/getVp.png, id=653, 222.07968pt x 342.5297pt>
 File: ./figs/getVp.png Graphic file (type png)
  <use ./figs/getVp.png>
 Package pdftex.def Info: ./figs/getVp.png used on input line 46.
@@ -1919,7 +1919,7 @@ Overfull \hbox (3.638pt too wide) in paragraph at lines 46--47
 
 LaTeX Warning: Reference `alg:getVp' on page 19 undefined on input line 52.
 
-<./figs/findVp.png, id=661, 670.75594pt x 646.66594pt>
+<./figs/findVp.png, id=656, 670.75594pt x 646.66594pt>
 File: ./figs/findVp.png Graphic file (type png)
  <use ./figs/findVp.png>
 Package pdftex.def Info: ./figs/findVp.png used on input line 60.
@@ -1929,14 +1929,14 @@ Package pdftex.def Info: ./figs/findVp.png used on input line 60.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [19 <./figs/getVp.png>] [20 <./figs/findVp.png>]
-<./figs/VpAppSequence.png, id=679, 969.6225pt x 460.72125pt>
+<./figs/VpAppSequence.png, id=674, 969.6225pt x 460.72125pt>
 File: ./figs/VpAppSequence.png Graphic file (type png)
 
 <use ./figs/VpAppSequence.png>
 Package pdftex.def Info: ./figs/VpAppSequence.png used on input line 90.
 (pdftex.def)             Requested size: 533.29402pt x 253.39746pt.
  [21 <./figs/VpAppSequence.png>]
-<./figs/VPGuiBlurred.png, id=685, 531.78674pt x 363.759pt>
+<./figs/VPGuiBlurred.png, id=680, 531.78674pt x 363.759pt>
 File: ./figs/VPGuiBlurred.png Graphic file (type png)
 
 <use ./figs/VPGuiBlurred.png>
@@ -1953,7 +1953,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [22
 
 
- <./figs/VPGuiBlurred.png>] <./figs/rig_pantilt.jpg, id=695, 4143.48pt x 2330.7
+ <./figs/VPGuiBlurred.png>] <./figs/rig_pantilt.jpg, id=690, 4143.48pt x 2330.7
 075pt>
 File: ./figs/rig_pantilt.jpg Graphic file (type jpg)
 
@@ -1965,7 +1965,7 @@ File: ./figs/rig_pantilt.jpg Graphic file (type jpg)
 Package pdftex.def Info: ./figs/rig_pantilt.jpg used on input line 126.
 (pdftex.def)             Requested size: 163.79889pt x 92.10994pt.
 
-<./figs/StereoGui.png, id=697, 986.18437pt x 487.06969pt>
+<./figs/StereoGui.png, id=692, 986.18437pt x 487.06969pt>
 File: ./figs/StereoGui.png Graphic file (type png)
 
 <use ./figs/StereoGui.png>
@@ -1979,7 +1979,7 @@ Overfull \hbox (0.8825pt too wide) in paragraph at lines 138--139
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [23 <./figs/rig_pantilt.jpg>] <./figs/StereoInit.png, id=707, 470.50781pt x 62
+ [23 <./figs/rig_pantilt.jpg>] <./figs/StereoInit.png, id=702, 470.50781pt x 62
 4.08156pt>
 File: ./figs/StereoInit.png Graphic file (type png)
 
@@ -1987,21 +1987,21 @@ File: ./figs/StereoInit.png Graphic file (type png)
 Package pdftex.def Info: ./figs/StereoInit.png used on input line 156.
 (pdftex.def)             Requested size: 329.35321pt x 436.85411pt.
 
-<./figs/chess_pattern.png, id=708, 1377.64688pt x 1001.24063pt>
+<./figs/chess_pattern.png, id=703, 1377.64688pt x 1001.24063pt>
 File: ./figs/chess_pattern.png Graphic file (type png)
 
 <use ./figs/chess_pattern.png>
 Package pdftex.def Info: ./figs/chess_pattern.png used on input line 164.
 (pdftex.def)             Requested size: 327.59778pt x 238.0874pt.
 
-<./figs/CamCalibDistorted.png, id=709, 961.34157pt x 540.51938pt>
+<./figs/CamCalibDistorted.png, id=704, 961.34157pt x 540.51938pt>
 File: ./figs/CamCalibDistorted.png Graphic file (type png)
 
 <use ./figs/CamCalibDistorted.png>
 Package pdftex.def Info: ./figs/CamCalibDistorted.png used on input line 169.
 (pdftex.def)             Requested size: 327.59778pt x 184.19478pt.
 
-<./figs/singleCamCalib.png, id=710, 405.01312pt x 538.26094pt>
+<./figs/singleCamCalib.png, id=705, 405.01312pt x 538.26094pt>
 File: ./figs/singleCamCalib.png Graphic file (type png)
 
 <use ./figs/singleCamCalib.png>
@@ -2049,68 +2049,68 @@ Overfull \hbox (71.66771pt too wide) in paragraph at lines 207--207
  []
 
 [27 <./figs/singleCamCalib.png>]
-<./figs/DepthLayer1.png, id=737, 578.16pt x 325.81725pt>
+<./figs/DepthLayer1.png, id=732, 578.16pt x 325.81725pt>
 File: ./figs/DepthLayer1.png Graphic file (type png)
 
 <use ./figs/DepthLayer1.png>
 Package pdftex.def Info: ./figs/DepthLayer1.png used on input line 217.
 (pdftex.def)             Requested size: 127.40222pt x 71.79436pt.
 
-<./figs/DepthLayer2.png, id=738, 578.16pt x 325.215pt>
+<./figs/DepthLayer2.png, id=733, 578.16pt x 325.215pt>
 File: ./figs/DepthLayer2.png Graphic file (type png)
 
 <use ./figs/DepthLayer2.png>
 Package pdftex.def Info: ./figs/DepthLayer2.png used on input line 221.
 (pdftex.def)             Requested size: 127.40222pt x 71.66165pt.
 
-<./figs/DepthLayer6.png, id=739, 578.16pt x 325.215pt>
+<./figs/DepthLayer6.png, id=734, 578.16pt x 325.215pt>
 File: ./figs/DepthLayer6.png Graphic file (type png)
 
 <use ./figs/DepthLayer6.png>
 Package pdftex.def Info: ./figs/DepthLayer6.png used on input line 225.
 (pdftex.def)             Requested size: 127.40222pt x 71.66165pt.
 
-<./figs/DepthLayer7.png, id=740, 578.16pt x 325.215pt>
+<./figs/DepthLayer7.png, id=735, 578.16pt x 325.215pt>
 File: ./figs/DepthLayer7.png Graphic file (type png)
 
 <use ./figs/DepthLayer7.png>
 Package pdftex.def Info: ./figs/DepthLayer7.png used on input line 229.
 (pdftex.def)             Requested size: 127.40222pt x 71.66165pt.
 
-<./figs/DepthLayer8.png, id=741, 578.16pt x 325.215pt>
+<./figs/DepthLayer8.png, id=736, 578.16pt x 325.215pt>
 File: ./figs/DepthLayer8.png Graphic file (type png)
 
 <use ./figs/DepthLayer8.png>
 Package pdftex.def Info: ./figs/DepthLayer8.png used on input line 233.
 (pdftex.def)             Requested size: 127.40222pt x 71.66165pt.
-
-<./figs/OriginalExample.png, id=744, 963.6pt x 542.025pt>
+ [28 <./figs/DepthLayer1.png> <./figs/DepthLayer2.png> <./figs/DepthLayer6.png>
+ <./figs/DepthLayer7.png> <./figs/DepthLayer8.png>] <./figs/OriginalExample.png
+, id=747, 963.6pt x 542.025pt>
 File: ./figs/OriginalExample.png Graphic file (type png)
 
 <use ./figs/OriginalExample.png>
-Package pdftex.def Info: ./figs/OriginalExample.png used on input line 275.
+Package pdftex.def Info: ./figs/OriginalExample.png used on input line 284.
 (pdftex.def)             Requested size: 163.79889pt x 92.13475pt.
 
-<./figs/DispExample.png, id=745, 963.6pt x 542.025pt>
+<./figs/DispExample.png, id=748, 963.6pt x 542.025pt>
 File: ./figs/DispExample.png Graphic file (type png)
 
 <use ./figs/DispExample.png>
-Package pdftex.def Info: ./figs/DispExample.png used on input line 280.
+Package pdftex.def Info: ./figs/DispExample.png used on input line 289.
 (pdftex.def)             Requested size: 163.79889pt x 92.13475pt.
- [28 <./figs/DepthLayer1.png> <./figs/DepthLayer2.png> <./figs/DepthLayer6.png>
- <./figs/DepthLayer7.png> <./figs/DepthLayer8.png>] <./figs/obstruction.png, id
-=754, 965.10562pt x 386.94562pt>
+
+<./figs/obstruction.png, id=749, 965.10562pt x 386.94562pt>
 File: ./figs/obstruction.png Graphic file (type png)
 
 <use ./figs/obstruction.png>
-Package pdftex.def Info: ./figs/obstruction.png used on input line 290.
+Package pdftex.def Info: ./figs/obstruction.png used on input line 299.
 (pdftex.def)             Requested size: 357.0835pt x 143.16763pt.
-) [29 <./figs/OriginalExample.png> <./figs/DispExample.png> <./figs/obstruction
-.png>] (assessment_chapter.tex [30
+) [29 <./figs/OriginalExample.png> <./figs/DispExample.png>] [30 <./figs/obstru
+ction.png>] (assessment_chapter.tex) [31
 
 
 
-]) [31]
+]
 (conclusion_chapter.tex [32
 
 
@@ -2136,7 +2136,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 112.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 112.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 112.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 30B7CF04717782A335DC162C6AA3FAD8;4457.
+(rerunfilecheck)             Checksum: B30A9A19B72B3CF5A945F23A76B94FF5;4369.
 
 
 LaTeX Warning: There were undefined references.
@@ -2144,10 +2144,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 112.
  ) 
 Here is how much of TeX's memory you used:
- 23496 strings out of 493698
- 350200 string characters out of 3144406
+ 23494 strings out of 493698
+ 350166 string characters out of 3144406
  622525 words of memory out of 3000000
- 25954 multiletter control sequences out of 15000+200000
+ 25953 multiletter control sequences out of 15000+200000
  117889 words of font info for 151 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  62i,13n,94p,1857b,608s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2200,9 +2200,9 @@ les/MiKTeX 2.9/fonts/type1/public/lm/lmss12.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/lm/lmss17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 lm/lmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (49 pages, 11752884 bytes).
+Output written on main.pdf (49 pages, 11753056 bytes).
 PDF statistics:
- 924 PDF objects out of 1000 (max. 8388607)
- 198 named destinations out of 1000 (max. 500000)
- 26754 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 919 PDF objects out of 1000 (max. 8388607)
+ 197 named destinations out of 1000 (max. 500000)
+ 26746 words of extra memory for PDF output out of 29859 (max. 10000000)
 

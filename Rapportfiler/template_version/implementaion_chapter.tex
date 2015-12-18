@@ -264,8 +264,8 @@ Rectification is the final step before stereo matching can be performed. In this
  ''stereoRectify()'' will write data unto a set of new matrices:
 
 \begin{description}
-	\item[Rl: ] 3 by 3 rotation matrix between the two cameras.
-	\item[Rr: ] Translation between the two cameras. Denoted $B$ in the theory chapter. Relates the left camera to the right together with $R$. 
+	\item[Rl: ] 3 by 3 rotation matrix for the left frame.
+	\item[Rr: ] 3 by 3 rotation matrix for the right frame.
 	\item[Pl: ] 3 by 3 essential matrix.
 	\item[Pr: ] 3 by 3 fundamental matrix.
 	\item[Q: ] 3 by 3 fundamental matrix.

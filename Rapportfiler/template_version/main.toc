@@ -66,12 +66,11 @@
 \contentsline {subsection}{\numberline {4.3.6}Finding Obstructions}{29}{subsection.4.3.6}
 \contentsline {subsection}{\numberline {4.3.7}Distance Measurment}{29}{subsection.4.3.7}
 \contentsline {subsection}{\numberline {4.3.8}Problems Encountered During Implementation }{29}{subsection.4.3.8}
-\contentsline {chapter}{\chapternumberline {5}Assessment}{31}{chapter.5}
+\contentsline {chapter}{\chapternumberline {5}Capabilities}{31}{chapter.5}
 \contentsline {section}{\numberline {5.1}Vanishing Point Detection}{31}{section.5.1}
 \contentsline {section}{\numberline {5.2}Depth Perception and Obstruction Detection}{31}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Real-time Disparity Map Calculation}{31}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Range Measurement and Object Detection}{31}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Weaknesses and Limitations}{31}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.1}Range Measurement and Object Detection}{31}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Weaknesses and Limitations}{31}{subsection.5.2.2}
 \contentsline {chapter}{\chapternumberline {6}Conclusion}{33}{chapter.6}
 \contentsline {section}{\numberline {6.1}Task Fulfilment}{33}{section.6.1}
 \contentsline {section}{\numberline {6.2}Future Work}{33}{section.6.2}

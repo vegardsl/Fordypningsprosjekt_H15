@@ -81,7 +81,7 @@ private:
     int blockSize = 5;
     int textureThreashold = 31;
     int uniquenessRatio = 15;
-    int speckleWindowSize = 15;
+    int speckleWindowSize = 100;
     int speckleRange = 15;
     int disp12MaxDiff = 5;
     int P1 = 16 * 3 * SADWindowSize * SADWindowSize;

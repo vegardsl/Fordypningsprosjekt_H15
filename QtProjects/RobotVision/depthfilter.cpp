@@ -128,7 +128,7 @@ void DepthFilter::morphOps(Mat &image)
 
 void DepthFilter::filterAndMaskImage(Mat imgDisparityGray, int lowerThreshold, int upperThreshold, Mat &imgThreshold)
 {
-    floorPlaneFilter(imgDisparityGray);
+    //floorPlaneFilter(imgDisparityGray);
     inRange(imgDisparityGray,lowerThreshold,upperThreshold,imgThreshold);
     morphOps(imgThreshold);
 
@@ -170,7 +170,7 @@ void DepthFilter::trackFilteredObject(int &x, int &y, Mat threshold)
     //imshow("temp",temp);
     //waitKey();
 
-    //QString ty = matType2str(temp.type());
+    QString ty = matType2str(temp.type());
     //qDebug() << "Matrix type: " + ty;
 
     //imshow("Thresh", threshold);
@@ -219,40 +219,23 @@ void DepthFilter::trackFilteredObject(int &x, int &y, Mat threshold)
                     //qDebug() << "Obstruction detected";
 
                     Scalar color = Scalar(255,128,0);
-                    //drawContours( drawing, contours_poly, i, color, 1, 8, vector<Vec4i>(), 0, Point() );
-                    //rectangle( imgOriginal, boundRect[index].tl(), boundRect[index].br(), color, 2, 8, 0 );
-                    //cv::Rect roi(boundRect[index]);
-                    //cv::Mat crop(imgDisparity, roi);
-                    //cv::Mat crop(pointcloud, roi);
-                    //imshow("crop",crop);
-                    //waitKey();
+                    rectangle( imgOriginal, boundRect[index].tl(), boundRect[index].br(), color, 2, 8, 0 );
 
                     // Calculate ROI mean.
-                    //cv::Mat mask(cv::Mat::zeros(crop.rows, crop.cols, CV_8UC1)); //the mask with the size of cropped image
-                    Mat mask = Mat::zeros(imgDisparity.size(), CV_8UC1);
-                    //imshow("mask",mask);
-                    //waitKey();
+                    Mat mask = Mat::zeros(imgDisparity.size(), CV_8UC1); // Initialize a mask Mat
 
-                    //Illustrate the contours of detected objects.
-                    drawContours(mask,contours,index,255,CV_FILLED);
-                    //drawContours(imgDisparity,contours,index,255);
-                    //imshow("mask",mask);
-                    //imshow("disparity",pointcloud);
-                    auto mean(cv::sum(cv::mean(imgDisparity, mask)));
+                    drawContours(mask,contours,index,255,CV_FILLED); //  Give the mask the shape of the detected contour
+                    auto mean(cv::sum(cv::mean(imgDisparity, mask))); // Cacl mean of disp values within mask
 
-
-                    //mean(imgDisparity,mask);
-                    //imshow("mask", mask);
-
-                    // Position the text inside the bounding rectangle;
+                    // Position the text near the bounding rectangle;
                     Point textPos = boundRect[index].tl();
                     textPos.x += 20;
                     textPos.y += 20;
 
                     double distance = disp2dist(mean[0]);
-
-                    //putText(imgOriginal, to_string((int)distance)+" cm",textPos,2,1,Scalar(0,255,0),2);
-                    //cout << "Depth: " << mean[0] << " mm" << endl;
+                    //Write distance on image
+                    putText(imgOriginal, to_string((int)distance)+" cm",textPos,2,1,Scalar(0,255,0),2);
+                    cout << "Depth: " << mean[0] << " mm" << endl;
 
                     //waitKey();
 
