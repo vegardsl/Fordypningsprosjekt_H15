@@ -44,12 +44,12 @@ Figure \ref{fig:GerogiannisLines}, taken from \cite{gerogiannisvp}, illustrates 
 	\vspace{-10pt} % Remove exessive whitespace
 	\centering
 	\includegraphics[width=0.36\textwidth]{getVp}
-	\caption{\label{fig:getVp}Two steps in "getVanishingPoint()".}
+	\caption{\label{fig:getVp}Two steps in \textit{getVanishingPoint()}.}
 	\vspace{-60pt} % Remove exessive whitespace
 \end{wrapfigure}
 
 
-When the detected lines have been filtered and stored, they will be passed to the vanishing point detector in the function "getVanishingPoint(lines)". This function will perform two steps (figure \ref{alg:getVp}):
+When the detected lines have been filtered and stored, they will be passed to the vanishing point detector in the function \textit{getVanishingPoint(lines)}. This function will perform two steps (figure \ref{alg:getVp}):
 
 \begin{enumerate}
 	\item Find, store and assign weights to the points where the lines intersect. Lines that are either too vertical or too horizintal will not be included in the calculations. Intersectionpoints outside the image frame are rejected.
@@ -66,7 +66,7 @@ When the detected lines have been filtered and stored, they will be passed to th
 
 \paragraph{Program Structure}
 
-The vanishing point detector was implemented as a QWidget Application in the Qt Creator IDE. The code excerpt shown in algorithm \ref{alg:edgelines} contains the most important image processing steps. A main thread, which may be called the GUI thread, handles all user related input and output. All image processing is done in the class "ImageProcessing" which inherits from QThread. This means that "ImageProcessing" controls a protected function "run()" which contains the threaded code and image processing steps. Figure \ref{fig:VpAppSequence} is a sequence diagram that shows the different classes and threads interact. The ellipse filter step is ommitted in the illustration; if it had been included, it would be called between "hough->detect()" and "getVanishingPoint()".
+The vanishing point detector was implemented as a QWidget Application in the Qt Creator IDE. The code excerpt shown in algorithm \ref{alg:edgelines} contains the most important image processing steps. A main thread, which may be called the GUI thread, handles all user related input and output. All image processing is done in the class \textit{ImageProcessing} which inherits from QThread. This means that \textit{ImageProcessing} controls a protected function \textit{run()} which contains the threaded code and image processing steps. Figure \ref{fig:VpAppSequence} is a sequence diagram that shows the different classes and threads interact. The ellipse filter step is ommitted in the illustration; if it had been included, it would be called between \textit{hough->detect()} and \textit{getVanishingPoint()}.
 
 \begin{algorithm}[h]
 	\caption{Vanishing point detector loop. Several lines of code are omitted in this example to make the processing more clear.}
@@ -210,32 +210,7 @@ In this step, the cameras are calibrated separately.  The purpose of this calibr
 
 \newpage
 
-\begin{wrapfigure}{R}{0.4\textwidth}
-\centering
 
-	\begin{subfigure}[b]{0.35\textwidth}
-        \includegraphics[width=\textwidth]{DepthLayer1}
-	\end{subfigure}
-	\par\medskip
-	\begin{subfigure}[b]{0.35\textwidth}
-        \includegraphics[width=\textwidth]{DepthLayer2}
-	\end{subfigure}
-	\par\medskip
-	\begin{subfigure}[b]{0.35\textwidth}
-        \includegraphics[width=\textwidth]{DepthLayer6}
-	\end{subfigure}
-	\par\medskip
-	\begin{subfigure}[b]{0.35\textwidth}
-        \includegraphics[width=\textwidth]{DepthLayer7}
-	\end{subfigure}
-	\par\medskip
-	\begin{subfigure}[b]{0.35\textwidth}
-        \includegraphics[width=\textwidth]{DepthLayer8}
-	\end{subfigure}
-	
-\caption{Some of the depth layers in figure \ref{fig:StereoMatching} separated by color filtering. The top image is the closest layer, while the most distant layer is at the bottom.}
-\label{fig:layers2}
-\end{wrapfigure}
 
 When all the image samples has been read into the program, the program will check if the chessboard can be detected. If the chessboard is present in the image, the position of the corners will be stored in  
 
@@ -250,7 +225,7 @@ Stereo calibration is almost exactly the same as single camera calibration. An i
 	\item[F: ] 3 by 3 fundamental matrix.
 \end{description}
 
-These matrices will be stored in a new file ''stereo\_calib.xml'' together with the distortion coefficients and camera matrices from the two single camera calibrations. These values will be applied in the next calibration step.
+These matrices will be stored in a new file, ''stereo\_calib.xml'', together with the distortion coefficients and camera matrices from the two single camera calibrations. These values will be applied in the next calibration step.
 
 \paragraph{Stereo Rectification}
 
@@ -258,19 +233,42 @@ Rectification is the final step before stereo matching can be performed. In this
 
 \begin{enumerate}
 	\item Loading ''stereo\_calib.xml'' and reading in the camera matrices, distortion coefficients, $R$ and $T$.
-	\item Calling ''stereoRectify()'' with the data above as input.
+	\item Calling \textit{stereoRectify()} with the data above as input.
 \end{enumerate}
 
- ''stereoRectify()'' will write data unto a set of new matrices:
+ \textit{stereoRectify()} will write data onto a set of new matrices:
 
 \begin{description}
 	\item[Rl: ] 3 by 3 rotation matrix for the left frame.
 	\item[Rr: ] 3 by 3 rotation matrix for the right frame.
-	\item[Pl: ] 3 by 3 essential matrix.
-	\item[Pr: ] 3 by 3 fundamental matrix.
-	\item[Q: ] 3 by 3 fundamental matrix.
+	\item[Pl: ] 3 by 4 left projection matrix.
+	\item[Pr: ] 3 by 4 right projection matrix.
+	\item[Q: ] 4 by 4 reprojection matrix. Maps disparity to depth.
 
 \end{description}
+
+Finally, the function \textit{initUndistortRectifyMap()} will use these matrices to generate four pixel maps with a size that equals the input images. The pixel maps are added the ''stereo\_calib.xml''. These matrices maps the pixels in the original images to their rectified locations. To rectify an input image, call the function \textit{remap()}.
+
+\begin{verbatim}
+	remap(leftCameraFeed, leftCameraFeed_rect, map_l1, map_l2, INTER_LINEAR);
+\end{verbatim}
+
+In this example, the function takes in the left camera feed and the \textit{cv::Mat} that will hold the resulting rectified image. \textit{map\_l1} and \textit{map\_l2} are the pixel maps. The result of all the calibration steps and the final rectification step is shown in figure \ref{fig:calibBeforeAfter}.
+
+\begin{figure}
+	\centering
+	\begin{subfigure}[b]{0.95\textwidth}
+		\includegraphics[width=\textwidth]{stereoPreCal}
+		\caption{Before calibration and rectification.}
+		\label{fig:stereoPreCal}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.95\textwidth}
+		\includegraphics[width=\textwidth]{stereoPostCal}
+		\caption{After calibration and rectifivation.}
+		\label{fig:stereoPostCal}
+	\end{subfigure}
+	\caption{\label{fig:calibBeforeAfter}Before and after calibration. The red lines in \ref{fig:stereoPostCal} can be used to assess the quality of the calibration procedure. Note that these image pairs are captured at different times.}
+\end{figure}
 
 %\begin{figure}
 %\includegraphics[scale=•]{•}
@@ -278,29 +276,163 @@ Rectification is the final step before stereo matching can be performed. In this
 
 \subsection{Stereo Matching}
 
+Recall that stereo matching is the search for mutual information in the sereo image pair. Matching of the sterao pair will result in a single channel disparity image (figure \ref{fig:StereoMatching}), i.e. the pixels have intencity values along a single dimention. The disparity is a measure of how far a block of features has shifted between the left and right image. 
+
 \begin{figure}
-\centering
- \begin{subfigure}[b]{0.45\textwidth}
-        \includegraphics[width=\textwidth]{OriginalExample}
-        \caption{Left camera image.}
-        \label{fig:OriginalExample}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.45\textwidth}
-        \includegraphics[width=\textwidth]{DispExample}
-        \caption{Disparity map.}
-        \label{fig:DispExample}
-    \end{subfigure}
-    \caption{\label{fig:StereoMatching}The result of StereoSGBM.}
+	\centering
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\textwidth]{OriginalExample}
+		\caption{Left camera image.}
+		\label{fig:OriginalExample}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\textwidth]{DispExample}
+		\caption{Disparity map.}
+		\label{fig:DispExample}
+	\end{subfigure}
+	\caption{\label{fig:StereoMatching}The result of StereoSGBM.}
 \end{figure}
+
+\paragraph{Processing Time}
+In this application, with no hardware acceleration from CUDA and the like, the choice of matching algorithm stands between the regular StereoBM and the more robust StereoSGBM. Block Matching (BM) is the fastest of the two, and usually allows a frame rate of several frames per second. Semi Global Block Matching (SGBM) on the other hand, is much slower. The Tsukuba samples in figure \ref{fig:StereoGui} are 384 pixels wide by 288 pixels high. Matching them with StereoSGBM takes roughly half a second. Images from the IP cameras on the robot are set to be 1280 pixels wide by 1024 pixels high. In this case, matching with StereoSGBM takes approximatly 8 seconds; a processing time which is too long if it is to be used for navigation. A solution to this problem is to reduce the size of the image pair. This was done in the matching application by downsampling the input images to $1/4th$ of their original size by using \textit{pyrDown()} in \gls{opencv}. This brings the frame rate up to 2 frames per second.
+
+The StereoSGBM object require at least these parameters:
+
+ \begin{description}
+ 	\item[numDisparities: ] The number of disparity values, and indirectly the maximum left to right projection displacement. Must be divisible by 16.
+ 	\item[minDisparity: ] The lowest disparity to be computed.
+	\item[blockSize: ] A block of pixels. Defines the size of regions to be matched. Must be an odd number, because the block is centered around a pixel.
+\end{description}
+
+Selecting a block size is a compromize between robustness and level of detail. Consider a block with the size of a single pixel. It is highly probable that it will cause false matches. A too large block will generate less noisy matches, while the details are surpressed.
+
+\begin{figure}
+	\centering
+	\begin{subfigure}[b]{0.30\textwidth}
+		\includegraphics[width=\textwidth]{blockSize1}
+		\caption{Block size $= 1$.}
+		\label{fig:block1}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.30\textwidth}
+		\includegraphics[width=\textwidth]{blockSize9}
+		\caption{Block size $= 9$.}
+		\label{fig:block9}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.30\textwidth}
+		\includegraphics[width=\textwidth]{blockSize25}
+		\caption{Block size $= 25$.}
+		\label{fig:block21}
+	\end{subfigure}
+	\caption{\label{fig:blockSize}Comparison of different block sizes.}
+\end{figure}
+
 
 \subsection{Finding Obstructions}
 
 \begin{figure}
 	\includegraphics[scale=0.37]{obstruction}
-	\caption{Dummy text. }
+	\caption{A preliminary version of the obstruction detector}
 	\label{fig:obstruction}
 \end{figure}
 
+Detection of obstructions is based purely on color thresholding, and is performed in the custom made: \textit{DepthFilter} class. The idea and initial code for obstruction detection is based on this autor's very first meeting with \gls{opencv}: an object tracking tutorial by \href{https://www.youtube.com/watch?v=bSeFrPrqZ2A}{Kyle Hounslow on youtube.com}. In the implemented application, obstruction detection is done within the \textit{DepthFilter} class. After the disparity map is calculated, the disparity thread will call \textit{exctractObstructions()} within the \textit{DepthFilter} class. The program flow within the function is shown in figure \ref{fig:obstructionFlow}. All detected obstructions are indicated on the original left frame by bounding rectangles (figure \ref{fig:obstruction}). The most sentral parts of the flowchart inf figure \ref{fig:obstructionFlow} will be explained in detail.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{obstructionFlow}
+	\caption{Obstruction detection in \textit{DepthFilter}.}
+	\label{fig:obstructionFlow}
+\end{figure}
+
+\begin{wrapfigure}{l}{0.4\textwidth}
+	\centering
+	
+	\begin{subfigure}[b]{0.35\textwidth}
+		\includegraphics[width=\textwidth]{DepthLayer1}
+	\end{subfigure}
+	\par\medskip
+	\begin{subfigure}[b]{0.35\textwidth}
+		\includegraphics[width=\textwidth]{DepthLayer2}
+	\end{subfigure}
+	\par\medskip
+	\begin{subfigure}[b]{0.35\textwidth}
+		\includegraphics[width=\textwidth]{DepthLayer6}
+	\end{subfigure}
+	\par\medskip
+	\begin{subfigure}[b]{0.35\textwidth}
+		\includegraphics[width=\textwidth]{DepthLayer7}
+	\end{subfigure}
+	\par\medskip
+	\begin{subfigure}[b]{0.35\textwidth}
+		\includegraphics[width=\textwidth]{DepthLayer8}
+	\end{subfigure}
+	
+	\caption{Some of the depth layers in figure \ref{fig:StereoMatching} separated by color filtering. The top image is the closest layer, while the most distant layer is at the bottom.}
+	\label{fig:layers2}
+\end{wrapfigure}
+
+\paragraph{Iterate Through Depth Layers}
+
+Disparity range is set to $\{0 ... 160 \}$, where each value relates to a corresponding distance. This part of the code will iterate through disparity intervals with a constant size of 10 starting at an interval of $\{150 ... 160\}$, and ending at $\{20 ... 30 \}$. The idea behind these intervals is that possible obstructions will stand out from the surface of the ground level (floor) and form a distinct shape that can be separated from the surroundings.
+
+\paragraph{Filter and Mask Image}
+
+This step will produce a binary image which represents the region of the disparity image where the disparity values falls within the interval from the previous step. This binary image is filtered by eroding all features with a size smaller than a predetermined value.
+
+\paragraph{Find Contours}
+
+It is possible to detect a set of contours in the filtered binary image. This is done with a prebuilt function from the OpenCV library.
+
+\paragraph{Iterate Through Contours and Indicate Obsticles}
+
+Some of the contours are so small that they can either be considered to be noise or harmless obsticles. Contours with an area above a certain size are also rejected. Rejecting large contours may seem to be a bad decision, but is is necessary given the limitations of this implementaton\ref{chp:assessment}. The contours are then indicated by a bounding rectangle.
+
 \subsection{Distance Measurment}
 
-\subsection{Problems Encountered During Implementation }
+Another functionality implemented within the \textit{DepthFilter} class is the ability to calculate the distance from the camera to the detected contours. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]{contourDetection}
+	\caption{All the detected contours in a disparity map that falls within the size threshold.}
+	\label{fig:contourDetection}
+\end{figure}
+
+\begin{wrapfigure}{r}{0.48\textwidth}
+	\vspace{-10pt} % Remove exessive whitespace
+	\centering
+	\includegraphics[width=0.50\textwidth]{mask}
+	\caption{\label{fig:mask} A mask.}
+	\vspace{-20pt} % Remove exessive whitespace
+\end{wrapfigure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]{rangeCalc}
+	\caption{Obstruction detection in \textit{DepthFilter}.}
+	\label{fig:rangeCalc}
+\end{figure}
+
+\subsection{Floor Filtering}
+
+\begin{figure}
+	\centering
+	\begin{subfigure}[b]{0.48\textwidth}
+		\includegraphics[width=\textwidth]{OriginalExample}
+		\caption{Left camera image.}
+		\label{fig:OriginalExample2}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.48\textwidth}
+		\includegraphics[width=\textwidth]{DispExampleWeakness}
+		\caption{Disparity map.}
+		\label{fig:DispExampleWeakness}
+	\end{subfigure}
+	\caption{\label{fig:distanceWeakness}The floor will have the same disparity value as two distict obstructions, thus making them appear as a single obstruction.}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=1\textwidth]{floorFilter}
+	\caption{Floor filtering in progress.}
+	\label{fig:floorFilter}
+\end{figure}

@@ -58,16 +58,25 @@ void DisparityCalcThread::initDisparityCalcThread(QString filePath, cv::Size ima
     sgbm = StereoSGBM::create(minDisparity,numDisparities, SADWindowSize);
 
     //Ptr<cuda::StereoBM> sbm = cuda::createStereoBM(numDisparities, SADWindowSize);
-/*
-    bm->setPreFilterCap(61);
-    bm->setBlockSize(15);
-    bm->setMinDisparity(10);
-    bm->setTextureThreshold(3);
-    bm->setUniquenessRatio(15);
-    bm->setSpeckleWindowSize(21);
-    bm->setSpeckleRange(30);
-    bm->setDisp12MaxDiff(1);
-*/
+
+    //bm->setPreFilterCap(prefilterCap);
+    //bm->setBlockSize(prefilterCap);
+    //bm->setMinDisparity(prefilterCap);
+    //bm->setTextureThreshold(3);
+    //bm->setUniquenessRatio(uniquenessRatio);
+    //bm->setSpeckleWindowSize(uniquenessRatio);
+    //bm->setSpeckleRange(speckleRange);
+    //bm->setDisp12MaxDiff(1);
+
+    bm->setPreFilterCap (prefilterCap);
+    //bm->setPreFilterSize (preFilterSize);
+    //bm->setPreFilterType (preFilterType);
+    //bm->setROI1 (roi1);
+    //bm->setROI2 (roi2);
+    //bm->setSmallerBlockSize (blockSize);
+    bm->setTextureThreshold (3);
+    bm->setUniquenessRatio (uniquenessRatio);
+
 
 
     sgbm->setPreFilterCap(prefilterCap);
@@ -131,7 +140,7 @@ void DisparityCalcThread::disparityLoop()
         //tmpr = dstr;
         //pyrDown( tmpr, dstr, Size( tmpr.cols/2, tmpr.rows/2 ) );
 
-        //bm->compute(framel_rect,framer_rect, disp16S);
+        //bm->compute(l8u,r8u, disp);
         sgbm->compute(tmpl,tmpr,disp16S);
 
 
@@ -143,6 +152,8 @@ void DisparityCalcThread::disparityLoop()
         dst1 = dst;
 
         minMaxLoc(dst, &minVal, &maxVal);
+
+        qDebug() << QString::number(maxVal) + " " + QString::number(minVal);
 
         dst.convertTo(disp8U, CV_8UC1, 255/(maxVal - minVal));
         dst.convertTo(disp32F, CV_32F,1./16);

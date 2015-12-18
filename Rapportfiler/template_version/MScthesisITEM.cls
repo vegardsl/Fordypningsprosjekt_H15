@@ -75,7 +75,7 @@
 \RequirePackage{memhfixc}
 \hypersetup{
   colorlinks=true, 
-  urlcolor=black, 
+  urlcolor=cyan, 
   linkcolor=black,
   citecolor=black
 }

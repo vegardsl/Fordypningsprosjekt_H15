@@ -5,9 +5,9 @@
 
 This report presents and documents the work that is done during the ninth semester spesialization project in Engineering Cybernetics, \textbf{TTK4550}. The procject is worth 15 credits (studiepoeng), which is approximatly equal to nine full time weeks. The overall learing objectives are that the student shall learn to specialize in a specific field based on scientific methods. Furthermore, the student shall learn to complete a larger project. The final learning goal is to produce a project report. Project work is performed as self-study under the guidence of a supervisor. The project shall be monitored and controlled by a project plan, milestones and progress updates at least once each month.
 
-\section{Mobile Autonomous Robotics and Computer Vision}
+\section{Motivation - Mobile Autonomous Robotics and Computer Vision}
 
-The field of computer vision has seen an enormous growth over the last few decades - not only in scale, but in accessibility and capability as well. As a consequence of this recent growth, tapping into the field of computer vision is bound to reveal applications that are useful for a mobile autonomous maintenance robot. Recent discoveries within computer vision includes robust feature recognition and object detection, face detection and video processing. The latest great additions to the field are Big Data and Artificial Intelligence.
+The field of computer vision has seen an enormous growth over the last few decades - not only in scale, but in accessibility and capability as well. As a consequence of this recent growth, tapping into the field of computer vision is bound to reveal applications that are useful for a mobile autonomous maintenance robot. Recent discoveries within computer vision includes robust feature recognition and object detection, face detection and video processing. The latest great additions to the field are Big Data and Artificial Intelligence, which takes computer vision one step closer to human-like abilities. One of the major benefits of using cameras as sensors are their flexibility. A camera as a sensor can be used for both navigation, mapping and maintenence tasks. Cameras are usefull for remote control as well.  
 
 \section{System Overview}
 
@@ -53,7 +53,7 @@ Only the cameras were used in this projects.
 A robot arm, SCORBOT-ER 4u from Intelitek, is monted on the wagon. It is intended for educational use in the context of automation and work cells. The robot has five rotation joints plus a servo gripper at the outer joint. Control of the robot in this project is done from the on-board computer on the wagon, which is connected to the robot arm through a USB cable. 
 
 
-\subsection{Project Set-up}
+\subsection{Implementation Set-up}
 
 Vanishing points and stereo vision are the main topics in this report. The stereo vision portion consist of the two IP cameras, a pair of wireless routers and a remote computer. The remote computer can be any computer which is able to run \gls{opencv} and receive video feed from the camera pair. The vanishing point detector is simply a desktop application which accesses a web camera. Both the stereo vision and vanishing point detector applications have been developed with Qt and run on Windows 7.
 

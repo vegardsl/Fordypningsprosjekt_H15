@@ -7,14 +7,14 @@
 \contentsline {chapter}{List of Tables}{vi}{section*.5}
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}About this Report}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Mobile Autonomous Robotics and Computer Vision}{1}{section.1.2}
-\contentsline {section}{\numberline {1.3}System Overview}{1}{section.1.3}
+\contentsline {section}{\numberline {1.2}Motivation - Mobile Autonomous Robotics and Computer Vision}{1}{section.1.2}
+\contentsline {section}{\numberline {1.3}System Overview}{2}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}The Robot}{2}{subsection.1.3.1}
 \contentsline {paragraph}{Propulsion}{2}{section*.7}
-\contentsline {paragraph}{Sensors}{2}{section*.8}
+\contentsline {paragraph}{Sensors}{3}{section*.8}
 \contentsline {paragraph}{Robot Arm}{3}{section*.9}
-\contentsline {subsection}{\numberline {1.3.2}Project Set-up}{3}{subsection.1.3.2}
-\contentsline {section}{\numberline {1.4}Report Structure}{3}{section.1.4}
+\contentsline {subsection}{\numberline {1.3.2}Implementation Set-up}{3}{subsection.1.3.2}
+\contentsline {section}{\numberline {1.4}Report Structure}{4}{section.1.4}
 \contentsline {chapter}{\chapternumberline {2}Background Theory}{5}{chapter.2}
 \contentsline {section}{\numberline {2.1}Introduction}{5}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Chapter Scope}{5}{subsection.2.1.1}
@@ -38,46 +38,52 @@
 \contentsline {subsection}{\numberline {2.5.2}Stereoscopic Vision in General}{10}{subsection.2.5.2}
 \contentsline {paragraph}{Stereo Cameras}{11}{section*.22}
 \contentsline {subsection}{\numberline {2.5.3}Stereoscopic Vision in OpenCV}{11}{subsection.2.5.3}
-\contentsline {chapter}{\chapternumberline {3}Example}{13}{chapter.3}
-\contentsline {section}{\numberline {3.1}First section}{14}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}First subsection with some $\mathcal {M}ath$ symbol}{14}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Mathematics}{14}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Source code example}{16}{subsection.3.1.3}
-\contentsline {chapter}{\chapternumberline {4}Implementation}{17}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{17}{section.4.1}
-\contentsline {section}{\numberline {4.2}Vanishing Point Detection}{17}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Overview}{17}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Line Detection}{18}{subsection.4.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Line Filtering}{18}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Vanishing Point Detection}{19}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Vanishing Point Detector Application}{19}{subsection.4.2.5}
-\contentsline {paragraph}{Program Structure}{19}{section*.30}
-\contentsline {paragraph}{Graphical User Interface}{22}{section*.32}
-\contentsline {subsection}{\numberline {4.2.6}Cause of Failure}{23}{subsection.4.2.6}
-\contentsline {section}{\numberline {4.3}Depth Perception and Obstruction Detection}{23}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Overview}{23}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}The camera rig}{23}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Graphical User Interface}{23}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Calibration}{24}{subsection.4.3.4}
-\contentsline {paragraph}{Single Camera Calibration}{27}{figure.caption.39}
-\contentsline {paragraph}{Stereo Calibration}{28}{section*.41}
-\contentsline {paragraph}{Stereo Rectification}{28}{section*.42}
-\contentsline {subsection}{\numberline {4.3.5}Stereo Matching}{29}{subsection.4.3.5}
-\contentsline {subsection}{\numberline {4.3.6}Finding Obstructions}{29}{subsection.4.3.6}
-\contentsline {subsection}{\numberline {4.3.7}Distance Measurment}{29}{subsection.4.3.7}
-\contentsline {subsection}{\numberline {4.3.8}Problems Encountered During Implementation }{29}{subsection.4.3.8}
-\contentsline {chapter}{\chapternumberline {5}Capabilities}{31}{chapter.5}
-\contentsline {section}{\numberline {5.1}Vanishing Point Detection}{31}{section.5.1}
-\contentsline {section}{\numberline {5.2}Depth Perception and Obstruction Detection}{31}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Range Measurement and Object Detection}{31}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Weaknesses and Limitations}{31}{subsection.5.2.2}
-\contentsline {chapter}{\chapternumberline {6}Conclusion}{33}{chapter.6}
-\contentsline {section}{\numberline {6.1}Task Fulfilment}{33}{section.6.1}
-\contentsline {section}{\numberline {6.2}Future Work}{33}{section.6.2}
-\contentsline {section}{\numberline {6.3}Conclusion}{33}{section.6.3}
-\contentsline {chapter}{References}{35}{section*.46}
+\contentsline {chapter}{\chapternumberline {3}Implementation}{13}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{13}{section.3.1}
+\contentsline {section}{\numberline {3.2}Vanishing Point Detection}{13}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Overview}{13}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Line Detection}{14}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Line Filtering}{14}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Vanishing Point Detection}{15}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Vanishing Point Detector Application}{15}{subsection.3.2.5}
+\contentsline {paragraph}{Program Structure}{15}{section*.28}
+\contentsline {paragraph}{Graphical User Interface}{18}{section*.30}
+\contentsline {subsection}{\numberline {3.2.6}Cause of Failure}{19}{subsection.3.2.6}
+\contentsline {section}{\numberline {3.3}Depth Perception and Obstruction Detection}{19}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Overview}{19}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}The camera rig}{19}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Graphical User Interface}{19}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Calibration}{20}{subsection.3.3.4}
+\contentsline {paragraph}{Single Camera Calibration}{23}{figure.caption.37}
+\contentsline {paragraph}{Stereo Calibration}{24}{section*.38}
+\contentsline {paragraph}{Stereo Rectification}{24}{section*.39}
+\contentsline {subsection}{\numberline {3.3.5}Stereo Matching}{26}{subsection.3.3.5}
+\contentsline {paragraph}{Processing Time}{26}{section*.42}
+\contentsline {subsection}{\numberline {3.3.6}Finding Obstructions}{27}{subsection.3.3.6}
+\contentsline {paragraph}{Iterate Through Depth Layers}{29}{section*.47}
+\contentsline {paragraph}{Filter and Mask Image}{29}{section*.48}
+\contentsline {paragraph}{Find Contours}{29}{section*.49}
+\contentsline {paragraph}{Iterate Through Contours and Indicate Obsticles}{29}{section*.50}
+\contentsline {subsection}{\numberline {3.3.7}Distance Measurment}{29}{subsection.3.3.7}
+\contentsline {subsection}{\numberline {3.3.8}Floor Filtering}{31}{subsection.3.3.8}
+\contentsline {chapter}{\chapternumberline {4}Assessment}{33}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{33}{section.4.1}
+\contentsline {section}{\numberline {4.2}Vanishing Point Detection}{33}{section.4.2}
+\contentsline {section}{\numberline {4.3}What Does Work?}{33}{section.4.3}
+\contentsline {section}{\numberline {4.4}Depth Perception and Obstruction Detection}{33}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Stereo Vision}{33}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Obstacle Detection}{34}{subsection.4.4.2}
+\contentsline {chapter}{\chapternumberline {5}Conclusion}{35}{chapter.5}
+\contentsline {section}{\numberline {5.1}Future Work}{35}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Integration With Point Cloud Library (PCL)}{35}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}New Hardware}{35}{subsection.5.1.2}
+\contentsline {paragraph}{Visual Sensors}{35}{section*.57}
+\contentsline {paragraph}{Computing Hardware Suitable for Image Processing}{35}{section*.58}
+\contentsline {section}{\numberline {5.2}Task Fulfilment}{35}{section.5.2}
+\contentsline {section}{\numberline {5.3}Final Conclusion}{35}{section.5.3}
+\contentsline {chapter}{References}{37}{section*.60}
 \vspace {1em}\noindent \bfseries Appendices\par \vspace {-.5em}
-\contentsline {appendix}{\chapternumberline {A}Setting up a project with Qt and OpenCV}{37}{appendix.A}
-\contentsline {section}{\numberline {A.1}Setting up OpenCV}{37}{section.A.1}
-\contentsline {section}{\numberline {A.2}Setting up Qt Creator with OpenCV}{37}{section.A.2}
-\contentsline {section}{\numberline {A.3}Building OpenCV with CUDA and Qt from source}{37}{section.A.3}
+\contentsline {appendix}{\chapternumberline {A}Setting up a project with Qt and OpenCV}{39}{appendix.A}
+\contentsline {section}{\numberline {A.1}Setting up OpenCV}{39}{section.A.1}
+\contentsline {section}{\numberline {A.2}Setting up Qt Creator with OpenCV}{39}{section.A.2}
+\contentsline {section}{\numberline {A.3}Building OpenCV with CUDA and Qt from source}{39}{section.A.3}

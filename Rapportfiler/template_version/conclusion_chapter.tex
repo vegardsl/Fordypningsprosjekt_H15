@@ -1,7 +1,23 @@
 \chapter{Conclusion}
 
-\section{Task Fulfilment}
-
 \section{Future Work}
 
-\section{Conclusion}
+Of the two implementations, the obstruction detector appears to be the better candidate for further developement. 
+
+\subsection{Integration With Point Cloud Library (PCL)}
+
+A great deal of time was spent on an attemt to integrate Qt and OpenCV with the Point Cloud Library (PCL). Needless to say, the integation was not successful. PCL is an open source procject for image and point cloud processing \cite{keylist}. Similarily to OpenCV, it is free of charge, and the source code is available for download on the project home page and on GitHub. PCL depends on many 3rd party libraries which must be downloaded and compiled separatly. This complicated the integration process, and was the most significant hindrance to a successful integration.
+
+
+
+\subsection{New Hardware}
+
+\paragraph{Visual Sensors}
+
+The current camera set-up comes with limitations that makes them unsuitable as navigational sensors. The video feed is unsyncronized, which makes the disparity map useless whenever there is relative motion between the cameras and the surroundings. 
+
+\paragraph{Computing Hardware Suitable for Image Processing}
+
+\section{Task Fulfilment}
+
+\section{Final Conclusion}

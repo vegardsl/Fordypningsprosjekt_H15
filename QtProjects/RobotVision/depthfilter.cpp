@@ -118,7 +118,8 @@ void DepthFilter::filterAndMaskImage(Mat imgDisparityGray, int lowerThreshold, i
     //floorPlaneFilter(imgDisparityGray);
     inRange(imgDisparityGray,lowerThreshold,upperThreshold,imgThreshold);
     morphOps(imgThreshold);
-
+    imshow("imgThreshold",imgThreshold);
+    waitKey();
     //cvtColor(imgThreshold, imgThreshold, CV_GRAY2BGR);
     //bitwise_and(imgOriginal, imgThreshold, imgMasked);
 }
@@ -128,12 +129,12 @@ void DepthFilter::extractObstacles(Mat imgInput, Mat _imgDisparity, Mat _pointcl
     int x = 0, y = 0;
     Mat imgMasked;
     imgOriginal = imgInput;
-    pointcloud = _pointcloud;
+    //pointcloud = _pointcloud;
     imgDisparity = _imgDisparity;
 
-    for(int i = 0; i < 150; i+=10)
+    for(int i = 0; i < 130; i+=10)
     {
-        filterAndMaskImage(imgDisparity, 170-i, 180-i, imgMasked);
+        filterAndMaskImage(imgDisparity, 150-i, 160-i, imgMasked);
         detectObstructions(x,y,imgMasked);
     }
 }
