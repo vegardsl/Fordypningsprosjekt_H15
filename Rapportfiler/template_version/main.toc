@@ -74,11 +74,11 @@
 \contentsline {subsection}{\numberline {4.2.1}What is Working?}{35}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Suitability for Autonomous navigation}{35}{subsection.4.2.2}
 \contentsline {section}{\numberline {4.3}Depth Perception and Obstruction Detection}{36}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Stereo Vision}{36}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.1}Stereo Matching}{36}{subsection.4.3.1}
 \contentsline {paragraph}{Weaknesses}{36}{section*.60}
-\contentsline {paragraph}{Cameras}{36}{section*.62}
 \contentsline {subsection}{\numberline {4.3.2}Obstacle Detection}{36}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Hardware}{37}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.3}Hardware}{36}{subsection.4.3.3}
+\contentsline {paragraph}{Cameras}{36}{section*.62}
 \contentsline {subsection}{\numberline {4.3.4}Suitability for Autonomous Navigation}{37}{subsection.4.3.4}
 \contentsline {chapter}{\chapternumberline {5}Conclusion}{39}{chapter.5}
 \contentsline {section}{\numberline {5.1}Future Work}{39}{section.5.1}

@@ -18,7 +18,7 @@ There are examples of robots that can successfully track  vanishing points\cite{
 
 \section{Depth Perception and Obstruction Detection}
 
-\subsection{Stereo Vision}
+\subsection{Stereo Matching}
 
 \paragraph{Weaknesses}
 
@@ -30,9 +30,7 @@ The stereo matching process has two significant weaknesses: inability to detect 
 	\label{fig:stereoWeakness}
 \end{figure}
 
-\paragraph{Cameras}
 
-The two IP cameras proved to be up for the task of demonstrating basic real-time stereo matching, but not much more. Some of the disparity maps were surprisingly dense, but never as dense as the sample images used in the preliminary parts of the project (see figure \ref{fig:StereoGui}).
 
 \subsection{Obstacle Detection}
 
@@ -40,7 +38,9 @@ Obstacle detection based on depth layers works as intended, and could potentiall
 
 \subsection{Hardware}
 
+\paragraph{Cameras}
 
+The two IP cameras proved to be up for the task of demonstrating basic real-time stereo matching, but not much more. Some of the disparity maps were surprisingly dense, but never as dense as the sample images used in the preliminary parts of the project (see figure \ref{fig:StereoGui}). When the rectified images are placed next to each other (figure \ref{fig:stereoPostCal), it looks like the imaging chips within the camera are misaligned. In addition, the stereo images were so dissimilar in color and brightness in the beginning of the project that matching was impossible, even when the camera settings were equal and calibrated. 
 
 
 \subsection{Suitability for Autonomous Navigation}

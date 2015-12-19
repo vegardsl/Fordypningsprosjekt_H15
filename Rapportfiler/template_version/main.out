@@ -46,7 +46,7 @@
 \BOOKMARK [2][-]{subsection.4.2.1}{What is Working?}{section.4.2}% 46
 \BOOKMARK [2][-]{subsection.4.2.2}{Suitability for Autonomous navigation}{section.4.2}% 47
 \BOOKMARK [1][-]{section.4.3}{Depth Perception and Obstruction Detection}{chapter.4}% 48
-\BOOKMARK [2][-]{subsection.4.3.1}{Stereo Vision}{section.4.3}% 49
+\BOOKMARK [2][-]{subsection.4.3.1}{Stereo Matching}{section.4.3}% 49
 \BOOKMARK [2][-]{subsection.4.3.2}{Obstacle Detection}{section.4.3}% 50
 \BOOKMARK [2][-]{subsection.4.3.3}{Hardware}{section.4.3}% 51
 \BOOKMARK [2][-]{subsection.4.3.4}{Suitability for Autonomous Navigation}{section.4.3}% 52
