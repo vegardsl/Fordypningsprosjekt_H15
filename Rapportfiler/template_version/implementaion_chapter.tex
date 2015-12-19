@@ -183,7 +183,9 @@ See figure \ref{fig:calibproc} for an overview of the calibration procedure. All
 	\vspace{-20pt} % Remove exessive whitespace
 \end{wrapfigure}
 
-In this step, the cameras are calibrated separately.  The purpose of this calibration procedure is to counter the constant radial and tangential distortion in a pinhole camera, and to identify the pinole camera model. The result of this procedure is the 3 by 3 camera matrix and the five distortion coefficients mentioned in the theory chapter. In the flowchart in figure \ref{fig:singleCamCalib}, assume that enough useful sample images are gathered and read into the program. In the last step, \gls{opencv}s calibration function will take inn the detected corners from the sample images and the chessboard dimentions. Finally, the calibration results are stored in an .xml file:
+In this step, the cameras are calibrated separately.  The purpose of this calibration procedure is to counter the constant radial and tangential distortion in a pinhole camera, and to identify the pinhole camera model. The result of this procedure is the 3 by 3 camera matrix and the five distortion coefficients mentioned in the theory chapter. In the flowchart in figure \ref{fig:singleCamCalib}, assume that enough useful sample images are gathered and read into the program.
+
+ When all image samples are read and stored in the image vector, the program will iterate through all the samples to check if the chessboard can be detected. If the chessboard is detectable in the image, the position of the internal chessboard corners will be stored a vector which will be handed over to the calibration function \textit{calibrateCamera()}. In the last step, \gls{opencv}s calibration function will take inn the detected corners from the sample images and the chessboard dimensions. Finally, the calibration results are stored in an .xml file:
 
 \begin{verbatim}
 <?xml version="1.0"?>
@@ -210,13 +212,9 @@ In this step, the cameras are calibrated separately.  The purpose of this calibr
 
 \newpage
 
-
-
-When all the image samples has been read into the program, the program will check if the chessboard can be detected. If the chessboard is present in the image, the position of the corners will be stored in  
-
 \paragraph{Stereo Calibration}
 
-Stereo calibration is almost exactly the same as single camera calibration. An important difference is obviously that sample images must be taken from both cameras simultaniously. The calibration pattern must be detectable in both frames. Stereo calibration will generate a new set of data:
+Stereo calibration is almost exactly the same as single camera calibration. An important difference is obviously that sample images must be taken from both cameras simultaneously. The calibration pattern must be detectable in both frames. Stereo calibration will generate a new set of data:
 
 \begin{description}
 	\item[R: ] 3 by 3 rotation matrix between the two cameras.
@@ -247,7 +245,7 @@ Rectification is the final step before stereo matching can be performed. In this
 
 \end{description}
 
-Finally, the function \textit{initUndistortRectifyMap()} will use these matrices to generate four pixel maps with a size that equals the input images. The pixel maps are added the ''stereo\_calib.xml''. These matrices maps the pixels in the original images to their rectified locations. To rectify an input image, call the function \textit{remap()}.
+Finally, the function \textit{initUndistortRectifyMap()} will use these matrices to generate four pixel maps with a size that equals the input images. The pixel maps are added the to ''stereo\_calib.xml''. These matrices maps the pixels in the original images to their rectified locations. To rectify an input image, call the function \textit{remap()}.
 
 \begin{verbatim}
 	remap(leftCameraFeed, leftCameraFeed_rect, map_l1, map_l2, INTER_LINEAR);
@@ -264,7 +262,7 @@ In this example, the function takes in the left camera feed and the \textit{cv::
 	\end{subfigure}
 	\begin{subfigure}[b]{0.95\textwidth}
 		\includegraphics[width=\textwidth]{stereoPostCal}
-		\caption{After calibration and rectifivation.}
+		\caption{After calibration and rectification.}
 		\label{fig:stereoPostCal}
 	\end{subfigure}
 	\caption{\label{fig:calibBeforeAfter}Before and after calibration. The red lines in \ref{fig:stereoPostCal} can be used to assess the quality of the calibration procedure. Note that these image pairs are captured at different times.}
@@ -276,7 +274,7 @@ In this example, the function takes in the left camera feed and the \textit{cv::
 
 \subsection{Stereo Matching}
 
-Recall that stereo matching is the search for mutual information in the sereo image pair. Matching of the sterao pair will result in a single channel disparity image (figure \ref{fig:StereoMatching}), i.e. the pixels have intencity values along a single dimention. The disparity is a measure of how far a block of features has shifted between the left and right image. 
+Recall that stereo matching is the search for mutual information in the stereo image pair. Matching of the stereo pair will result in a single channel disparity image (figure \ref{fig:StereoMatching}), i.e. the pixels have intensity values along a single dimension. The disparity is a measure of how far a block of features has shifted between the left and right image. 
 
 \begin{figure}
 	\centering
@@ -294,17 +292,17 @@ Recall that stereo matching is the search for mutual information in the sereo im
 \end{figure}
 
 \paragraph{Processing Time}
-In this application, with no hardware acceleration from CUDA and the like, the choice of matching algorithm stands between the regular StereoBM and the more robust StereoSGBM. Block Matching (BM) is the fastest of the two, and usually allows a frame rate of several frames per second. Semi Global Block Matching (SGBM) on the other hand, is much slower. The Tsukuba samples in figure \ref{fig:StereoGui} are 384 pixels wide by 288 pixels high. Matching them with StereoSGBM takes roughly half a second. Images from the IP cameras on the robot are set to be 1280 pixels wide by 1024 pixels high. In this case, matching with StereoSGBM takes approximatly 8 seconds; a processing time which is too long if it is to be used for navigation. A solution to this problem is to reduce the size of the image pair. This was done in the matching application by downsampling the input images to $1/4th$ of their original size by using \textit{pyrDown()} in \gls{opencv}. This brings the frame rate up to 2 frames per second.
+In this application, with no hardware acceleration from CUDA and the like, the choice of matching algorithm stands between the regular StereoBM and the more robust StereoSGBM. Block Matching (BM) is the fastest of the two, and usually allows a frame rate of several frames per second. Semi Global Block Matching (SGBM) on the other hand, is much slower. The Tsukuba samples in figure \ref{fig:StereoGui} are 384 pixels wide by 288 pixels high. Matching them with StereoSGBM takes roughly half a second. Images from the IP cameras on the robot are set to be 1280 pixels wide by 1024 pixels high. In this case, matching with StereoSGBM takes approximately 8 seconds; a processing time which is too long if it is to be used for navigation. A solution to this problem is to reduce the size of the image pair. This was done in the matching application by down-sampling the input images to $1/4th$ of their original size by using \textit{pyrDown()} in \gls{opencv}. This brings the frame rate up to 2 frames per second.
 
 The StereoSGBM object require at least these parameters:
 
  \begin{description}
  	\item[numDisparities: ] The number of disparity values, and indirectly the maximum left to right projection displacement. Must be divisible by 16.
  	\item[minDisparity: ] The lowest disparity to be computed.
-	\item[blockSize: ] A block of pixels. Defines the size of regions to be matched. Must be an odd number, because the block is centered around a pixel.
+	\item[blockSize: ] A block of pixels. Defines the size of regions to be matched. Must be an odd number, because the block is centred around a pixel.
 \end{description}
 
-Selecting a block size is a compromize between robustness and level of detail. Consider a block with the size of a single pixel. It is highly probable that it will cause false matches. A too large block will generate less noisy matches, while the details are surpressed.
+Selecting a block size is a compromise between robustness and level of detail. Consider a block with the size of a single pixel. It is highly probable that it will cause false matches. A too large block will generate less noisy matches, while the details are suppressed.
 
 \begin{figure}
 	\centering
@@ -335,7 +333,7 @@ Selecting a block size is a compromize between robustness and level of detail. C
 	\label{fig:obstruction}
 \end{figure}
 
-Detection of obstructions is based purely on color thresholding, and is performed in the custom made: \textit{DepthFilter} class. The idea and initial code for obstruction detection is based on this autor's very first meeting with \gls{opencv}: an object tracking tutorial by \href{https://www.youtube.com/watch?v=bSeFrPrqZ2A}{Kyle Hounslow on youtube.com}. In the implemented application, obstruction detection is done within the \textit{DepthFilter} class. After the disparity map is calculated, the disparity thread will call \textit{exctractObstructions()} within the \textit{DepthFilter} class. The program flow within the function is shown in figure \ref{fig:obstructionFlow}. All detected obstructions are indicated on the original left frame by bounding rectangles (figure \ref{fig:obstruction}). The most sentral parts of the flowchart inf figure \ref{fig:obstructionFlow} will be explained in detail.
+Detection of obstructions is based purely on color thresholds, and is performed in the custom made: \textit{DepthFilter} class. The idea and initial code for obstruction detection is based on this author's very first meeting with \gls{opencv}: an object tracking tutorial by \href{https://www.youtube.com/watch?v=bSeFrPrqZ2A}{Kyle Hounslow on youtube.com}. In the implemented application, obstruction detection is done within the \textit{DepthFilter} class. After the disparity map is calculated, the disparity thread will call \textit{exctractObstructions()} within the \textit{DepthFilter} class. The program flow within the function is shown in figure \ref{fig:obstructionFlow}. All detected obstructions are indicated on the original left frame by bounding rectangles (figure \ref{fig:obstruction}). The most central parts of the flowchart inf figure \ref{fig:obstructionFlow} will be explained in detail.
 
 \begin{figure}
 	\centering
@@ -343,6 +341,10 @@ Detection of obstructions is based purely on color thresholding, and is performe
 	\caption{Obstruction detection in \textit{DepthFilter}.}
 	\label{fig:obstructionFlow}
 \end{figure}
+
+\paragraph{Iterate Through Depth Layers}
+
+Disparity range is set to $\{0 ... 160 \}$, where each value relates to a corresponding distance. This part of the code will iterate through disparity intervals with a constant size of 10 starting at an interval of $\{150 ... 160\}$, and ending at $\{20 ... 30 \}$. The idea behind these intervals is that possible obstructions will stand out from the surface of the ground level (floor) and form a distinct shape that can be separated from the surroundings.
 
 \begin{wrapfigure}{l}{0.4\textwidth}
 	\centering
@@ -371,25 +373,28 @@ Detection of obstructions is based purely on color thresholding, and is performe
 	\label{fig:layers2}
 \end{wrapfigure}
 
-\paragraph{Iterate Through Depth Layers}
-
-Disparity range is set to $\{0 ... 160 \}$, where each value relates to a corresponding distance. This part of the code will iterate through disparity intervals with a constant size of 10 starting at an interval of $\{150 ... 160\}$, and ending at $\{20 ... 30 \}$. The idea behind these intervals is that possible obstructions will stand out from the surface of the ground level (floor) and form a distinct shape that can be separated from the surroundings.
-
 \paragraph{Filter and Mask Image}
 
 This step will produce a binary image which represents the region of the disparity image where the disparity values falls within the interval from the previous step. This binary image is filtered by eroding all features with a size smaller than a predetermined value.
 
 \paragraph{Find Contours}
 
-It is possible to detect a set of contours in the filtered binary image. This is done with a prebuilt function from the OpenCV library.
+It is possible to detect a set of contours in the filtered binary image. This is done with a pre-built function from the OpenCV library.
 
-\paragraph{Iterate Through Contours and Indicate Obsticles}
+\paragraph{Iterate Through Contours and Indicate Obstacles}
 
-Some of the contours are so small that they can either be considered to be noise or harmless obsticles. Contours with an area above a certain size are also rejected. Rejecting large contours may seem to be a bad decision, but is is necessary given the limitations of this implementaton\ref{chp:assessment}. The contours are then indicated by a bounding rectangle.
+Some of the contours are so small that they can either be considered to be noise or harmless obstacles. Contours with an area above a certain size are also rejected. Rejecting large contours may seem to be a bad decision, but is is necessary given the limitations of this implementation (chapter \ref{chp:assessment}). The contours are then indicated by a bounding rectangle.
 
 \subsection{Distance Measurment}
 
-Another functionality implemented within the \textit{DepthFilter} class is the ability to calculate the distance from the camera to the detected contours. 
+Another functionality implemented within the \textit{DepthFilter} class is the ability to calculate the distance from the camera to the detected contours. The procedure for calculating the distance to an obstruction is as follows:
+
+\begin{enumerate}
+	\item Create a filled mask based on the contour of the obstruction. See figure \ref{fig:mask}.
+	\item Combine the mask with the disparity map. Calculate the mean value of the disparities that fall within the mask.
+	\item Convert the average disparity to centimetres and draw the distance next to the bounding rectangle.
+	
+\end{enumerate}
 
 \begin{figure}
 	\centering
@@ -413,7 +418,28 @@ Another functionality implemented within the \textit{DepthFilter} class is the a
 	\label{fig:rangeCalc}
 \end{figure}
 
+\paragraph{Disparity to Distance Conversion}
+
+When stereo calibration has been performed, the disparities will be unambiguously related to real distances. The function \textit{reprojectImageTo3d()}\cite{3dCalibRec} is able to translate the pixels in a disparity and their values values into voxels, pixels in 3d space. Another more crude method was used in this implementation because of difficulties with using the projected point cloud: fitting a curve to measured distances. 
+
+\begin{figure}
+	\centering
+	\begin{subfigure}[b]{0.80\textwidth}
+		\includegraphics[width=\textwidth]{Disp2Dist256plot}
+		\caption{Disparity to distance conversion.}
+		\label{fig:OriginalExample2}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.60\textwidth}
+		\includegraphics[width=\textwidth]{distSampling}
+		\caption{How measurments were taken.}
+		\label{fig:DispExampleWeakness}
+	\end{subfigure}
+	\caption{\label{fig:distanceWeakness}}
+\end{figure}
+
 \subsection{Floor Filtering}
+
+In figure \ref{fig:distanceWeakness}, notice how the disparities in the left part of the image blends obstacles together. With the current implementation, this will cause two separate obstructions at equal distances to the camera to be perceived as one big obstruction, even if the path between them is clear. This can be solved with floor filtering.
 
 \begin{figure}
 	\centering
@@ -427,8 +453,40 @@ Another functionality implemented within the \textit{DepthFilter} class is the a
 		\caption{Disparity map.}
 		\label{fig:DispExampleWeakness}
 	\end{subfigure}
-	\caption{\label{fig:distanceWeakness}The floor will have the same disparity value as two distict obstructions, thus making them appear as a single obstruction.}
+	\caption{\label{fig:distanceWeakness}The floor will have the same disparity value as two distinct obstructions, thus making them appear as a single obstruction.}
 \end{figure}
+
+\begin{figure}
+	\centering
+	\begin{subfigure}[b]{0.30\textwidth}
+		\includegraphics[width=\textwidth]{TwoObst1}
+		\caption{Original disparity map with two obstacles. Created in MS Paint.}
+		\label{fig:TwoObst1}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.30\textwidth}
+		\includegraphics[width=\textwidth]{TwoObst2}
+		\caption{The resulting contour mask without floor filtering.}
+		\label{fig:TwoObst2}
+	\end{subfigure}
+	\begin{subfigure}[b]{0.30\textwidth}
+		\includegraphics[width=\textwidth]{TwoObst3}
+		\caption{With color filtering. Obstacles detected as two separate blocks.}
+		\label{fig:TwoObst3}
+	\end{subfigure}
+	\caption{\label{fig:blockSize}The concept of floor plane filtering.}
+\end{figure}
+
+\paragraph{Implementing a floor filter}
+
+Floor filter implementation was bases on the following assumptions:
+
+\begin{enumerate}
+\item The floor plane is always flat and horizontal.
+\item The vehicle is always level, so that the horizon is located at the image center.
+\end{enumerate}
+
+This implies that if the cameras horizontal and vertical field of view is known, and if the height above the floor plane is known, it will be possible to calculate the distance to any point on the floor plane.  
+
 
 \begin{figure}
 	\centering

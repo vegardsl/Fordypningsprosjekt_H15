@@ -10,7 +10,7 @@ Computer Vision is the field of giving computers the ability to duplicate the wa
 
 \subsection{Introduction to OpenCV}
 
-\gls{opencv} is an  open source library with a vast number of advanced computer vision and machine learning algorithms. The library is written in C and C++; it supports Windows, Linux, iOS and Android; and has interfaces to Python, Java and MATLAB. All OpenCV applications in this project uses \gls{opencv} 3.0.0 for Windows. \gls{opencv} for Windows can be downloaded from \textit{sourceforge.net} or "itseez" on GitHub. The download from \textit{sourceforge.net} contains source files, sample programs, sample data and a pre-built library for MSVC 2010 and 2013. The pre-build library can quickly be plugged into  an IDE such as Qt Creator or Visual Studio 2013, thus giving the programmer access to all basic OpenCV features. A steb-by-step guide for using both the pre-built and a custom-built library can be found in Appendix \ref{chp:setup}.
+\gls{opencv} is an  open source library with a vast number of advanced computer vision and machine learning algorithms. The library is written in C and C++; it supports Windows, Linux, iOS and Android; and has interfaces to Python, Java and MATLAB. All OpenCV applications in this project uses \gls{opencv} 3.0.0 for Windows. \gls{opencv} for Windows can be downloaded from \textit{sourceforge.net} or "itseez" on GitHub. The download from \textit{sourceforge.net} contains source files, sample programs, sample data and a pre-built library for MSVC 2010 and 2013. The pre-build library can quickly be plugged into  an IDE such as Qt Creator or Visual Studio 2013, thus giving the programmer access to all basic OpenCV features. A step-by-step guide for using both the pre-built and a custom-built library can be found in Appendix \ref{chp:setup}.
 
 \paragraph{cv::Mat - The Image Container}
 
@@ -25,10 +25,10 @@ Computer Vision is the field of giving computers the ability to duplicate the wa
 
 \subsection{Simultanious Localization and Mapping (SLAM)}
 
-Consider a robot that is placed in an unknown environment with no a priori information of the surroundings. If this robot is capable of solving the \gls{slam} problem, it is implied that it can build a map of the surroundings while it determines, simultaniously, where it is located on the same map. This section will, in brief, present some variants of and solutions to the \gls{slam} problem. From \cite{SLAMp1} a preliminary description of the \gls{slam} problem is based on the following parameters at time $k$ is:
+Consider a robot that is placed in an unknown environment with no a priori information of the surroundings. If this robot is capable of solving the \gls{slam} problem, it is implied that it can build a map of the surroundings while it determines, simultaneously, where it is located on the same map. This section will, in brief, present some variants of and solutions to the \gls{slam} problem. From \cite{SLAMp1} a preliminary description of the \gls{slam} problem is based on the following parameters at time $k$ is:
 \vspace{-10pt} % Remove exessive whitespace
 \begin{description}
-	\item[\boldmath$x_k$:] "State vection describing position and orientation of the vehicle"\cite{SLAMp1}.
+	\item[\boldmath$x_k$:] "State vector describing position and orientation of the vehicle"\cite{SLAMp1}.
 	\item[\boldmath$u_k$:] Control input at time $k - 1$. Used to drive the vehicle to $x_k$. 
 	\item[\boldmath$m_i$:] The position of the $ith$ landmark. The true position is assumed to be time invariant.
 	\item[\boldmath$z_{ik}$:] Observed position of the $ith$ landmark relative to the vehicle at time $k$.
@@ -38,7 +38,7 @@ Consider a robot that is placed in an unknown environment with no a priori infor
 \end{description}
 
 \paragraph{Probabilistic SLAM}
-Probabilistic \gls{slam} computes the probability distrobution $P(x_k,m|Z_{0:k},U_{0_k},x_0)$ at all time steps $k$\cite{SLAMp1}, i.e. the joint probability that the robot is in state \boldmath$x_k$ and that the landmarks can be described by a map,\boldmath$m$, given historic inputs, landmark observations and vehicle states. The solution algorithm can be implemented in two steps: A time update based on the last updated observation history and current input, and a measurment update where $P(x_k,m|Z_{0:k},U_{0_k},x_0)$ is computed based on bayes theorem. 
+Probabilistic \gls{slam} computes the probability distrobution $P(x_k,m|Z_{0:k},U_{0_k},x_0)$ at all time steps $k$\cite{SLAMp1}, i.e. the joint probability that the robot is in state \boldmath$x_k$ and that the landmarks can be described by a map,\boldmath$m$, given historic inputs, landmark observations and vehicle states. The solution algorithm can be implemented in two steps: A time update based on the last updated observation history and current input, and a measurement update where $P(x_k,m|Z_{0:k},U_{0_k},x_0)$ is computed based on bayes theorem. 
 
 
 \paragraph{EKF-SLAM}
@@ -46,11 +46,11 @@ Probabilistic \gls{slam} computes the probability distrobution $P(x_k,m|Z_{0:k},
 The inclusion of \gls{awgn} leads to the application of the \gls{ekf} to the \gls{slam} problem\cite{SLAMp1}.
 \paragraph{MonoSLAM}
 
-MonoSLAM by Davison et. al. (2007) is the first successful vision based real-time \gls{slam} algorithm\cite{monoSLAM}. The algorithm works by maintaining a probabilistic 3d map of a sparse set of landmarks. The map is continously updated by an \gls{ekf}. Landmarks are chosen based on som prominent features in the surroundings. In the algorithm, they are represented as flat surfaces with a certain orientation in 3d space. This solution will approximate the fact that the appearence of a feature will change based on the position from where they are observed.
+MonoSLAM by Davison et. al. (2007) is the first successful vision based real-time \gls{slam} algorithm\cite{monoSLAM}. The algorithm works by maintaining a probabilistic 3d map of a sparse set of landmarks. The map is continuously updated by an \gls{ekf}. Landmarks are chosen based on some prominent features in the surroundings. In the algorithm, they are represented as flat surfaces with a certain orientation in 3d space. This solution will approximate the fact that the appearance of a feature will change based on the position from where they are observed.
 
 \paragraph{The Kinect Sensor and SLAM}
 
-The Kinect sensor has been a remarkable contribution to the field of \gls{slam} and computer vision. It is a cheap sensor capable of generating high quality, but noisy, depth maps at $30 Hz$. By applying \gls{slam} to the real-time depth data, it is possible to generate a very accurate 3d reconstruction of the surroundings.
+The Kinect sensor has been a remarkable contribution to the field of \gls{slam} and computer vision. It is a cheap sensor capable of generating high quality, but noisy, depth maps at $30 Hz$. By applying \gls{slam} to the real-time depth data, it is possible to generate a very accurate 3d reconstruction of the surroundings \cite{slamKinect}.
 
 
 \section{The Pinhole Camera Model}
@@ -66,7 +66,7 @@ The Kinect sensor has been a remarkable contribution to the field of \gls{slam} 
 	\label{phantompic}
 \end{wrapfigure}
 
-Figure \ref{fig:pinhole} illustrates the geometry of a pinhole camera. In a pinhole camera, light reflected from some object in a scene will be projected onto an image plane inside the camera house. The light is projected through the "pinhole", that is the camera projection point $O$, which is located at the origin. Imagine that a single ray enters the camera house through the pinhole, before it hits and exites a sensor element on the image plane. The values retreived from these sensor elements will make up the pixels in an image. The focal length $f$ is the distance from the projection point $O$ to the image plane $\pi$. In a true pinhole camera the image plane will be located behind the lens and the projection point $O$, and the scene projection will be rotated by $180^{\circ}$. A virtual image plane placed in front of $O$ is intended to make the figure more straightforward and the mathmatics easier. 
+Figure \ref{fig:pinhole} illustrates the geometry of a pinhole camera. In a pinhole camera, light reflected from some object in a scene will be projected onto an image plane inside the camera house. The light is projected through the "pinhole", that is the camera projection point $O$, which is located at the origin. Imagine that a single ray enters the camera house through the pinhole, before it hits and excites a sensor element on the image plane. The values retrieved from these sensor elements will make up the pixels in an image. The focal length $f$ is the distance from the projection point $O$ to the image plane $\pi$. In a true pinhole camera the image plane will be located behind the lens and the projection point $O$, and the scene projection will be rotated by $180^{\circ}$. A virtual image plane placed in front of $O$ is intended to make the figure more straightforward and the mathematics easier. 
 
 \begin{equation}
 M = \begin{bmatrix}
@@ -77,7 +77,7 @@ f_x & 0 & c_x \\
 \label{eq:pinhole}
 \end{equation}
 
-"Learning OpenCV" by Gary Bradski\cite{oreillycv} shows how a pinhole camera can be modelled by a 3 by 3 camera matrix $M$ (equation \ref{eq:pinhole}). This model accounts for two important differences between the ideal and real pinhole camera. First, the imaging chip will often be displaced from the optical center. This displacement is described by the parameters $c_x$ and $c_y$. The second real world problem is that the pixels on the image sensor are shaped as rectangles, not squares. This is accounted for by $f_x$ and $f_y$, the focal lengths in the $x$ and $y$ direction given in pixels. These values are the product of the actual focal length $f$ and size of the individual imager elements $s_x$ and $s_y$. The reason for using these values in the camera model is because $s$ and $f$ cannot be measured without actually dismantling the camera\cite{oreillycv}.
+"Learning OpenCV" by Gary Bradski\cite{oreillycv} shows how a pinhole camera can be modelled by a 3 by 3 camera matrix $M$ (equation \ref{eq:pinhole}). This model accounts for two important differences between the ideal and real pinhole camera. First, the imaging chip will often be displaced from the optical center. This displacement is described by the parameters $c_x$ and $c_y$. The second real world problem is that the pixels on the image sensor are shaped as rectangles, not squares. This is accounted for by $f_x$ and $f_y$, the focal lengths in the $x$ and $y$ direction given in pixels. These values are the product of the actual focal length $f$ and size of the individual image elements $s_x$ and $s_y$. The reason for using these values in the camera model is because $s$ and $f$ cannot be measured without actually dismantling the camera\cite{oreillycv}.
 
 \subsection{Camera Distortion}
 
@@ -116,11 +116,11 @@ k_i \quad \textrm{with} \quad i \in \left\{1, 2, 3\right\}
 
 \paragraph{Vanishing Points}
 
-A vanishing point is the result of prespective projection. A prespective can be described as the way a 3d world appears when it is projected on a two-dimentional surface. Consider a set of two parallel lines in 3d space that are projected onto an image plane. If these two lines are not parallel to the image plane, their projected representatons will converge to a vanishing point. If the lines are parallel to the image plane, their corresponding vanishing points will be at infinity. The projected lines are formed by the projection lines, that is the direct lines from the parallel lines and the projection center $O$ (figure \ref{fig:pinhole} and \ref{fig:StereoSpace}). Figure \ref{fig:VpConseptBl} illustrates the consept of vanishing points with two parallel horizontal lines.
+A vanishing point is the result of perspective projection. A perspective can be described as the way a 3d world appears when it is projected on a two-dimensional surface. Consider a set of two parallel lines in 3d space that are projected onto an image plane. If these two lines are not parallel to the image plane, their projected representations will converge to a vanishing point. If the lines are parallel to the image plane, their corresponding vanishing points will be at infinity. The projected lines are formed by the projection lines, that is the direct lines from the parallel lines and the projection center $O$ (figure \ref{fig:pinhole} and \ref{fig:StereoSpace}). Figure \ref{fig:VpConseptBl} illustrates the concept of vanishing points with two parallel horizontal lines.
 
 \paragraph{Perspective Transformations}
 
-When the intrinsic camera parameters (equation \eqref{eq:pinhole}) and distortion coefficients (equation \ref{eq:distortion}) have been calculated, it will be possible to map a point in the outside 3d world to the image plane. This knowlegde allows perspective transformations. A perspective transformation can be used to transform a wall viewed at an angle to an observation point that is perpendicular to the wall. Likewise, the view of a road from a car can be transformed to a birds-eye representation. This birds-eye view can for example be used in combination with a \gls{lidar}\cite{oreillycv}.
+When the intrinsic camera parameters (equation \eqref{eq:pinhole}) and distortion coefficients (equation \ref{eq:distortion}) have been calculated, it will be possible to map a point in the outside 3d world to the image plane. This knowledge allows perspective transformations. A perspective transformation can, for example, be used to transform a wall viewed at an angle to an observation point that is perpendicular to the wall. Likewise, the view of a road from a car can be transformed to a birds-eye representation. This birds-eye view can for example be used in combination with a \gls{lidar}\cite{oreillycv}.
 
 \section{Stereo Vision and Depth Perception}
 
@@ -162,4 +162,4 @@ Figure \ref{fig:StereoSpace} shows an ideal stereo camera model.  The model comp
 
 \subsection{Stereoscopic Vision in OpenCV}
 
-The prebuilt version of OpenCV 3.0.0 comes with two stereo matching algorithms: \gls{bm} Block Matching (StereoBM) and Semi Global Block Matching (StereoSGBM)\cite{hirschmullerstereo}. Additional algorithms are available if OpenCV is built with, e.g. CUDA. Both algoritms require a rectified pair of images as input. The basic idea of block matching is illustrated in figure \ref{fig:blockMatching}. The algorithm will search for blocks in the right image that corresponds to similar blocks in the right image. In \cite{hirschmullerstereo}, this process is described as "pixelwise matching of mutual information". This search for mutual information is simplified significantly if the search direction can be limited to a one dimentional constraint: a horizontal line. This is easy to do, given that the assumption of coplanar image planes holds. The disparity is a measure of how far the matching blocks are displaced from each other. 
+The prebuilt version of OpenCV 3.0.0 comes with two stereo matching algorithms: \gls{bm} and Semi Global Block Matching (StereoSGBM)\cite{hirschmullerstereo}. Additional algorithms are available if OpenCV is built with, e.g. CUDA. Both algoritms require a rectified pair of images as input. The basic idea of block matching is illustrated in figure \ref{fig:blockMatching}. The algorithm will search for blocks in the right image that corresponds to similar blocks in the right image. In \cite{hirschmullerstereo}, this process is described as "pixel-wise matching of mutual information". This search for mutual information is simplified significantly if the search direction can be limited to a one dimensional constraint: a horizontal line. This is easy to do, given that the assumption of coplanar image planes holds. The disparity is a measure of how far the matching blocks are displaced from each other. 

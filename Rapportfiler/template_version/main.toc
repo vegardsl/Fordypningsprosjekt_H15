@@ -55,35 +55,50 @@
 \contentsline {subsection}{\numberline {3.3.3}Graphical User Interface}{19}{subsection.3.3.3}
 \contentsline {subsection}{\numberline {3.3.4}Calibration}{20}{subsection.3.3.4}
 \contentsline {paragraph}{Single Camera Calibration}{23}{figure.caption.37}
-\contentsline {paragraph}{Stereo Calibration}{24}{section*.38}
-\contentsline {paragraph}{Stereo Rectification}{24}{section*.39}
+\contentsline {paragraph}{Stereo Calibration}{25}{section*.38}
+\contentsline {paragraph}{Stereo Rectification}{25}{section*.39}
 \contentsline {subsection}{\numberline {3.3.5}Stereo Matching}{26}{subsection.3.3.5}
-\contentsline {paragraph}{Processing Time}{26}{section*.42}
-\contentsline {subsection}{\numberline {3.3.6}Finding Obstructions}{27}{subsection.3.3.6}
-\contentsline {paragraph}{Iterate Through Depth Layers}{29}{section*.47}
-\contentsline {paragraph}{Filter and Mask Image}{29}{section*.48}
-\contentsline {paragraph}{Find Contours}{29}{section*.49}
-\contentsline {paragraph}{Iterate Through Contours and Indicate Obsticles}{29}{section*.50}
-\contentsline {subsection}{\numberline {3.3.7}Distance Measurment}{29}{subsection.3.3.7}
+\contentsline {paragraph}{Processing Time}{27}{section*.42}
+\contentsline {subsection}{\numberline {3.3.6}Finding Obstructions}{28}{subsection.3.3.6}
+\contentsline {paragraph}{Iterate Through Depth Layers}{28}{section*.46}
+\contentsline {paragraph}{Filter and Mask Image}{30}{section*.48}
+\contentsline {paragraph}{Find Contours}{30}{section*.49}
+\contentsline {paragraph}{Iterate Through Contours and Indicate Obstacles}{30}{section*.50}
+\contentsline {subsection}{\numberline {3.3.7}Distance Measurment}{30}{subsection.3.3.7}
+\contentsline {paragraph}{Disparity to Distance Conversion}{31}{section*.54}
 \contentsline {subsection}{\numberline {3.3.8}Floor Filtering}{31}{subsection.3.3.8}
-\contentsline {chapter}{\chapternumberline {4}Assessment}{33}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introduction}{33}{section.4.1}
-\contentsline {section}{\numberline {4.2}Vanishing Point Detection}{33}{section.4.2}
-\contentsline {section}{\numberline {4.3}What Does Work?}{33}{section.4.3}
-\contentsline {section}{\numberline {4.4}Depth Perception and Obstruction Detection}{33}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Stereo Vision}{33}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Obstacle Detection}{34}{subsection.4.4.2}
-\contentsline {chapter}{\chapternumberline {5}Conclusion}{35}{chapter.5}
-\contentsline {section}{\numberline {5.1}Future Work}{35}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Integration With Point Cloud Library (PCL)}{35}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}New Hardware}{35}{subsection.5.1.2}
-\contentsline {paragraph}{Visual Sensors}{35}{section*.57}
-\contentsline {paragraph}{Computing Hardware Suitable for Image Processing}{35}{section*.58}
-\contentsline {section}{\numberline {5.2}Task Fulfilment}{35}{section.5.2}
-\contentsline {section}{\numberline {5.3}Final Conclusion}{35}{section.5.3}
-\contentsline {chapter}{References}{37}{section*.60}
+\contentsline {paragraph}{Implementing a floor filter}{33}{section*.58}
+\contentsline {chapter}{\chapternumberline {4}Assessment}{35}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introduction}{35}{section.4.1}
+\contentsline {section}{\numberline {4.2}Vanishing Point Detection}{35}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}What is Working?}{35}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Suitability for Autonomous navigation}{35}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Depth Perception and Obstruction Detection}{36}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Stereo Vision}{36}{subsection.4.3.1}
+\contentsline {paragraph}{Weaknesses}{36}{section*.60}
+\contentsline {paragraph}{Cameras}{36}{section*.62}
+\contentsline {subsection}{\numberline {4.3.2}Obstacle Detection}{36}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Hardware}{37}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Suitability for Autonomous Navigation}{37}{subsection.4.3.4}
+\contentsline {chapter}{\chapternumberline {5}Conclusion}{39}{chapter.5}
+\contentsline {section}{\numberline {5.1}Future Work}{39}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Further Assessment and Improvements of the Obstruction Detector}{39}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Integration With Point Cloud Library (PCL)}{39}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}New Hardware}{40}{subsection.5.1.3}
+\contentsline {paragraph}{Visual Sensors}{40}{section*.64}
+\contentsline {paragraph}{Computing Hardware Suitable for Image Processing}{40}{section*.65}
+\contentsline {subsection}{\numberline {5.1.4}Additional Functionality}{40}{subsection.5.1.4}
+\contentsline {paragraph}{Visual Servoing of Robotic Arms}{40}{section*.66}
+\contentsline {section}{\numberline {5.2}Task Fulfilment}{41}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Point 1 - Find Methods}{41}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Point 2 - Implementation}{41}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Point 3 - Performance and Suitability}{41}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Point 4 - Handling of Errors and Hazards}{41}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.5}Point 5 - Changes and Further work}{41}{subsection.5.2.5}
+\contentsline {section}{\numberline {5.3}Final Conclusion}{41}{section.5.3}
+\contentsline {chapter}{References}{43}{section*.68}
 \vspace {1em}\noindent \bfseries Appendices\par \vspace {-.5em}
-\contentsline {appendix}{\chapternumberline {A}Setting up a project with Qt and OpenCV}{39}{appendix.A}
-\contentsline {section}{\numberline {A.1}Setting up OpenCV}{39}{section.A.1}
-\contentsline {section}{\numberline {A.2}Setting up Qt Creator with OpenCV}{39}{section.A.2}
-\contentsline {section}{\numberline {A.3}Building OpenCV with CUDA and Qt from source}{39}{section.A.3}
+\contentsline {appendix}{\chapternumberline {A}Setting up a project with Qt and OpenCV}{45}{appendix.A}
+\contentsline {section}{\numberline {A.1}Setting up OpenCV}{45}{section.A.1}
+\contentsline {section}{\numberline {A.2}Setting up Qt Creator with OpenCV}{45}{section.A.2}
+\contentsline {section}{\numberline {A.3}Building OpenCV with CUDA and Qt from source}{45}{section.A.3}

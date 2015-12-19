@@ -1,6 +1,11 @@
 \begin{thebibliography}{DRMS07}
 
-\bibitem[3dC]{3dCalib}
+\bibitem[3dCa]{3dCalibRec}
+Camera calibration and 3d reconstruction.
+\newblock
+  \url{http://docs.opencv.org/3.0-beta/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html}.
+
+\bibitem[3dCb]{3dCalib}
 Camera calibration with opencv.
 \newblock
   \url{http://docs.opencv.org/2.4/doc/tutorials/calib3d/camera_calibration/camera_calibration.html}.
@@ -29,6 +34,13 @@ Samarth Brahmbhatt.
 Canny edge detection with opencv.
 \newblock
   \url{http://docs.opencv.org/2.4/doc/tutorials/imgproc/imgtrans/canny_detector/canny_detector.html}.
+
+\bibitem[CSI12]{monocularvp}
+Chin-Kai Chang, C.~Siagian, and L.~Itti.
+\newblock Mobile robot monocular vision navigation based on road region and
+  boundary estimation.
+\newblock In {\em Intelligent Robots and Systems (IROS), 2012 IEEE/RSJ
+  International Conference on}, pages 1043--1050, Oct 2012.
 
 \bibitem[DRMS07]{monoSLAM}
 A.J. Davison, I.D Reid, N.D Molton, and O.~Stasse.
@@ -65,15 +77,26 @@ Chao Liu and L.~Christopher.
 \newblock In {\em Electro/Information Technology (EIT), 2012 IEEE International
   Conference on}, pages 1--4, May 2012.
 
-\bibitem[NN00]{Author:year:XYZ}
-Firstname~1 Name1 and Firstname2 Name2.
-\newblock A dummy title.
-\newblock {\em A Fake Journal}, 1(1):000--000, June 2000.
+\bibitem[pcl]{pcl}
+Point cloud library (or pcl).
+\newblock \url{ http://pointclouds.org/}.
 
 \bibitem[Pra80]{optflwego}
 K.~Prazdny.
 \newblock Egomotion and relative depth map from optical flow.
 \newblock {\em Biological Cybernetics}, 36(2):87--102, 1980.
+
+\bibitem[RANF11]{slamKinect}
+Otmar Hilliges David Molyneaux David Kim Andrew J. Davison Pushmeet Kohli Jamie
+  Shotton Steve~Hodges Richard A.~Newcombe, Shahram~Izadi and Andrew
+  Fitzgibbon.
+\newblock Kinectfusion: Real-time dense surface mapping and tracking.
+\newblock In {\em IEEE ISMAR}. IEEE, Oct 2011.
+
+\bibitem[sin]{sintefKinect}
+Seamless - simultaneous navigation and manipulation in complex dynamic scenes.
+\newblock \url{
+  http://www.sintef.no/en/projects/seamless-simultaneous-navigation-and-manipulation-/}.
 
 \bibitem[XWS06]{autorobot}
 Jian Xu, Han Wang, and Andrew Shacklock.

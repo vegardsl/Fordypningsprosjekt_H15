@@ -3,7 +3,6 @@ A level-1 auxiliary file: abstract_english.aux
 A level-1 auxiliary file: preface.aux
 A level-1 auxiliary file: introduction_chapter.aux
 A level-1 auxiliary file: theory_chapter.aux
-A level-1 auxiliary file: example_chapter.aux
 A level-1 auxiliary file: implementaion_chapter.aux
 A level-1 auxiliary file: assessment_chapter.aux
 A level-1 auxiliary file: conclusion_chapter.aux
@@ -14,8 +13,55 @@ I was expecting an "="---line 47 of file main.bib
  :  month 
  :        "feb",
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Beobot"
+Warning--I didn't find a database entry for "vprobot"
+Name 1 in "Richard A. Newcombe, Shahram Izadi, Otmar Hilliges, David Molyneaux, David Kim, Andrew J. Davison, Pushmeet Kohli, Jamie Shotton, Steve Hodges, and Andrew Fitzgibbon" has a comma at the end for entry slamKinect
+while executing---line 1185 of file alpha.bst
+Too many commas in name 1 of "Richard A. Newcombe, Shahram Izadi, Otmar Hilliges, David Molyneaux, David Kim, Andrew J. Davison, Pushmeet Kohli, Jamie Shotton, Steve Hodges, and Andrew Fitzgibbon" for entry slamKinect
+while executing---line 1185 of file alpha.bst
+Too many commas in name 1 of "Richard A. Newcombe, Shahram Izadi, Otmar Hilliges, David Molyneaux, David Kim, Andrew J. Davison, Pushmeet Kohli, Jamie Shotton, Steve Hodges, and Andrew Fitzgibbon" for entry slamKinect
+while executing---line 1185 of file alpha.bst
+Too many commas in name 1 of "Richard A. Newcombe, Shahram Izadi, Otmar Hilliges, David Molyneaux, David Kim, Andrew J. Davison, Pushmeet Kohli, Jamie Shotton, Steve Hodges, and Andrew Fitzgibbon" for entry slamKinect
+while executing---line 1185 of file alpha.bst
+Too many commas in name 1 of "Richard A. Newcombe, Shahram Izadi, Otmar Hilliges, David Molyneaux, David Kim, Andrew J. Davison, Pushmeet Kohli, Jamie Shotton, Steve Hodges, and Andrew Fitzgibbon" for entry slamKinect
+while executing---line 1185 of file alpha.bst
+Too many commas in name 1 of "Richard A. Newcombe, Shahram Izadi, Otmar Hilliges, David Molyneaux, David Kim, Andrew J. Davison, Pushmeet Kohli, Jamie Shotton, Steve Hodges, and Andrew Fitzgibbon" for entry slamKinect
+while executing---line 1185 of file alpha.bst
+Too many commas in name 1 of "Richard A. Newcombe, Shahram Izadi, Otmar Hilliges, David Molyneaux, David Kim, Andrew J. Davison, Pushmeet Kohli, Jamie Shotton, Steve Hodges, and Andrew Fitzgibbon" for entry slamKinect
+while executing---line 1185 of file alpha.bst
+Name 1 in "Richard A. Newcombe, Shahram Izadi, Otmar Hilliges, David Molyneaux, David Kim, Andrew J. Davison, Pushmeet Kohli, Jamie Shotton, Steve Hodges, and Andrew Fitzgibbon" has a comma at the end for entry slamKinect
+while executing---line 1185 of file alpha.bst
+Too many commas in name 1 of "Richard A. Newcombe, Shahram Izadi, Otmar Hilliges, David Molyneaux, David Kim, Andrew J. Davison, Pushmeet Kohli, Jamie Shotton, Steve Hodges, and Andrew Fitzgibbon" for entry slamKinect
+while executing---line 1185 of file alpha.bst
+Too many commas in name 1 of "Richard A. Newcombe, Shahram Izadi, Otmar Hilliges, David Molyneaux, David Kim, Andrew J. Davison, Pushmeet Kohli, Jamie Shotton, Steve Hodges, and Andrew Fitzgibbon" for entry slamKinect
+while executing---line 1185 of file alpha.bst
+Too many commas in name 1 of "Richard A. Newcombe, Shahram Izadi, Otmar Hilliges, David Molyneaux, David Kim, Andrew J. Davison, Pushmeet Kohli, Jamie Shotton, Steve Hodges, and Andrew Fitzgibbon" for entry slamKinect
+while executing---line 1185 of file alpha.bst
+Too many commas in name 1 of "Richard A. Newcombe, Shahram Izadi, Otmar Hilliges, David Molyneaux, David Kim, Andrew J. Davison, Pushmeet Kohli, Jamie Shotton, Steve Hodges, and Andrew Fitzgibbon" for entry slamKinect
+while executing---line 1185 of file alpha.bst
+Too many commas in name 1 of "Richard A. Newcombe, Shahram Izadi, Otmar Hilliges, David Molyneaux, David Kim, Andrew J. Davison, Pushmeet Kohli, Jamie Shotton, Steve Hodges, and Andrew Fitzgibbon" for entry slamKinect
+while executing---line 1185 of file alpha.bst
+Too many commas in name 1 of "Richard A. Newcombe, Shahram Izadi, Otmar Hilliges, David Molyneaux, David Kim, Andrew J. Davison, Pushmeet Kohli, Jamie Shotton, Steve Hodges, and Andrew Fitzgibbon" for entry slamKinect
+while executing---line 1185 of file alpha.bst
 Warning--to sort, need author or key in 3dCalib
 Warning--to sort, need author or key in cannyedge
+Warning--to sort, need author or key in 3dCalibRec
+Warning--to sort, need author or key in pcl
+Warning--to sort, need author or key in sintefKinect
 Warning--there's a number but no volume in monoSLAM
 Warning--there's a number but no volume in SLAMp1
-(There was 1 error message)
+Name 1 in "Richard A. Newcombe, Shahram Izadi, Otmar Hilliges, David Molyneaux, David Kim, Andrew J. Davison, Pushmeet Kohli, Jamie Shotton, Steve Hodges, and Andrew Fitzgibbon" has a comma at the end for entry slamKinect
+while executing---line 1250 of file alpha.bst
+Too many commas in name 1 of "Richard A. Newcombe, Shahram Izadi, Otmar Hilliges, David Molyneaux, David Kim, Andrew J. Davison, Pushmeet Kohli, Jamie Shotton, Steve Hodges, and Andrew Fitzgibbon" for entry slamKinect
+while executing---line 1250 of file alpha.bst
+Too many commas in name 1 of "Richard A. Newcombe, Shahram Izadi, Otmar Hilliges, David Molyneaux, David Kim, Andrew J. Davison, Pushmeet Kohli, Jamie Shotton, Steve Hodges, and Andrew Fitzgibbon" for entry slamKinect
+while executing---line 1250 of file alpha.bst
+Too many commas in name 1 of "Richard A. Newcombe, Shahram Izadi, Otmar Hilliges, David Molyneaux, David Kim, Andrew J. Davison, Pushmeet Kohli, Jamie Shotton, Steve Hodges, and Andrew Fitzgibbon" for entry slamKinect
+while executing---line 1250 of file alpha.bst
+Too many commas in name 1 of "Richard A. Newcombe, Shahram Izadi, Otmar Hilliges, David Molyneaux, David Kim, Andrew J. Davison, Pushmeet Kohli, Jamie Shotton, Steve Hodges, and Andrew Fitzgibbon" for entry slamKinect
+while executing---line 1250 of file alpha.bst
+Too many commas in name 1 of "Richard A. Newcombe, Shahram Izadi, Otmar Hilliges, David Molyneaux, David Kim, Andrew J. Davison, Pushmeet Kohli, Jamie Shotton, Steve Hodges, and Andrew Fitzgibbon" for entry slamKinect
+while executing---line 1250 of file alpha.bst
+Too many commas in name 1 of "Richard A. Newcombe, Shahram Izadi, Otmar Hilliges, David Molyneaux, David Kim, Andrew J. Davison, Pushmeet Kohli, Jamie Shotton, Steve Hodges, and Andrew Fitzgibbon" for entry slamKinect
+while executing---line 1250 of file alpha.bst
+(There were 22 error messages)

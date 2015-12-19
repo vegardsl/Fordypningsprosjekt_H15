@@ -24,18 +24,21 @@
 \contentsline {figure}{\numberline {3.8}{\ignorespaces An overview of the calibration procedure.\relax }}{21}{figure.caption.34}
 \contentsline {figure}{\numberline {3.9}{\ignorespaces \relax }}{22}{figure.caption.35}
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Single camera calibration.\relax }}{23}{figure.caption.37}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Before and after calibration. The red lines in \ref {fig:stereoPostCal} can be used to assess the quality of the calibration procedure. Note that these image pairs are captured at different times.\relax }}{25}{figure.caption.40}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces The result of StereoSGBM.\relax }}{26}{figure.caption.41}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Comparison of different block sizes.\relax }}{27}{figure.caption.43}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces A preliminary version of the obstruction detector\relax }}{27}{figure.caption.44}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Obstruction detection in \textit {DepthFilter}.\relax }}{28}{figure.caption.45}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Some of the depth layers in figure \ref {fig:StereoMatching} separated by color filtering. The top image is the closest layer, while the most distant layer is at the bottom.\relax }}{29}{figure.caption.46}
-\contentsline {figure}{\numberline {3.17}{\ignorespaces All the detected contours in a disparity map that falls within the size threshold.\relax }}{30}{figure.caption.51}
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Obstruction detection in \textit {DepthFilter}.\relax }}{30}{figure.caption.53}
-\contentsline {figure}{\numberline {3.20}{\ignorespaces The floor will have the same disparity value as two distict obstructions, thus making them appear as a single obstruction.\relax }}{30}{figure.caption.54}
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Floor filtering in progress.\relax }}{31}{figure.caption.55}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Before and after calibration. The red lines in \ref {fig:stereoPostCal} can be used to assess the quality of the calibration procedure. Note that these image pairs are captured at different times.\relax }}{26}{figure.caption.40}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces The result of StereoSGBM.\relax }}{27}{figure.caption.41}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Comparison of different block sizes.\relax }}{28}{figure.caption.43}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces A preliminary version of the obstruction detector\relax }}{28}{figure.caption.44}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Obstruction detection in \textit {DepthFilter}.\relax }}{29}{figure.caption.45}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Some of the depth layers in figure \ref {fig:StereoMatching} separated by color filtering. The top image is the closest layer, while the most distant layer is at the bottom.\relax }}{30}{figure.caption.47}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces All the detected contours in a disparity map that falls within the size threshold.\relax }}{31}{figure.caption.51}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Obstruction detection in \textit {DepthFilter}.\relax }}{31}{figure.caption.53}
 \contentsline {figure}{\numberline {3.18}{\ignorespaces A mask.\relax }}{31}{figure.caption.52}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces \relax }}{32}{figure.caption.55}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces The floor will have the same disparity value as two distinct obstructions, thus making them appear as a single obstruction.\relax }}{33}{figure.caption.56}
+\contentsline {figure}{\numberline {3.22}{\ignorespaces The concept of floor plane filtering.\relax }}{33}{figure.caption.57}
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Floor filtering in progress.\relax }}{34}{figure.caption.59}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Illustration of the weaknesses with stereo matching. Little or no matching where there are few distict features. False matches and shadows caused by reperitive patterns.\relax }}{34}{figure.caption.56}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Illustration of the weaknesses with stereo matching. Little or no matching where there are few distinct features. False matches and shadows caused by repetitive patterns.\relax }}{36}{figure.caption.61}
 \addvspace {10pt}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Example of a negative obstacle. The disparities have been dilated to give the appearance of a denser disparity map.\relax }}{40}{figure.caption.63}
 \addvspace {10pt}
